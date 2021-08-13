@@ -1,39 +1,94 @@
 package com.ams.service;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.mockito.Mockito.times;
+import static org.mockito.Mockito.verify;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Optional;
 
 import org.junit.jupiter.api.Test;
+import org.mockito.Mockito;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.mock.mockito.MockBean;
 
+import com.ams.entity.AssignFacultyEntity;
+import com.ams.repository.AssignFacultyDAO;
+@SpringBootTest
 class AssignFacultyServiceImplTest {
 
-	@Test
-	void testFindAllAssignFaculty() {
-		fail("Not yet implemented");
-	}
-
+	@Autowired
+	AssignFacultyServiceImpl assignfacultyservice;
+	
+	@MockBean
+	AssignFacultyDAO repo;
+	
 	@Test
 	void testAdd() {
-		fail("Not yet implemented");
+		AssignFacultyEntity temp =createAndSaveAssignFaculty();
+		Mockito.when(repo.save(temp)).thenReturn(temp);
+		assertThat(temp.getFacultyid()).isEqualTo(assignfacultyservice.add(temp));
+	}
+	@Test
+	void testUpdate() throws Exception{
+		AssignFacultyEntity temp = createAndSaveAssignFaculty();
+		Optional<AssignFacultyEntity> tempopt =Optional.of(temp);
+		Mockito.when(repo.findById(temp.getFacultyid())).thenReturn(tempopt);
+    	Mockito.when(repo.save(temp)).thenReturn(temp);
+		temp.setCourseName("CSE");
+		assignfacultyservice.update(temp);
+		assertThat(temp).isEqualTo(assignfacultyservice.findByPK(temp.getFacultyid()));		
+	}
+		
+	@Test
+	void testDelete() throws Exception {
+		AssignFacultyEntity temp = createAndSaveAssignFaculty();
+		Optional<AssignFacultyEntity> tempopt =Optional.of(temp);
+		Mockito.when(repo.findById(temp.getFacultyid())).thenReturn(tempopt);
+		assignfacultyservice.delete(temp);
+		verify(repo,times(1)).deleteById(temp.getFacultyid());
+	}
+	
+
+	@Test
+	void testFindByName() {
+		AssignFacultyEntity temp = createAndSaveAssignFaculty();
+		Mockito.when(repo.findByUserName(temp.getUserName())).thenReturn(temp);
+		assertThat(temp).isEqualTo(assignfacultyservice.findByUserName(temp.getUserName()));
 	}
 
 	@Test
-	void testUpdate() {
-		fail("Not yet implemented");
+	void testFindByPk() throws Exception{
+		AssignFacultyEntity temp = createAndSaveAssignFaculty();
+		Optional<AssignFacultyEntity> tempopt = Optional.of(temp);
+		Mockito.when(repo.findById(temp.getFacultyid())).thenReturn(tempopt);
+		assertThat(temp).isEqualTo(assignfacultyservice.findByPK(temp.getFacultyid()));
 	}
 
 	@Test
-	void testDelete() {
-		fail("Not yet implemented");
+	void testFindAllStudents()  {
+		AssignFacultyEntity temp = createAndSaveAssignFaculty();
+		List<AssignFacultyEntity> tempList = new ArrayList<>();
+		tempList.add(temp);
+		Mockito.when(repo.findAll()).thenReturn(tempList);
+		assertThat(1).isEqualTo(assignfacultyservice.findAllAssignFaculty().size());
 	}
-
-	@Test
-	void testFindByUserName() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	void testFindByPK() {
-		fail("Not yet implemented");
+	
+	private AssignFacultyEntity createAndSaveAssignFaculty() {
+		AssignFacultyEntity temp = new AssignFacultyEntity();
+		temp.setUserId((long) 1100);
+		temp.setUserName("Somil");
+		temp.setCourseId((long) 150);
+		temp.setCourseName("CSE");
+		temp.setSubjectId((long) 765);
+		temp.setSubjectName("java");
+		temp.setTotalClass("10");
+		return temp;
+		
+		
+	
 	}
 
 }

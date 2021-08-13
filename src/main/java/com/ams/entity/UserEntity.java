@@ -2,13 +2,10 @@ package com.ams.entity;
 
 import java.time.LocalDate;
 
-import javax.persistence.CascadeType;
+
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.OneToOne;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Past;
@@ -58,21 +55,6 @@ public class UserEntity {
 	@NotNull(message = "roleType is required")
 	private String roleType;
 
-//	@OneToOne(fetch = FetchType.LAZY,cascade= CascadeType.ALL)
-//	@JoinColumn(name = "facultyid")
-//	private AssignFacultyEntity assignFaculty;
-//	
-//	
-//	
-//	
-//
-//	public AssignFacultyEntity getAssignFaculty() {
-//		return assignFaculty;
-//	}
-//
-//	public void setAssignFaculty(AssignFacultyEntity assignFaculty) {
-//		this.assignFaculty = assignFaculty;
-//	}
 
 	public String getProfilePic() {
 		return profilePic;

@@ -1,11 +1,9 @@
 package com.ams.entity;
 
-import javax.persistence.CascadeType;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.OneToOne;
+
 
 @Entity
 public class AssignFacultyEntity {
@@ -29,19 +27,6 @@ public class AssignFacultyEntity {
 
 	private String totalClass;
 	
-//	@OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL, mappedBy = "assignFaculty")
-//	private UserEntity user;
-	
-	
-	
-
-//	public UserEntity getUser() {
-//		return user;
-//	}
-//
-//	public void setUser(UserEntity user) {
-//		this.user = user;
-//	}
 
 	public long getFacultyid() {
 		return facultyid;
