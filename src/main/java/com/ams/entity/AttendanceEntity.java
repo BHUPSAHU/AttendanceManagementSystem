@@ -5,6 +5,8 @@ import java.util.Date;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 
 @Entity
 public class AttendanceEntity {
@@ -17,9 +19,9 @@ public class AttendanceEntity {
 	
 	private long subjectId;
 
-	private long studentId;
-	
-	private String studentName;
+//	private long studentId;
+//	
+//	private String studentName;
 	
 	private String semester;
 	
@@ -37,8 +39,18 @@ public class AttendanceEntity {
 	
 	private String courseName;
 
+	@ManyToOne
+	@JoinColumn(name="studentId")
+	private StudentEntity student;
 	
-	
+	public StudentEntity getStudent() {
+		return student;
+	}
+
+	public void setStudent(StudentEntity student) {
+		this.student = student;
+	}
+
 	public long getAttendanceId() {
 		return attendanceId;
 	}
@@ -63,21 +75,21 @@ public class AttendanceEntity {
 		this.subjectId = subjectId;
 	}
 
-	public long getStudentId() {
-		return studentId;
-	}
-
-	public void setStudentId(long studentId) {
-		this.studentId = studentId;
-	}
-
-	public String getStudentName() {
-		return studentName;
-	}
-
-	public void setStudentName(String studentName) {
-		this.studentName = studentName;
-	}
+//	public long getStudentId() {
+//		return studentId;
+//	}
+//
+//	public void setStudentId(long studentId) {
+//		this.studentId = studentId;
+//	}
+//
+//	public String getStudentName() {
+//		return studentName;
+//	}
+//
+//	public void setStudentName(String studentName) {
+//		this.studentName = studentName;
+//	}
 
 	public String getSemester() {
 		return semester;

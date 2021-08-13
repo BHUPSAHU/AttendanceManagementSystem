@@ -31,8 +31,8 @@ public class SubjectServiceImpl implements SubjectService{
 	  { 
 		  long id=subject.getSubjectId();
 		  SubjectEntity s=sub.findById( id).orElseThrow(s1);
-		  s.setCourseId(subject.getCourseId());
-		  s.setCourseName(subject.getCourseName());
+//		  s.setCourseId(subject.getCourseId());
+//		  s.setCourseName(subject.getCourseName());
 		  s.setSubjectName(subject.getSubjectName()); 
 		  s.setSubjectCode(subject.getSubjectCode());
 		  s.setSemester(subject.getSemester());

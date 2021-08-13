@@ -37,7 +37,7 @@ class AssignFacultyServiceImplTest {
 		Optional<AssignFacultyEntity> tempopt =Optional.of(temp);
 		Mockito.when(repo.findById(temp.getFacultyid())).thenReturn(tempopt);
     	Mockito.when(repo.save(temp)).thenReturn(temp);
-		temp.setCourseName("CSE");
+//		temp.setCourseName("CSE");
 		assignfacultyservice.update(temp);
 		assertThat(temp).isEqualTo(assignfacultyservice.findByPK(temp.getFacultyid()));		
 	}
@@ -78,12 +78,12 @@ class AssignFacultyServiceImplTest {
 	
 	private AssignFacultyEntity createAndSaveAssignFaculty() {
 		AssignFacultyEntity temp = new AssignFacultyEntity();
-		temp.setUserId((long) 1100);
+//		temp.setUserId((long) 1100);
 		temp.setUserName("Somil");
-		temp.setCourseId((long) 150);
-		temp.setCourseName("CSE");
-		temp.setSubjectId((long) 765);
-		temp.setSubjectName("java");
+//		temp.setCourseId((long) 150);
+//		temp.setCourseName("CSE");
+//		temp.setSubjectId((long) 765);
+//		temp.setSubjectName("java");
 		temp.setTotalClass("10");
 		return temp;
 		

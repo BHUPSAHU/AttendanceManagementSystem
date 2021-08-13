@@ -57,8 +57,8 @@ class AttendanceServiceImplTest {
 	@Test
 	void testFindByName()  {
 		AttendanceEntity ae = createAndSaveAttendance();
-		Mockito.when(attendanceDao.findByStudentName(ae.getStudentName())).thenReturn(ae);
-		assertThat(ae).isEqualTo(attendanceService.findByName(ae.getStudentName()));
+		Mockito.when(attendanceDao.findBySubjectName(ae.getSubjectName())).thenReturn(ae);
+		assertThat(ae).isEqualTo(attendanceService.findByName(ae.getSubjectName()));
 		
 	}
 

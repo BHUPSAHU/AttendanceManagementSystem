@@ -2,17 +2,19 @@ package com.ams.entity;
 
 import java.time.LocalDate;
 
-
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.validation.constraints.Min;
+import javax.persistence.OneToOne;
+//import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Past;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
 import org.hibernate.validator.constraints.Length;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.format.annotation.DateTimeFormat;
 
 @Entity
@@ -23,38 +25,49 @@ public class UserEntity {
 	private long userId;
 
 	@Length(min = 3, max = 15)
-	@NotNull(message = "userName is required")
+//	@NotNull(message = "userName is required")
 	private String userName;
 
 	@Length(min = 3, max = 15)
-	@NotNull(message = "firstName is required")
+//	@NotNull(message = "firstName is required")
 	private String firstName;
 
 	@Length(min = 3, max = 15)
-	@NotNull(message = "lastName is required")
+//	@NotNull(message = "lastName is required")
 	private String lastName;
 
 	@Size(min = 10, max = 10)
 	@Pattern(regexp = "(^$|[0-9]{10})")
 	private String mobileNo;
 
-	@NotNull(message = "profilepic is required")
-	@Min(4)
+//	@NotNull(message = "profilepic is required")
 	private String profilePic;
 
 	@DateTimeFormat(pattern = "yyyy-MM-dd")
-	@NotNull(message = "date of birth is required")
+//	@NotNull(message = "date of birth is required")
 	@Past
 	private LocalDate dob;
 
 	@Length(min = 6, max = 15)
-	@NotNull(message = "password is required")
+//	@NotNull(message = "password is required")
 	private String password;
 
 	@Length(min = 1, max = 1)
-	@NotNull(message = "roleType is required")
+//	@NotNull(message = "roleType is required")
 	private String roleType;
+	
+	@Autowired
+	@OneToOne(targetEntity=AssignFacultyEntity.class,cascade=CascadeType.ALL)
+	private AssignFacultyEntity assignFaculty;
 
+
+	public AssignFacultyEntity getAssignFaculty() {
+		return assignFaculty;
+	}
+
+	public void setAssignFaculty(AssignFacultyEntity assignFaculty) {
+		this.assignFaculty = assignFaculty;
+	}
 
 	public String getProfilePic() {
 		return profilePic;

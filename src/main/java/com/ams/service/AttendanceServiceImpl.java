@@ -30,10 +30,10 @@ public class AttendanceServiceImpl implements AttendanceService{
 	public void update(AttendanceEntity attendance) throws Exception{
 		long id = attendance.getAttendanceId();
 		AttendanceEntity ae = attendanceDao.findById(id).orElseThrow(s1);
-		ae.setStudentId(attendance.getStudentId());
+//		ae.setStudentId(attendance.getStudentId());
 		ae.setSubjectName(attendance.getSubjectName());
-		ae.setStudentId(attendance.getStudentId());
-		ae.setStudentName(attendance.getStudentName());
+//		ae.setStudentId(attendance.getStudentId());
+//		ae.setStudentName(attendance.getStudentName());
 		ae.setSemester(attendance.getSemester());
 		ae.setDate(attendance.getDate());
 		ae.setTotalClass(attendance.getTotalClass());
@@ -55,7 +55,7 @@ public class AttendanceServiceImpl implements AttendanceService{
 
 	@Override
 	public AttendanceEntity findByName(String name) {
-		AttendanceEntity ae = attendanceDao.findByStudentName(name);
+		AttendanceEntity ae = attendanceDao.findBySubjectName(name);
 		return ae;
 	}
 

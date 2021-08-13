@@ -35,13 +35,13 @@ public class AssignFacultyServiceImpl implements AssignFacultyService {
 		long id = entity.getFacultyid();
 		
 		AssignFacultyEntity temp = repo.findById(id).orElseThrow(s1);
-		temp.setUserId(entity.getUserId());
+//		temp.setUserId(entity.getUserId());
 		temp.setUserName(entity.getUserName());
-		temp.setCourseId(entity.getCourseId());
-		temp.setCourseName(entity.getCourseName());
-		temp.setSubjectId(entity.getSubjectId());
-		temp.setSubjectName(entity.getSubjectName());
-		temp.setSemester(entity.getSemester());
+//		temp.setCourseId(entity.getCourseId());
+//		temp.setCourseName(entity.getCourseName());
+//		temp.setSubjectId(entity.getSubjectId());
+//		temp.setSubjectName(entity.getSubjectName());
+//		temp.setSemester(entity.getSemester());
 		temp.setTotalClass(entity.getTotalClass());
 		repo.save(temp);
 	}
