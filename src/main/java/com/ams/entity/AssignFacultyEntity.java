@@ -6,11 +6,9 @@ import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.ManyToMany;
 import javax.persistence.OneToOne;
-
-import org.springframework.beans.factory.annotation.Autowired;
-
 
 
 @Entity
@@ -34,10 +32,17 @@ public class AssignFacultyEntity {
 //	private String semester;
 
 	private String totalClass;
-	@Autowired
-	@OneToOne(targetEntity=UserEntity.class,cascade=CascadeType.ALL)
-	private UserEntity user;
 	
+	@OneToOne(mappedBy = "assignFaculty")
+//	@JoinColumn(name = "userId")
+	private UserEntity user;
+
+	
+
+	@ManyToMany(targetEntity=SubjectEntity.class,cascade=CascadeType.ALL)
+	private List<SubjectEntity> subjectList;
+	
+
 	public UserEntity getUser() {
 		return user;
 	}
@@ -45,12 +50,6 @@ public class AssignFacultyEntity {
 	public void setUser(UserEntity user) {
 		this.user = user;
 	}
-
-	@ManyToMany(targetEntity=SubjectEntity.class,cascade=CascadeType.ALL)
-	private List<SubjectEntity> subjectList;
-	
-
-	
 
 	public List<SubjectEntity> getSubjectList() {
 		return subjectList;

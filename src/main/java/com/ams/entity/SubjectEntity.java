@@ -29,7 +29,7 @@ public class SubjectEntity {
 
 	private String description;
 
-	@ManyToMany(targetEntity=AssignFacultyEntity.class,cascade=CascadeType.ALL)
+	@ManyToMany(mappedBy = "subjectList",cascade=CascadeType.ALL)
 	private List<AssignFacultyEntity> assignFacultyList;
 	
 	@ManyToOne

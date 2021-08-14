@@ -48,8 +48,8 @@ class UserServiceImplTest {
 	@Test
 	void testFindByName() throws Exception{
 		UserEntity user=createusertemp();
-		Mockito.when(userRepo.findByUserName(user.getUserName())).thenReturn(user);
-		assertThat(user).isEqualTo(userSImpl.findByUserName(user.getUserName()));
+		Mockito.when(userRepo.findByFirstName(user.getFirstName())).thenReturn(user);
+		assertThat(user).isEqualTo(userSImpl.findByFirstName(user.getFirstName()));
 		
 	}
 	
@@ -92,8 +92,7 @@ class UserServiceImplTest {
 		user.setMobileNo("777777777");
 		user.setPassword("pass");
 		user.setProfilePic("hellopic");
-		user.setRoleType("1");
-		user.setUserName("test1");
+		user.setRoleType(1);
 		return user;
 	}
 

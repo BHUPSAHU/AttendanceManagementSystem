@@ -20,6 +20,7 @@ public class UserServiceImpl implements UserService{
 	
 	@Override
 	public long add(UserEntity user) {
+//		user.getAssignFaculty().getUser().setUserId(user.getUserId());
 		UserEntity tempUser =  userRepo.save(user);
 		return tempUser.getUserId();
 	}
@@ -44,9 +45,7 @@ public class UserServiceImpl implements UserService{
 		existingUser.setPassword(user.getPassword());
 		existingUser.setProfilePic(user.getProfilePic());
 		existingUser.setUserId(user.getUserId());
-		existingUser.setRoleType(user.getRoleType());
-		existingUser.setUserName(user.getUserName());
-		
+		existingUser.setRoleType(user.getRoleType());	
 		 
 		userRepo.save(existingUser);		
 	}
@@ -57,8 +56,8 @@ public class UserServiceImpl implements UserService{
 	}
 
 	@Override
-	public UserEntity findByUserName(String userName) throws Exception{
-		return userRepo.findByUserName(userName);
+	public UserEntity findByFirstName(String userName) throws Exception{
+		return userRepo.findByFirstName(userName);
 	}
 	
 	@Override

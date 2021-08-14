@@ -18,7 +18,7 @@ public interface UserService {
 
 	public Boolean forgotPassword(String userName);
 
-	public UserEntity findByUserName(String name) throws Exception;
+	public UserEntity findByFirstName(String name) throws Exception;
 
 	public List<UserEntity> userlist();
 }

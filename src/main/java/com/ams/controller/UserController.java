@@ -58,7 +58,7 @@ public class UserController {
 	
 	@RequestMapping(value="/user/byUserName/{name}",method=RequestMethod.GET)
 	public ResponseEntity<UserEntity> getByName(@PathVariable("name") String name)throws Exception{
-		UserEntity temp=userService.findByUserName(name);
+		UserEntity temp=userService.findByFirstName(name);
 		ResponseEntity<UserEntity> res=new ResponseEntity<UserEntity>(temp,HttpStatus.ACCEPTED);
 		return res;
 	}

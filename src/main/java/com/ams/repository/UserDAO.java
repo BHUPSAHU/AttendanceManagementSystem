@@ -5,5 +5,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import com.ams.entity.UserEntity;
 
 public interface UserDAO extends JpaRepository<UserEntity,Long>{
-	public UserEntity findByUserName(String name);
+	public UserEntity findByFirstName(String name);
 }
