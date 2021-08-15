@@ -5,8 +5,11 @@ import java.util.Date;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotNull;
+
+import org.hibernate.validator.constraints.Length;
 
 @Entity
 public class AttendanceEntity {
@@ -14,33 +17,44 @@ public class AttendanceEntity {
 	@Id
 	@GeneratedValue
 	private long attendanceId;
-
+	
+	@Length(min=3,max=15)
+	@NotNull(message = "SubjectName is required")
 	private String subjectName;
 	
-	private long subjectId;
-
-//	private long studentId;
-//	
-//	private String studentName;
-	
+	@Length(min=2,max=5)
+	@NotNull(message= "Semester is required")
 	private String semester;
 	
-	private Date date;
+	@NotNull(message = "Date is required")
+	private Date attendanceDate;
 	
+	@Length(min=1,max=3)
+	@NotNull(message= "TotalClass is required")
 	private String totalClass;
 	
+	@Min(1)
+	@NotNull(message= "Status is required")
 	private long status;
 	
+	@Min(1)
+	@NotNull(message= "Total is required")
 	private long total;
 	
+	@Length(min=1,max=2)
+	@NotNull(message= "Percentage is required")
 	private String percentage;
 	
+	@Min(2)
+	@NotNull(message= "CourseId is required")
 	private long courseId;
 	
+	@Length(min=3,max=10)
+	@NotNull(message= "CourseName is required")
 	private String courseName;
 
+	
 	@ManyToOne
-	@JoinColumn(name="studentId")
 	private StudentEntity student;
 	
 	public StudentEntity getStudent() {
@@ -67,30 +81,6 @@ public class AttendanceEntity {
 		this.subjectName = subjectName;
 	}
 
-	public long getSubjectId() {
-		return subjectId;
-	}
-
-	public void setSubjectId(long subjectId) {
-		this.subjectId = subjectId;
-	}
-
-//	public long getStudentId() {
-//		return studentId;
-//	}
-//
-//	public void setStudentId(long studentId) {
-//		this.studentId = studentId;
-//	}
-//
-//	public String getStudentName() {
-//		return studentName;
-//	}
-//
-//	public void setStudentName(String studentName) {
-//		this.studentName = studentName;
-//	}
-
 	public String getSemester() {
 		return semester;
 	}
@@ -99,12 +89,13 @@ public class AttendanceEntity {
 		this.semester = semester;
 	}
 
-	public Date getDate() {
-		return date;
+	
+	public Date getAttendanceDate() {
+		return attendanceDate;
 	}
 
-	public void setDate(Date date) {
-		this.date = date;
+	public void setAttendanceDate(Date attendanceDate) {
+		this.attendanceDate = attendanceDate;
 	}
 
 	public String getTotalClass() {
@@ -155,4 +146,13 @@ public class AttendanceEntity {
 		this.courseName = courseName;
 	}
 
+	@Override
+	public String toString() {
+		return "AttendanceEntity [attendanceId=" + attendanceId + ", subjectName=" + subjectName + ", semester="
+				+ semester + ", attendanceDate=" + attendanceDate + ", totalClass=" + totalClass + ", status=" + status
+				+ ", total=" + total + ", percentage=" + percentage + ", courseId=" + courseId + ", courseName="
+				+ courseName + ", student=" + student + "]";
+	}
+
+	
 }

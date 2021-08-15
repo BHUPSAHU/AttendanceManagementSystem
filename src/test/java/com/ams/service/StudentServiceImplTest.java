@@ -4,8 +4,8 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
@@ -29,25 +29,25 @@ class StudentServiceImplTest {
 	void testAdd() {
 		StudentEntity temp = createAndSaveStudent();
 		Mockito.when(repo.save(temp)).thenReturn(temp);
-		assertThat(temp.getId()).isEqualTo(studentService.add(temp));
+		assertThat(temp.getStudentId()).isEqualTo(studentService.add(temp));
 	}
 
 	@Test
 	void testUpdate() throws Exception{
 		StudentEntity temp = createAndSaveStudent();
 		Optional<StudentEntity> tempopt =Optional.of(temp);
-		Mockito.when(repo.findById(temp.getId())).thenReturn(tempopt);
+		Mockito.when(repo.findById(temp.getStudentId())).thenReturn(tempopt);
     	Mockito.when(repo.save(temp)).thenReturn(temp);
 		temp.setCourseName("Train102");
 		studentService.update(temp);
-		assertThat(temp).isEqualTo(studentService.findByPk(temp.getId()));		
+		assertThat(temp).isEqualTo(studentService.findByPk(temp.getStudentId()));		
 	}
 
 	@Test
 	void testDelete() {
 		StudentEntity temp = createAndSaveStudent();
 		studentService.delete(temp);
-		verify(repo,times(1)).deleteById(temp.getId());
+		verify(repo,times(1)).deleteById(temp.getStudentId());
 	}
 
 	@Test
@@ -61,8 +61,8 @@ class StudentServiceImplTest {
 	void testFindByPk() throws Exception{
 		StudentEntity temp = createAndSaveStudent();
 		Optional<StudentEntity> tempopt = Optional.of(temp);
-		Mockito.when(repo.findById(temp.getId())).thenReturn(tempopt);
-		assertThat(temp).isEqualTo(studentService.findByPk(temp.getId()));
+		Mockito.when(repo.findById(temp.getStudentId())).thenReturn(tempopt);
+		assertThat(temp).isEqualTo(studentService.findByPk(temp.getStudentId()));
 	}
 
 	@Test
@@ -78,7 +78,7 @@ class StudentServiceImplTest {
 	
 	private StudentEntity createAndSaveStudent() {
 		StudentEntity temp = new StudentEntity();
-		Date dt = new Date();
+		LocalDate dt = LocalDate.now();
 		temp.setRollNo(101);
 		temp.setFirstName("Mohan");
 		temp.setLastName("Kumar");
@@ -87,9 +87,6 @@ class StudentServiceImplTest {
 		temp.setMobileNo("8602109476");
 		temp.setCourseId(301);
 		temp.setCourseName("Train101");
-		temp.setSubjectId(201);
-		temp.setSubjectName("Java");
-		temp.setSemester("2nd");
 		temp.setEmailId("sample@example.com");
 		temp.setFatherEmailId("sample2@example.com");
 		temp.setFatherMobileNo("1234587400");

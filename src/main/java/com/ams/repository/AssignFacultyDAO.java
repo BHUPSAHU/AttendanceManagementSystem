@@ -3,11 +3,11 @@ package com.ams.repository;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.ams.entity.AssignFacultyEntity;
+import com.ams.entity.FacultyEntity;
 
 @Repository
-public interface AssignFacultyDAO extends JpaRepository<AssignFacultyEntity, Long> {
+public interface AssignFacultyDAO extends JpaRepository<FacultyEntity, Long> {
 
-	public AssignFacultyEntity findByUserName(String name);
+	public FacultyEntity findByUserName(String name);
 
 }

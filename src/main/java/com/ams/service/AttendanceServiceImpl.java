@@ -30,18 +30,13 @@ public class AttendanceServiceImpl implements AttendanceService{
 	public void update(AttendanceEntity attendance) throws Exception{
 		long id = attendance.getAttendanceId();
 		AttendanceEntity ae = attendanceDao.findById(id).orElseThrow(s1);
-//		ae.setStudentId(attendance.getStudentId());
 		ae.setSubjectName(attendance.getSubjectName());
-//		ae.setStudentId(attendance.getStudentId());
-//		ae.setStudentName(attendance.getStudentName());
 		ae.setSemester(attendance.getSemester());
-		ae.setDate(attendance.getDate());
+		ae.setAttendanceDate(attendance.getAttendanceDate());
 		ae.setTotalClass(attendance.getTotalClass());
 		ae.setStatus(attendance.getStatus());
 		ae.setTotal(attendance.getTotal());
 		ae.setPercentage(attendance.getPercentage());
-		ae.setCourseId(attendance.getCourseId());
-		ae.setCourseName(attendance.getCourseName());
 		attendanceDao.save(attendance);
 		
 		}

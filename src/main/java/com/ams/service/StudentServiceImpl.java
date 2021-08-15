@@ -22,12 +22,12 @@ public class StudentServiceImpl implements StudentService {
 	public long add(StudentEntity entity) {
 		entity.setName(entity.getFirstName(), entity.getLastName());
 		StudentEntity temp = repo.save(entity);
-		return temp.getId();
+		return temp.getStudentId();
 	}
 
 	@Override
 	public StudentEntity update(StudentEntity entity) throws Exception {
-		long id = entity.getId();
+		long id = entity.getStudentId();
 		StudentEntity temp = repo.findById(id).orElseThrow(sup1);
 		temp.setRollNo(entity.getRollNo());
 		temp.setFirstName(entity.getFirstName());
@@ -37,9 +37,6 @@ public class StudentServiceImpl implements StudentService {
 		temp.setMobileNo(entity.getMobileNo());
 		temp.setCourseId(entity.getCourseId());
 		temp.setCourseName(entity.getCourseName());
-		temp.setSubjectId(entity.getSubjectId());
-		temp.setSubjectName(entity.getSubjectName());
-		temp.setSemester(entity.getSemester());
 		temp.setEmailId(entity.getEmailId());
 		temp.setFatherEmailId(entity.getFatherEmailId());
 		temp.setFatherMobileNo(entity.getFatherMobileNo());
@@ -52,8 +49,7 @@ public class StudentServiceImpl implements StudentService {
 
 	@Override
 	public void delete(StudentEntity entity) {
-		repo.deleteById(entity.getId());
-
+		repo.deleteById(entity.getStudentId());
 	}
 
 	@Override

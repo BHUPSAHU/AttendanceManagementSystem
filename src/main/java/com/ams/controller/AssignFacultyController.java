@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.ams.entity.AssignFacultyEntity;
+import com.ams.entity.FacultyEntity;
 import com.ams.exception.RecordNotFoundException;
 import com.ams.service.AssignFacultyServiceImpl;
 
@@ -35,37 +35,37 @@ public class AssignFacultyController {
 	}
 
 	@GetMapping("/faculty/all")
-	public List<AssignFacultyEntity> getAllFaculty() throws RecordNotFoundException {
+	public List<FacultyEntity> getAllFaculty() throws RecordNotFoundException {
 		return assignfacultyservice.findAllAssignFaculty();
 	}
 
 	@PostMapping(path = "/faculty/add")
-	public ResponseEntity<Long> create(@RequestBody AssignFacultyEntity Assignfaculty) {
+	public ResponseEntity<Long> create(@RequestBody FacultyEntity Assignfaculty) {
 		long id = assignfacultyservice.add(Assignfaculty);
 		ResponseEntity<Long> re = new ResponseEntity<Long>(id,HttpStatus.OK);
 		return re;
 	}
 
 	@PutMapping("/faculty/update")
-	public void update(@RequestBody AssignFacultyEntity faculty) throws Exception {
+	public void update(@RequestBody FacultyEntity faculty) throws Exception {
 		assignfacultyservice.update(faculty);
 	}
 
 	@DeleteMapping("/faculty/delete")
-	public void deleteAssignFaculty(@RequestBody AssignFacultyEntity assignfaculty) throws Exception {
+	public void deleteAssignFaculty(@RequestBody FacultyEntity assignfaculty) throws Exception {
 		assignfacultyservice.delete(assignfaculty);
 	}
 
 	@GetMapping("/faculty/byId/{id}")
-	public ResponseEntity<AssignFacultyEntity> getFacultyById(@PathVariable("id") Long id) throws Exception {
-		AssignFacultyEntity faculty = assignfacultyservice.findByPK(id);
-		return new ResponseEntity<AssignFacultyEntity>(faculty, HttpStatus.OK);
+	public ResponseEntity<FacultyEntity> getFacultyById(@PathVariable("id") Long id) throws Exception {
+		FacultyEntity faculty = assignfacultyservice.findByPK(id);
+		return new ResponseEntity<FacultyEntity>(faculty, HttpStatus.OK);
 	}
 
 	@GetMapping("/faculty/byName/{name}")
-	public ResponseEntity<AssignFacultyEntity> getFacultyByName(@PathVariable("name") String name)
+	public ResponseEntity<FacultyEntity> getFacultyByName(@PathVariable("name") String name)
 			throws RecordNotFoundException {
-		AssignFacultyEntity faculty = assignfacultyservice.findByUserName(name);
-		return new ResponseEntity<AssignFacultyEntity>(faculty, HttpStatus.OK);
+		FacultyEntity faculty = assignfacultyservice.findByUserName(name);
+		return new ResponseEntity<FacultyEntity>(faculty, HttpStatus.OK);
 	}
 }

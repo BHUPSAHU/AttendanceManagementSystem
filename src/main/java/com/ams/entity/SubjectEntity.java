@@ -1,48 +1,39 @@
 package com.ams.entity;
 
-import java.util.List;
-
-import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
+import javax.validation.constraints.NotNull;
+import org.hibernate.validator.constraints.Length;
 
 @Entity
 public class SubjectEntity {
 	
 	@Id
 	@GeneratedValue
+		
 	private long subjectId;
-	
-//	private long courseId;
-//
-//	private String courseName;
 
+	@NotNull
+	@Length(min = 2, max = 30, message = "Subject name should be between 2 and 30  characters")
 	private String subjectName;
 
+	@NotNull
+	@Length(min = 2, max = 30, message = "Subject Code should be between 2 and 30  characters")
 	private String subjectCode;
 
+	@NotNull
+	@Length(min = 2, max = 30, message = "Semester should be between 2 and 30  characters")
 	private String semester;
 
+	@NotNull
+	@Length(min = 2, max = 200, message = "Description should be between 2 and 200  characters")
 	private String description;
 
-	@ManyToMany(mappedBy = "subjectList",cascade=CascadeType.ALL)
-	private List<AssignFacultyEntity> assignFacultyList;
-	
 	@ManyToOne
-	@JoinColumn(name="courseId")
-	private CourseEntity course;
+	public CourseEntity course;
 
-	public List<AssignFacultyEntity> getAssignFacultyList() {
-		return assignFacultyList;
-	}
-
-	public void setAssignFacultyList(List<AssignFacultyEntity> assignFacultyList) {
-		this.assignFacultyList = assignFacultyList;
-	}
 
 	public CourseEntity getCourse() {
 		return course;
@@ -60,21 +51,6 @@ public class SubjectEntity {
 		this.subjectId = subjectId;
 	}
 
-//	public long getCourseId() {
-//		return courseId;
-//	}
-//
-//	public void setCourseId(long courseId) {
-//		this.courseId = courseId;
-//	}
-//
-//	public String getCourseName() {
-//		return courseName;
-//	}
-//
-//	public void setCourseName(String courseName) {
-//		this.courseName = courseName;
-//	}
 
 	public String getSubjectName() {
 		return subjectName;
@@ -106,6 +82,13 @@ public class SubjectEntity {
 
 	public void setDescription(String description) {
 		this.description = description;
+	}
+
+	@Override
+	public String toString() {
+		return "SubjectEntity [subjectId=" + subjectId + ", subjectName=" + subjectName + ", subjectCode=" + subjectCode
+				+ ", semester=" + semester + ", description=" + description + ", course=" + course
+				+  "]";
 	}
 
 }

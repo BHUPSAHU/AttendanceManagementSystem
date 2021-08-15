@@ -38,7 +38,7 @@ class AttendanceServiceImplTest {
 		Optional<AttendanceEntity> aeOpt = Optional.of(ae);
 		Mockito.when(attendanceDao.findById(ae.getAttendanceId())).thenReturn(aeOpt);
 		Mockito.when(attendanceDao.save(ae)).thenReturn(ae);
-		ae.setCourseName("Angular2.0");
+		ae.setSemester("5th");
 		attendanceService.update(ae);
 		assertThat(ae).isEqualTo(attendanceService.findByPk(ae.getAttendanceId()));
 		
@@ -84,15 +84,12 @@ class AttendanceServiceImplTest {
 		
 		AttendanceEntity ae = new AttendanceEntity();
 		ae.setAttendanceId(1);
-		ae.setSubjectId(352);
 		ae.setSubjectName("Python");
 		ae.setSemester("4th");
 		ae.setTotalClass("B-52");
 		ae.setStatus(1);
 		ae.setTotal(32);
 		ae.setPercentage("56.7");
-		ae.setCourseId(811);
-		ae.setCourseName("Angular");
 		
 		return ae;
 		

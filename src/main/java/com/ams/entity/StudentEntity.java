@@ -1,11 +1,18 @@
 package com.ams.entity;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Past;
+import javax.validation.constraints.Pattern;
+
+import org.hibernate.validator.constraints.Length;
+import org.springframework.format.annotation.DateTimeFormat;
 
 @Entity
 public class StudentEntity {
@@ -14,52 +21,65 @@ public class StudentEntity {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long studentId;
 
+	@NotNull(message= "Enrollment Number is required")
+	@Length(min = 3, max =5, message = "Enrollment Number should be between 3 and 5 digits")
 	private long rollNo;
 
+	@NotNull
+	@Length(min = 3, max = 30, message = "First name should be between 3 and 30  characters")	
 	private String firstName;
 
+	@NotNull
+	@Length(min = 1, max = 30, message = "Last name should be between 1 and 30  characters")
 	private String lastName;
 
-	private Date dob;
+	@DateTimeFormat(pattern = "yyyy-MM-dd")
+    @NotNull(message="date of birth is required")
+	@Past(message ="Date should be past dates" )
+	private LocalDate dob;
 
+	@NotNull
+	@Length(min = 4, max = 10, message = "Gender should be between 1 and 10  characters")
 	private String gender;
 
+	@NotNull(message= "Student Mobile Number is required")
+	@Length(min = 10, max = 10, message = "Mobile number should be only 10 digits")
+	@Pattern(regexp="(^$|[0-9]{10})", message = "Mobile number should be only Numbers")
 	private String mobileNo;
 
+	@NotNull(message= "Course Id is required")
+	@Length(min=1, max =5, message = "Course Id should be between 1 and 5 digits")
 	private long courseId;
 
+	@NotNull(message= "Course Name is required")
+	@Length( min=2,max = 30, message = "course name should be between 2 and 30 characters")
 	private String courseName;
 
-	private long subjectId;
-
-	private String subjectName;
-
-	private String semester;
-
+	@NotNull(message= "Student Email is required")
+	@Email(message = "Email should be valid")
 	private String emailId;
 
+	@NotNull(message= "Father's Email is required")
+	@Email(message = "Email should be valid")
 	private String fatherEmailId;
 
+	
+	@NotNull(message= "Fathers Mobile Number is required")
+	@Length(min = 10, max = 10, message = "Mobile number should be only 10 digits")
+	@Pattern(regexp="(^$|[0-9]{10})", message = "Mobile number should be only Numbers")
 	private String fatherMobileNo;
 
+	@Length(min = 10, message = "Profile Picture URL should be minimum 10 characters ")
 	private String profilePic;
 
 	private String name;
 
-	public String getName() {
-		return this.name;
-	}
-
-	public void setName(String fname, String lname) {
-		this.name = fname + " " + lname;
-	}
-
-	public long getId() {
+	public long getStudentId() {
 		return studentId;
 	}
 
-	public void setId(long id) {
-		this.studentId = id;
+	public void setStudentId(long studentId) {
+		this.studentId = studentId;
 	}
 
 	public long getRollNo() {
@@ -86,12 +106,12 @@ public class StudentEntity {
 		this.lastName = lastName;
 	}
 
-	public Date getDob() {
+	public LocalDate getDob() {
 		return dob;
 	}
 
-	public void setDob(Date date) {
-		this.dob = date;
+	public void setDob(LocalDate dob) {
+		this.dob = dob;
 	}
 
 	public String getGender() {
@@ -126,30 +146,6 @@ public class StudentEntity {
 		this.courseName = courseName;
 	}
 
-	public long getSubjectId() {
-		return subjectId;
-	}
-
-	public void setSubjectId(long subjectId) {
-		this.subjectId = subjectId;
-	}
-
-	public String getSubjectName() {
-		return subjectName;
-	}
-
-	public void setSubjectName(String subjectName) {
-		this.subjectName = subjectName;
-	}
-
-	public String getSemester() {
-		return semester;
-	}
-
-	public void setSemester(String semester) {
-		this.semester = semester;
-	}
-
 	public String getEmailId() {
 		return emailId;
 	}
@@ -181,4 +177,23 @@ public class StudentEntity {
 	public void setProfilePic(String profilePic) {
 		this.profilePic = profilePic;
 	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String firstName,String lastName) {
+		this.name = firstName+ " "+ lastName;
+	}
+
+	@Override
+	public String toString() {
+		return "StudentEntity [studentId=" + studentId + ", rollNo=" + rollNo + ", firstName=" + firstName
+				+ ", lastName=" + lastName + ", dob=" + dob + ", gender=" + gender + ", mobileNo=" + mobileNo
+				+ ", courseId=" + courseId + ", courseName=" + courseName + ", emailId=" + emailId + ", fatherEmailId="
+				+ fatherEmailId + ", fatherMobileNo=" + fatherMobileNo + ", profilePic=" + profilePic + ", name=" + name
+				+ "]";
+	}
+	
+
 }

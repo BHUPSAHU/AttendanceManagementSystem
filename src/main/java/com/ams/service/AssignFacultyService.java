@@ -2,19 +2,19 @@ package com.ams.service;
 
 import java.util.List;
 
-import com.ams.entity.AssignFacultyEntity;
+import com.ams.entity.FacultyEntity;
 
 public interface AssignFacultyService {
 
-	public long add(AssignFacultyEntity assignfaculty);
+	public long add(FacultyEntity assignfaculty);
 
-	public void update(AssignFacultyEntity assignfaculty) throws Exception;
+	public void update(FacultyEntity assignfaculty) throws Exception;
 
-	public void delete(AssignFacultyEntity assignfaculty) throws Exception;
+	public void delete(FacultyEntity assignfaculty) throws Exception;
 
-	AssignFacultyEntity findByPK(long id) throws Exception;
+	FacultyEntity findByPK(long id) throws Exception;
 
-	AssignFacultyEntity findByUserName(String name);
+	FacultyEntity findByUserName(String name);
 
-	public List<AssignFacultyEntity> findAllAssignFaculty();
+	public List<FacultyEntity> findAllAssignFaculty();
 }
