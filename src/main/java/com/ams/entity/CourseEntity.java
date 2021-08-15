@@ -6,6 +6,11 @@ import javax.persistence.Id;
 import javax.validation.constraints.NotNull;
 import org.hibernate.validator.constraints.Length;
 
+/*
+Entity Definition of COURSE_ENTITY Table
+@author: Aishwarya K. 
+*/
+
 @Entity
 public class CourseEntity {
 
@@ -22,6 +27,10 @@ public class CourseEntity {
 	private String description;
 
 
+/*
+ Setter Getters for the Entity Attributes
+*/
+	
 	public long getCourseId() {
 		return courseId;
 	}
@@ -46,10 +55,5 @@ public class CourseEntity {
 		this.description = description;
 	}
 
-	@Override
-	public String toString() {
-		return "CourseEntity [courseId=" + courseId + ", courseName=" + courseName + ", description=" + description
-				+ "]";
-	}
 
 }

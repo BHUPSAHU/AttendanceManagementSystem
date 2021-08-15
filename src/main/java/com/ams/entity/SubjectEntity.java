@@ -7,6 +7,11 @@ import javax.persistence.ManyToOne;
 import javax.validation.constraints.NotNull;
 import org.hibernate.validator.constraints.Length;
 
+/*
+Entity Definition of SUBJECT_ENTITY Table
+@author: Arpitha S 
+*/
+
 @Entity
 public class SubjectEntity {
 	
@@ -31,10 +36,17 @@ public class SubjectEntity {
 	@Length(min = 2, max = 200, message = "Description should be between 2 and 200  characters")
 	private String description;
 
+/*
+ Many To one Relation with Subject Entity
+*/
 	@ManyToOne
 	public CourseEntity course;
 
 
+/*
+ Setter Getters for the Entity Attributes
+*/
+	
 	public CourseEntity getCourse() {
 		return course;
 	}

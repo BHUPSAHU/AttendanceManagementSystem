@@ -11,6 +11,10 @@ import javax.validation.constraints.NotNull;
 
 import org.hibernate.validator.constraints.Length;
 
+/*
+  Entity Definition of ATTENDANCE_ENTITY Table
+  @author: Tejaswini 
+ */
 @Entity
 public class AttendanceEntity {
 	
@@ -53,10 +57,18 @@ public class AttendanceEntity {
 	@NotNull(message= "CourseName is required")
 	private String courseName;
 
-	
+/*
+ Many To one Relation with Student Entity
+*/
 	@ManyToOne
 	private StudentEntity student;
 	
+
+	
+/*
+ Setter Getters for the Entity Attributes
+*/
+
 	public StudentEntity getStudent() {
 		return student;
 	}
@@ -144,14 +156,6 @@ public class AttendanceEntity {
 
 	public void setCourseName(String courseName) {
 		this.courseName = courseName;
-	}
-
-	@Override
-	public String toString() {
-		return "AttendanceEntity [attendanceId=" + attendanceId + ", subjectName=" + subjectName + ", semester="
-				+ semester + ", attendanceDate=" + attendanceDate + ", totalClass=" + totalClass + ", status=" + status
-				+ ", total=" + total + ", percentage=" + percentage + ", courseId=" + courseId + ", courseName="
-				+ courseName + ", student=" + student + "]";
 	}
 
 	

@@ -15,6 +15,10 @@ import javax.validation.constraints.Pattern;
 import org.hibernate.validator.constraints.Length;
 import org.springframework.format.annotation.DateTimeFormat;
 
+/*
+Entity Definition of USER_ENTITY Table
+@author: Anjan 
+*/
 
 @Entity
 public class UserEntity {
@@ -52,9 +56,20 @@ public class UserEntity {
 	@NotNull(message= "Role Type is required")
 	private long roleType;
 	
+	
+/*
+ Many To one Relation with Student Entity
+*/
+	
 	@OneToOne(cascade=CascadeType.ALL)
 	private FacultyEntity assignFaculty;
 
+
+/*
+ Setter Getters for the Entity Attributes
+*/	
+	
+	
 	public long getUserId() {
 		return userId;
 	}

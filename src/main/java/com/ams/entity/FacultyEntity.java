@@ -10,7 +10,10 @@ import javax.validation.constraints.NotNull;
 
 import org.hibernate.validator.constraints.Length;
 
-
+/*
+Entity Definition of FACULTY_ENTITY Table
+@author: Manjari NA
+*/
 @Entity
 public class FacultyEntity {
 	@Id
@@ -25,11 +28,17 @@ public class FacultyEntity {
 	@Length(min = 2, max = 10, message = "totalclass should be between 2 and 10  characters")
 	private String totalClass;
 	
-
+/*
+	 One To Many Relation with Subject Entity
+*/
 	@OneToMany
 	private List<SubjectEntity> subjectList;
 	
 
+/*
+ Setter Getters for the Entity Attributes
+*/
+	
 	public List<SubjectEntity> getSubjectList() {
 		return subjectList;
 	}
@@ -60,12 +69,6 @@ public class FacultyEntity {
 
 	public void setTotalClass(String totalClass) {
 		this.totalClass = totalClass;
-	}
-
-	@Override
-	public String toString() {
-		return "FacultyEntity [facultyid=" + facultyid + ", userName=" + userName + ", totalClass=" + totalClass
-				+ ", subjectList=" + subjectList + "]";
 	}
 
 	

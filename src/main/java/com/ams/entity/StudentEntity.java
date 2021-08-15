@@ -15,6 +15,11 @@ import javax.validation.constraints.Pattern;
 import org.hibernate.validator.constraints.Length;
 import org.springframework.format.annotation.DateTimeFormat;
 
+/*
+Entity Definition of STUDENT_ENTITY Table
+@author: Bhupesh Kumar Sahu 
+*/
+
 @Entity
 public class StudentEntity {
 	
@@ -73,8 +78,15 @@ public class StudentEntity {
 	@Length(min = 10, message = "Profile Picture URL should be minimum 10 characters ")
 	private String profilePic;
 
+/*
+ Merging First name and Last name to result full name 
+*/	
+	
 	private String name;
 
+/*
+ Setter Getters for the Entity Attributes
+*/
 	public long getStudentId() {
 		return studentId;
 	}
@@ -186,15 +198,5 @@ public class StudentEntity {
 	public void setName(String firstName,String lastName) {
 		this.name = firstName+ " "+ lastName;
 	}
-
-	@Override
-	public String toString() {
-		return "StudentEntity [studentId=" + studentId + ", rollNo=" + rollNo + ", firstName=" + firstName
-				+ ", lastName=" + lastName + ", dob=" + dob + ", gender=" + gender + ", mobileNo=" + mobileNo
-				+ ", courseId=" + courseId + ", courseName=" + courseName + ", emailId=" + emailId + ", fatherEmailId="
-				+ fatherEmailId + ", fatherMobileNo=" + fatherMobileNo + ", profilePic=" + profilePic + ", name=" + name
-				+ "]";
-	}
-	
 
 }
