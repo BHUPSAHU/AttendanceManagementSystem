@@ -33,16 +33,10 @@ public class AssignFacultyServiceImpl implements AssignFacultyService {
 	@Override
 	public void update(FacultyEntity entity) throws Exception {
 		long id = entity.getFacultyid();
-		
 		FacultyEntity temp = repo.findById(id).orElseThrow(s1);
-//		temp.setUserId(entity.getUserId());
 		temp.setUserName(entity.getUserName());
-//		temp.setCourseId(entity.getCourseId());
-//		temp.setCourseName(entity.getCourseName());
-//		temp.setSubjectId(entity.getSubjectId());
-//		temp.setSubjectName(entity.getSubjectName());
-//		temp.setSemester(entity.getSemester());
 		temp.setTotalClass(entity.getTotalClass());
+		temp.setSubjectList(entity.getSubjectList());
 		repo.save(temp);
 	}
 

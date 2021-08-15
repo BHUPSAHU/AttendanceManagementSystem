@@ -48,7 +48,7 @@ public class SubjectController {
 	}
 	
 	@DeleteMapping("/subject/delete")
-	public void deleteSubject(@RequestBody SubjectEntity subject)
+	public void deleteSubject(@RequestBody SubjectEntity subject) throws Exception
 	{
 	subjectservice.delete(subject);
 	}

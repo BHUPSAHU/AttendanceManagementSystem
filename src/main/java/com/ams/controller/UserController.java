@@ -33,7 +33,6 @@ public class UserController {
 	
 	@RequestMapping(value="/user/add",method=RequestMethod.POST)
 	public ResponseEntity<Long> add( @RequestBody UserEntity user) {
-		System.out.println("you have neterd the add post method");
 		long temp=userService.add(user);
 		ResponseEntity<Long> res=new ResponseEntity<Long>(temp,HttpStatus.CREATED);
 		return res;
@@ -71,16 +70,16 @@ public class UserController {
 	}
 	
 	@RequestMapping(value="/user/authenticate",method=RequestMethod.GET)
-	public ResponseEntity<Boolean> authenticate(@RequestBody String UserName){
-		Boolean temp=userService.authenticate(UserName);
+	public ResponseEntity<Boolean> authenticate(@RequestBody String userName){
+		Boolean temp=userService.authenticate(userName);
 		ResponseEntity<Boolean> res=new ResponseEntity<Boolean>(temp,HttpStatus.ACCEPTED);
 		return res;
 			
 	}
 	
 	@RequestMapping(value="/user/password",method=RequestMethod.GET)
-	public ResponseEntity<Boolean> forgotPassword(@RequestBody String UserName){
-		Boolean temp=userService.forgotPassword(UserName);
+	public ResponseEntity<Boolean> forgotPassword(@RequestBody String userName){
+		Boolean temp=userService.forgotPassword(userName);
 		ResponseEntity<Boolean> res=new ResponseEntity<Boolean>(temp,HttpStatus.ACCEPTED);
 		return res;
 			

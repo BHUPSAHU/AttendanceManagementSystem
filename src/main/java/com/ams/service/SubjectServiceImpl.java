@@ -31,19 +31,19 @@ public class SubjectServiceImpl implements SubjectService{
 	  { 
 		  long id=subject.getSubjectId();
 		  SubjectEntity s=sub.findById( id).orElseThrow(s1);
-//		  s.setCourseId(subject.getCourseId());
-//		  s.setCourseName(subject.getCourseName());
 		  s.setSubjectName(subject.getSubjectName()); 
 		  s.setSubjectCode(subject.getSubjectCode());
 		  s.setSemester(subject.getSemester());
 		  s.setDescription(subject.getDescription()); 
+		  s.setCourse(subject.getCourse());
 		  sub.save(s);	  	  
 	  }
 	  
 	  @Override
-	  public void delete(SubjectEntity subject)
+	  public void delete(SubjectEntity subject) throws Exception
 		  { 
-			  sub.delete(subject); 		  
+		  SubjectEntity s = sub.findById(subject.getSubjectId()).orElseThrow(s1);
+			  sub.deleteById(s.getSubjectId()); 		  
 		  }
 	  
 	  @Override 

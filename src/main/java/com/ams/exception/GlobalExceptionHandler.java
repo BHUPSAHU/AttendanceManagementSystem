@@ -15,23 +15,5 @@ public class GlobalExceptionHandler {
         ErrorDetails errorDetails = new ErrorDetails(LocalDateTime.now(), ex.getMessage(), request.getDescription(false));
         return new ResponseEntity<>(errorDetails, HttpStatus.NOT_FOUND);
    }
-	
-	@ExceptionHandler(DuplicateRecordException.class)
-    public ResponseEntity<?> duplicateRecordException(DuplicateRecordException ex, WebRequest request) {
-        ErrorDetails errorDetails = new ErrorDetails(LocalDateTime.now(), ex.getMessage(), request.getDescription(false));
-        return new ResponseEntity<>(errorDetails, HttpStatus.NOT_FOUND);
-   }
-	
-	@ExceptionHandler(DatabaseException.class)
-    public ResponseEntity<?> databaseException(DatabaseException ex, WebRequest request) {
-        ErrorDetails errorDetails = new ErrorDetails(LocalDateTime.now(), ex.getMessage(), request.getDescription(false));
-        return new ResponseEntity<>(errorDetails, HttpStatus.NOT_FOUND);
-   }
-	
-	@ExceptionHandler(ApplicationException.class)
-    public ResponseEntity<?> applicationException(ApplicationException ex, WebRequest request) {
-        ErrorDetails errorDetails = new ErrorDetails(LocalDateTime.now(), ex.getMessage(), request.getDescription(false));
-        return new ResponseEntity<>(errorDetails, HttpStatus.NOT_FOUND);
-   }
-	
+		
 }

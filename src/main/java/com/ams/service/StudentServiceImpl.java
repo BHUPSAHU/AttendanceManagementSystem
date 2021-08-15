@@ -43,7 +43,6 @@ public class StudentServiceImpl implements StudentService {
 		temp.setProfilePic(entity.getProfilePic());
 		temp.setName(entity.getFirstName(), entity.getLastName());
 		repo.save(temp);
-		System.out.println(temp);
 		return temp;
 	}
 

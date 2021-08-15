@@ -7,6 +7,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.validation.constraints.Email;
+import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Past;
 import javax.validation.constraints.Pattern;
@@ -22,7 +23,7 @@ public class StudentEntity {
 	private long studentId;
 
 	@NotNull(message= "Enrollment Number is required")
-	@Length(min = 3, max =5, message = "Enrollment Number should be between 3 and 5 digits")
+	@Min(3)
 	private long rollNo;
 
 	@NotNull
@@ -48,7 +49,7 @@ public class StudentEntity {
 	private String mobileNo;
 
 	@NotNull(message= "Course Id is required")
-	@Length(min=1, max =5, message = "Course Id should be between 1 and 5 digits")
+	@Min(3)
 	private long courseId;
 
 	@NotNull(message= "Course Name is required")

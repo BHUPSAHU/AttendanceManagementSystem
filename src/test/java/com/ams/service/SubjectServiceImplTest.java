@@ -56,11 +56,13 @@ class SubjectServiceImplTest {
 	}
 	
 	@Test
-	void testDelete()
+	void testDelete() throws Exception
 	{
 		SubjectEntity temp=dataSubject();
+		Optional<SubjectEntity> tempOpt= Optional.of(temp);
+		Mockito.when(sub.findById(temp.getSubjectId())).thenReturn(tempOpt);
 		subjectservice.delete(temp);
-		verify(sub,times(1)).delete(temp);;	
+		verify(sub,times(1)).deleteById(temp.getSubjectId());	
 	}
 	
 	@Test

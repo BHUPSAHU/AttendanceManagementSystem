@@ -37,6 +37,7 @@ public class AttendanceServiceImpl implements AttendanceService{
 		ae.setStatus(attendance.getStatus());
 		ae.setTotal(attendance.getTotal());
 		ae.setPercentage(attendance.getPercentage());
+		ae.setStudent(attendance.getStudent());
 		attendanceDao.save(attendance);
 		
 		}

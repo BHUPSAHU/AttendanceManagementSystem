@@ -40,8 +40,8 @@ public class AssignFacultyController {
 	}
 
 	@PostMapping(path = "/faculty/add")
-	public ResponseEntity<Long> create(@RequestBody FacultyEntity Assignfaculty) {
-		long id = assignfacultyservice.add(Assignfaculty);
+	public ResponseEntity<Long> create(@RequestBody FacultyEntity assignfaculty) {
+		long id = assignfacultyservice.add(assignfaculty);
 		ResponseEntity<Long> re = new ResponseEntity<Long>(id,HttpStatus.OK);
 		return re;
 	}
