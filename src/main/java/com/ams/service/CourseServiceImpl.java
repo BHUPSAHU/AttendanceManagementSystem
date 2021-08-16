@@ -7,26 +7,26 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.ams.entity.CourseEntity;
-import com.ams.exception.RecordNotFoundException;
+import com.ams.exception.CourseNotFoundException;
 import com.ams.repository.CourseDAO;
 
 @Service
-public class CourseServiceImpl implements CourseService{
-	
-	Supplier<Exception> s1 = ()-> new RecordNotFoundException("Course Not Found in DataBase");
+public class CourseServiceImpl implements CourseService {
 
-	
+	Supplier<Exception> s1 = () -> new CourseNotFoundException("Course Not Found in DataBase");
+
 	@Autowired
 	private CourseDAO sub;
 
+	// saving a specific record by using the method save()
 	@Override
-	public long add(CourseEntity course) 
-	{
+	public long add(CourseEntity course) {
 		CourseEntity c = sub.save(course);
 		return c.getCourseId();
 
 	}
 
+	// updating a record
 	@Override
 	public void update(CourseEntity course) throws Exception {
 		long id = course.getCourseId();
@@ -37,30 +37,32 @@ public class CourseServiceImpl implements CourseService{
 		sub.save(c);
 	}
 
+	// deleting a specific record by using the method deleteById()
 	@Override
-	public void delete(CourseEntity course) throws Exception 
-	{
+	public void delete(CourseEntity course) throws Exception {
 		CourseEntity c = sub.findById(course.getCourseId()).orElseThrow(s1);
 		sub.delete(c);
 	}
 
+	// getting a specific record by using the method findByName()
 	@Override
 	public CourseEntity findByName(String courseName) {
-		CourseEntity c =  sub.findByCourseName(courseName);
+		CourseEntity c = sub.findByCourseName(courseName);
 		return c;
 	}
 
+	// getting a specific record by using the method findById()
 	@Override
 	public CourseEntity findByPk(long courseId) throws Exception {
 		CourseEntity c = sub.findById(courseId).orElseThrow(s1);
 		return c;
 	}
 
+	// getting all records by using method findAll()
 	@Override
 	public List<CourseEntity> findAllCourse() {
 		List<CourseEntity> subList = sub.findAll();
 		return subList;
 	}
-
 
 }

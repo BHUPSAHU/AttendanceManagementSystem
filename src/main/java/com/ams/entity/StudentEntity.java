@@ -27,54 +27,54 @@ public class StudentEntity {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long studentId;
 
-	@NotNull(message= "\nEnrollment Number is required")
-	@Min(3)
+	@NotNull(message= "Enrollment Number is required")
+	@Min(value = 3,message = "Enrollment Number should be minimum 3")
 	private long rollNo;
 
-	@NotNull
-	@Length(min = 3, max = 30, message = "\nFirst name should be between 3 and 30  characters")	
+	@NotNull(message= "First name Id is required")
+	@Length(min = 3, max = 30, message = "First name should be between 3 and 30  characters")	
 	private String firstName;
 
-	@NotNull
-	@Length(min = 1, max = 30, message = "\nLast name should be between 1 and 30  characters")
+	@NotNull(message= "Last name is required")
+	@Length(min = 1, max = 30, message = "Last name should be between 1 and 30  characters")
 	private String lastName;
 
 	@DateTimeFormat(pattern = "yyyy-MM-dd")
-    @NotNull(message="\ndate of birth is required")
-	@Past(message="\nDate of birth must be past date")
+    @NotNull(message="Date of birth is required")
+	@Past(message="Date of birth must be past date")
 	private LocalDate dob;
 
-	@NotNull
-	@Length(min = 4, max = 10, message = "\nGender should be between 1 and 10  characters")
+	@NotNull(message= "Gender is required")
+	@Length(min = 4, max = 10, message = "Gender should be between 1 and 10  characters")
 	private String gender;
 
-	@NotNull
-	@Length(min = 10, max = 10, message = "\nMobile number should be only 10 digits")
-	@Pattern(regexp="(^$|[0-9]{10})")
+	@NotNull(message= "Mobile number is required")
+	@Length(min = 10, max = 10, message = "Mobile number should be only 10 digits")
+	@Pattern(regexp="(^$|[0-9]{10})",message ="Mobile number should match (^$|[0-9]{10}) pattern" )
 	private String mobileNo;
 
-	@NotNull(message= "\nCourse Id is required")
-	@Min(3)
+	@NotNull(message= "Course Id is required")
+	@Min(value = 3,message ="Course Id should be minimum 3" )
 	private long courseId;
 
 	@NotNull
-	@Length( min=2,max = 30, message = "\ncourse name should be between 2 and 30 characters")
+	@Length( min=2,max = 30, message = "course name should be between 2 and 30 characters")
 	private String courseName;
 
-	@NotNull
-	@Email(message = "\nEmail should be valid")
+	@NotNull(message= "Student Email is required")
+	@Email(message = "Student Email should be valid")
 	private String emailId;
 
-	@NotNull
-	@Email(message = "\nFather's Email should be valid")
+	@NotNull(message= "Father's Email is required")
+	@Email(message = "Father's Email should be valid")
 	private String fatherEmailId;
 
 	
-	@NotNull
-	@Pattern(regexp="(^$|[0-9]{10})", message = "\nMobile number should be only 10 digits")
+	@NotNull(message= "Father's Mobile number is required")
+	@Pattern(regexp="(^$|[0-9]{10})", message = "Father's Mobile number should be only 10 digits")
 	private String fatherMobileNo;
 
-	@Length(min = 10, message = "\nProfile Picture URL should be minimum 10 characters ")
+	@Length(min = 10, message = "Profile Picture URL should be minimum 10 characters ")
 	private String profilePic;
 
 /*

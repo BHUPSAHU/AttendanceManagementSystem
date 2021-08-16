@@ -25,9 +25,16 @@ import com.ams.exception.ErrorDetails;
 import com.ams.service.CourseServiceImpl;
 
 
+/**
+ * @author Aishwarya K
+ *
+ */
+//mark class as controller
+
 @RestController
 @RequestMapping("/api")
 public class CourseController {
+	// @Autowire the CourseService class
 	@Autowired
 	CourseServiceImpl courseservice;
 
@@ -37,7 +44,7 @@ public class CourseController {
 		ResponseEntity<String> str1 = new ResponseEntity<String>(msg, HttpStatus.OK);
 		return str1;
 	}
-	
+	// creating post mapping that adds to DB
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	@PostMapping("/course/add")
 	public ResponseEntity<Long> addCourse(@Valid @RequestBody CourseEntity course, BindingResult result) {
@@ -49,32 +56,32 @@ public class CourseController {
 		ResponseEntity<Long> re = new ResponseEntity<Long>(c1, HttpStatus.OK);
 		return re;
 	}
-
+	// creating put mapping that update to DB
 	@PutMapping("/course/update")
 	public void updateCourse(@RequestBody CourseEntity course) throws Exception {
 		courseservice.update(course);
 
 	}
-
+	// creating delete mapping that deletes on DB
 	@DeleteMapping("/course/delete")
 	public void deleteCourse(@RequestBody CourseEntity course) throws Exception {
 		courseservice.delete(course);
 	}
-
+	// creating get mapping through Course Id
 	@GetMapping("/course/byId/{id}")
 	public ResponseEntity<CourseEntity> findSubjectById(@PathVariable("id") long id) throws Exception {
 		CourseEntity c1 = courseservice.findByPk(id);
 		ResponseEntity<CourseEntity> re = new ResponseEntity<CourseEntity>(c1, HttpStatus.OK);
 		return re;
 	}
-
+	// creating get mapping through Course Name
 	@GetMapping("/course/byName/{name}")
 	public ResponseEntity<CourseEntity> findCourseByCourseName(@PathVariable("name") String name) {
 		CourseEntity c1 = courseservice.findByName(name);
 		ResponseEntity<CourseEntity> re = new ResponseEntity<CourseEntity>(c1, HttpStatus.OK);
 		return re;
 	}
-
+	// fetch all course through Get mapping
 	@GetMapping("/course/all")
 	public ResponseEntity<List<CourseEntity>> findAllSubject() {
 		List<CourseEntity> list = courseservice.findAllCourse();

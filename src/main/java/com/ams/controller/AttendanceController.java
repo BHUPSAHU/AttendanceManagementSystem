@@ -25,10 +25,16 @@ import com.ams.exception.ErrorDetails;
 import com.ams.service.AttendanceService;
 
 
-
+/**
+ * @author Tejaswini
+ *
+ */
+//mark class as controller
 @RestController
 @RequestMapping("/api")
 public class AttendanceController {
+	
+	// @Autowire the AttendenceService class
 	@Autowired
 	AttendanceService attendanceService;
 
@@ -38,7 +44,7 @@ public class AttendanceController {
 		ResponseEntity<String> str1 = new ResponseEntity<String>(msg, HttpStatus.OK);
 		return str1;
 	}
-
+	// creating post mapping that adds to DB
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	@PostMapping("/attendance/add")
 	public ResponseEntity<Long> addAttendance(@Valid @RequestBody AttendanceEntity ae , BindingResult result) {
@@ -51,18 +57,18 @@ public class AttendanceController {
 		return responseEntity;
 
 	}
-
+	// creating put mapping that update to DB
 	@PutMapping("/attendance/update")
 	public void updateAttendance(@RequestBody AttendanceEntity ae) throws Exception {
 
 		attendanceService.update(ae);
 	}
-
+	// creating delete mapping that deletes on DB
 	@DeleteMapping("/attendance/delete")
 	public void deleteAttendance(@RequestBody AttendanceEntity ae) throws Exception {
 		attendanceService.delete(ae);
 	}
-
+	// creating get mapping through attendance Name
 	@GetMapping("/attendance/byName/{name}")
 	public ResponseEntity<AttendanceEntity> findStudentByNmae(@PathVariable("name") String name) {
 		AttendanceEntity ae = attendanceService.findByName(name);
@@ -70,7 +76,7 @@ public class AttendanceController {
 		return responseEntity;
 
 	}
-
+	// creating get mapping through attendance Id
 	@GetMapping("/attendance/byId/{id}")
 	public ResponseEntity<AttendanceEntity> findAttendenceByPk(@PathVariable("id") long id) throws Exception {
 		AttendanceEntity ae = attendanceService.findByPk(id);
@@ -78,7 +84,7 @@ public class AttendanceController {
 		return responseEntity;
 
 	}
-
+	// fetch all subjects through Get mapping
 	@GetMapping("/attendance/all")
 	public ResponseEntity<List<AttendanceEntity>> findAllAttendances() {
 		List<AttendanceEntity> aeList = attendanceService.findAllAttendances();
