@@ -22,7 +22,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.ams.entity.StudentEntity;
 import com.ams.exception.ErrorDetails;
-import com.ams.exception.ValidationException;
 import com.ams.service.StudentServiceImpl;
 
 
@@ -44,7 +43,7 @@ public class StudentController {
 	
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	@PostMapping("/student/add")
-	public ResponseEntity<Long> addStudent(@Valid @RequestBody StudentEntity entity,BindingResult result) throws ValidationException {
+	public ResponseEntity<Long> addStudent(@Valid @RequestBody StudentEntity entity,BindingResult result)  {
 		if(result.hasErrors()) {
 		ErrorDetails errorDetails = new ErrorDetails(LocalDateTime.now(),result.getFieldErrors().stream().map(FieldError :: getDefaultMessage).collect(Collectors.toList()).toString() ,"ConstraintViolationException"); 
 		return  new ResponseEntity(errorDetails,HttpStatus.BAD_REQUEST);
