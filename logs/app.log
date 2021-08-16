@@ -1531,3 +1531,1626 @@ CONNECTED TO DB
 2021-08-16 10:34:59,037 DEBUG com.zaxxer.hikari.pool.PoolBase [AttendenceManagementHikariCP connection closer] AttendenceManagementHikariCP - Closing connection oracle.jdbc.driver.T4CConnection@14027183: (connection evicted)
 2021-08-16 10:34:59,039 DEBUG com.zaxxer.hikari.pool.HikariPool [RMI TCP Connection(5)-127.0.0.1] AttendenceManagementHikariCP - After shutdown stats (total=0, active=0, idle=0, waiting=0)
 2021-08-16 10:34:59,040 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(5)-127.0.0.1] AttendenceManagementHikariCP - Shutdown completed.
+2021-08-16 10:45:27,923 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.0.Final
+2021-08-16 10:45:27,978 INFO com.ams.AttendanceManagementSystemApplication [main] Starting AttendanceManagementSystemApplication using Java 16.0.2 on DIN25000258 with PID 3372 (C:\Users\BHUPSAHU\WorkSpace\eclipse\Sprint1\AttendanceManagementSystem\bin\main started by bhupsahu in C:\Users\BHUPSAHU\WorkSpace\eclipse\Sprint1\AttendanceManagementSystem)
+2021-08-16 10:45:27,979 DEBUG com.ams.AttendanceManagementSystemApplication [main] Running with Spring Boot v2.5.3, Spring v5.3.9
+2021-08-16 10:45:27,979 INFO com.ams.AttendanceManagementSystemApplication [main] No active profile set, falling back to default profiles: default
+2021-08-16 10:45:29,113 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-08-16 10:45:29,213 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 88 ms. Found 6 JPA repository interfaces.
+2021-08-16 10:45:29,944 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 9090 (http)
+2021-08-16 10:45:29,954 INFO org.apache.coyote.http11.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-9090"]
+2021-08-16 10:45:29,955 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2021-08-16 10:45:29,955 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-08-16 10:45:30,103 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2021-08-16 10:45:30,103 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2070 ms
+2021-08-16 10:45:30,240 DEBUG com.zaxxer.hikari.HikariConfig [main] Driver class oracle.jdbc.OracleDriver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@2e5c649
+2021-08-16 10:45:30,389 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-08-16 10:45:30,453 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-08-16 10:45:30,632 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-08-16 10:45:30,826 DEBUG com.zaxxer.hikari.HikariConfig [main] AttendenceManagementHikariCP - configuration:
+2021-08-16 10:45:30,829 DEBUG com.zaxxer.hikari.HikariConfig [main] allowPoolSuspension................................false
+2021-08-16 10:45:30,829 DEBUG com.zaxxer.hikari.HikariConfig [main] autoCommit................................true
+2021-08-16 10:45:30,829 DEBUG com.zaxxer.hikari.HikariConfig [main] catalog................................none
+2021-08-16 10:45:30,830 DEBUG com.zaxxer.hikari.HikariConfig [main] connectionInitSql................................none
+2021-08-16 10:45:30,830 DEBUG com.zaxxer.hikari.HikariConfig [main] connectionTestQuery................................none
+2021-08-16 10:45:30,830 DEBUG com.zaxxer.hikari.HikariConfig [main] connectionTimeout................................30000
+2021-08-16 10:45:30,830 DEBUG com.zaxxer.hikari.HikariConfig [main] dataSource................................none
+2021-08-16 10:45:30,831 DEBUG com.zaxxer.hikari.HikariConfig [main] dataSourceClassName................................none
+2021-08-16 10:45:30,831 DEBUG com.zaxxer.hikari.HikariConfig [main] dataSourceJNDI................................none
+2021-08-16 10:45:30,831 DEBUG com.zaxxer.hikari.HikariConfig [main] dataSourceProperties................................{password=<masked>}
+2021-08-16 10:45:30,831 DEBUG com.zaxxer.hikari.HikariConfig [main] driverClassName................................"oracle.jdbc.OracleDriver"
+2021-08-16 10:45:30,831 DEBUG com.zaxxer.hikari.HikariConfig [main] exceptionOverrideClassName................................none
+2021-08-16 10:45:30,832 DEBUG com.zaxxer.hikari.HikariConfig [main] healthCheckProperties................................{}
+2021-08-16 10:45:30,832 DEBUG com.zaxxer.hikari.HikariConfig [main] healthCheckRegistry................................none
+2021-08-16 10:45:30,832 DEBUG com.zaxxer.hikari.HikariConfig [main] idleTimeout................................30000
+2021-08-16 10:45:30,832 DEBUG com.zaxxer.hikari.HikariConfig [main] initializationFailTimeout................................1
+2021-08-16 10:45:30,832 DEBUG com.zaxxer.hikari.HikariConfig [main] isolateInternalQueries................................false
+2021-08-16 10:45:30,833 DEBUG com.zaxxer.hikari.HikariConfig [main] jdbcUrl................................jdbc:oracle:thin:@localhost:1521:XE
+2021-08-16 10:45:30,833 DEBUG com.zaxxer.hikari.HikariConfig [main] keepaliveTime................................0
+2021-08-16 10:45:30,833 DEBUG com.zaxxer.hikari.HikariConfig [main] leakDetectionThreshold................................0
+2021-08-16 10:45:30,833 DEBUG com.zaxxer.hikari.HikariConfig [main] maxLifetime................................20000000
+2021-08-16 10:45:30,833 DEBUG com.zaxxer.hikari.HikariConfig [main] maximumPoolSize................................20
+2021-08-16 10:45:30,833 DEBUG com.zaxxer.hikari.HikariConfig [main] metricRegistry................................none
+2021-08-16 10:45:30,834 DEBUG com.zaxxer.hikari.HikariConfig [main] metricsTrackerFactory................................none
+2021-08-16 10:45:30,834 DEBUG com.zaxxer.hikari.HikariConfig [main] minimumIdle................................5
+2021-08-16 10:45:30,835 DEBUG com.zaxxer.hikari.HikariConfig [main] password................................<masked>
+2021-08-16 10:45:30,835 DEBUG com.zaxxer.hikari.HikariConfig [main] poolName................................"AttendenceManagementHikariCP"
+2021-08-16 10:45:30,835 DEBUG com.zaxxer.hikari.HikariConfig [main] readOnly................................false
+2021-08-16 10:45:30,836 DEBUG com.zaxxer.hikari.HikariConfig [main] registerMbeans................................false
+2021-08-16 10:45:30,836 DEBUG com.zaxxer.hikari.HikariConfig [main] scheduledExecutor................................none
+2021-08-16 10:45:30,836 DEBUG com.zaxxer.hikari.HikariConfig [main] schema................................none
+2021-08-16 10:45:30,836 DEBUG com.zaxxer.hikari.HikariConfig [main] threadFactory................................internal
+2021-08-16 10:45:30,836 DEBUG com.zaxxer.hikari.HikariConfig [main] transactionIsolation................................default
+2021-08-16 10:45:30,837 DEBUG com.zaxxer.hikari.HikariConfig [main] username................................"SYSTEM"
+2021-08-16 10:45:30,837 DEBUG com.zaxxer.hikari.HikariConfig [main] validationTimeout................................5000
+2021-08-16 10:45:30,837 INFO com.zaxxer.hikari.HikariDataSource [main] AttendenceManagementHikariCP - Starting...
+2021-08-16 10:45:31,238 DEBUG com.zaxxer.hikari.pool.PoolBase [main] AttendenceManagementHikariCP - Failed to create/setup connection: ORA-01017: invalid username/password; logon denied
+
+2021-08-16 10:45:31,241 DEBUG com.zaxxer.hikari.pool.HikariPool [main] AttendenceManagementHikariCP - Cannot acquire connection from data source
+java.sql.SQLException: ORA-01017: invalid username/password; logon denied
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:628)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:557)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:552)
+	at oracle.jdbc.driver.T4CTTIfun.processError(T4CTTIfun.java:1312)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.processError(T4CTTIoauthenticate.java:699)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:726)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:291)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:389)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTHWithO5Logon(T4CTTIoauthenticate.java:1455)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:1219)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:1173)
+	at oracle.jdbc.driver.T4CConnection.authenticateUserForLogon(T4CConnection.java:1030)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:646)
+	at oracle.jdbc.driver.PhysicalConnection.connect(PhysicalConnection.java:1032)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:90)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:681)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:602)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:176)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:127)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1224)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1255)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1845)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at com.ams.AttendanceManagementSystemApplication.main(AttendanceManagementSystemApplication.java:22)
+2021-08-16 10:45:32,252 ERROR com.zaxxer.hikari.pool.HikariPool [main] AttendenceManagementHikariCP - Exception during pool initialization.
+java.sql.SQLException: ORA-01017: invalid username/password; logon denied
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:628)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:557)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:552)
+	at oracle.jdbc.driver.T4CTTIfun.processError(T4CTTIfun.java:1312)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.processError(T4CTTIoauthenticate.java:699)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:726)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:291)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:389)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTHWithO5Logon(T4CTTIoauthenticate.java:1455)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:1219)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:1173)
+	at oracle.jdbc.driver.T4CConnection.authenticateUserForLogon(T4CConnection.java:1030)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:646)
+	at oracle.jdbc.driver.PhysicalConnection.connect(PhysicalConnection.java:1032)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:90)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:681)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:602)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:176)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:127)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1224)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1255)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1845)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at com.ams.AttendanceManagementSystemApplication.main(AttendanceManagementSystemApplication.java:22)
+2021-08-16 10:45:32,253 WARN org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator [main] HHH000342: Could not obtain connection to query metadata
+java.sql.SQLException: ORA-01017: invalid username/password; logon denied
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:628)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:557)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:552)
+	at oracle.jdbc.driver.T4CTTIfun.processError(T4CTTIfun.java:1312)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.processError(T4CTTIoauthenticate.java:699)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:726)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:291)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:389)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTHWithO5Logon(T4CTTIoauthenticate.java:1455)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:1219)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:1173)
+	at oracle.jdbc.driver.T4CConnection.authenticateUserForLogon(T4CConnection.java:1030)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:646)
+	at oracle.jdbc.driver.PhysicalConnection.connect(PhysicalConnection.java:1032)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:90)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:681)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:602)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:176)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:127)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1224)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1255)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1845)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at com.ams.AttendanceManagementSystemApplication.main(AttendanceManagementSystemApplication.java:22)
+2021-08-16 10:45:32,282 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2021-08-16 10:45:33,145 DEBUG com.zaxxer.hikari.HikariConfig [main] AttendenceManagementHikariCP - configuration:
+2021-08-16 10:45:33,146 DEBUG com.zaxxer.hikari.HikariConfig [main] allowPoolSuspension................................false
+2021-08-16 10:45:33,146 DEBUG com.zaxxer.hikari.HikariConfig [main] autoCommit................................true
+2021-08-16 10:45:33,146 DEBUG com.zaxxer.hikari.HikariConfig [main] catalog................................none
+2021-08-16 10:45:33,146 DEBUG com.zaxxer.hikari.HikariConfig [main] connectionInitSql................................none
+2021-08-16 10:45:33,147 DEBUG com.zaxxer.hikari.HikariConfig [main] connectionTestQuery................................none
+2021-08-16 10:45:33,147 DEBUG com.zaxxer.hikari.HikariConfig [main] connectionTimeout................................30000
+2021-08-16 10:45:33,147 DEBUG com.zaxxer.hikari.HikariConfig [main] dataSource................................none
+2021-08-16 10:45:33,147 DEBUG com.zaxxer.hikari.HikariConfig [main] dataSourceClassName................................none
+2021-08-16 10:45:33,147 DEBUG com.zaxxer.hikari.HikariConfig [main] dataSourceJNDI................................none
+2021-08-16 10:45:33,147 DEBUG com.zaxxer.hikari.HikariConfig [main] dataSourceProperties................................{password=<masked>}
+2021-08-16 10:45:33,147 DEBUG com.zaxxer.hikari.HikariConfig [main] driverClassName................................"oracle.jdbc.OracleDriver"
+2021-08-16 10:45:33,148 DEBUG com.zaxxer.hikari.HikariConfig [main] exceptionOverrideClassName................................none
+2021-08-16 10:45:33,148 DEBUG com.zaxxer.hikari.HikariConfig [main] healthCheckProperties................................{}
+2021-08-16 10:45:33,148 DEBUG com.zaxxer.hikari.HikariConfig [main] healthCheckRegistry................................none
+2021-08-16 10:45:33,148 DEBUG com.zaxxer.hikari.HikariConfig [main] idleTimeout................................30000
+2021-08-16 10:45:33,148 DEBUG com.zaxxer.hikari.HikariConfig [main] initializationFailTimeout................................1
+2021-08-16 10:45:33,148 DEBUG com.zaxxer.hikari.HikariConfig [main] isolateInternalQueries................................false
+2021-08-16 10:45:33,148 DEBUG com.zaxxer.hikari.HikariConfig [main] jdbcUrl................................jdbc:oracle:thin:@localhost:1521:XE
+2021-08-16 10:45:33,148 DEBUG com.zaxxer.hikari.HikariConfig [main] keepaliveTime................................0
+2021-08-16 10:45:33,149 DEBUG com.zaxxer.hikari.HikariConfig [main] leakDetectionThreshold................................0
+2021-08-16 10:45:33,149 DEBUG com.zaxxer.hikari.HikariConfig [main] maxLifetime................................20000000
+2021-08-16 10:45:33,149 DEBUG com.zaxxer.hikari.HikariConfig [main] maximumPoolSize................................20
+2021-08-16 10:45:33,149 DEBUG com.zaxxer.hikari.HikariConfig [main] metricRegistry................................none
+2021-08-16 10:45:33,149 DEBUG com.zaxxer.hikari.HikariConfig [main] metricsTrackerFactory................................none
+2021-08-16 10:45:33,149 DEBUG com.zaxxer.hikari.HikariConfig [main] minimumIdle................................5
+2021-08-16 10:45:33,149 DEBUG com.zaxxer.hikari.HikariConfig [main] password................................<masked>
+2021-08-16 10:45:33,149 DEBUG com.zaxxer.hikari.HikariConfig [main] poolName................................"AttendenceManagementHikariCP"
+2021-08-16 10:45:33,150 DEBUG com.zaxxer.hikari.HikariConfig [main] readOnly................................false
+2021-08-16 10:45:33,150 DEBUG com.zaxxer.hikari.HikariConfig [main] registerMbeans................................false
+2021-08-16 10:45:33,150 DEBUG com.zaxxer.hikari.HikariConfig [main] scheduledExecutor................................none
+2021-08-16 10:45:33,150 DEBUG com.zaxxer.hikari.HikariConfig [main] schema................................none
+2021-08-16 10:45:33,150 DEBUG com.zaxxer.hikari.HikariConfig [main] threadFactory................................internal
+2021-08-16 10:45:33,150 DEBUG com.zaxxer.hikari.HikariConfig [main] transactionIsolation................................default
+2021-08-16 10:45:33,150 DEBUG com.zaxxer.hikari.HikariConfig [main] username................................"SYSTEM"
+2021-08-16 10:45:33,150 DEBUG com.zaxxer.hikari.HikariConfig [main] validationTimeout................................5000
+2021-08-16 10:45:33,150 INFO com.zaxxer.hikari.HikariDataSource [main] AttendenceManagementHikariCP - Starting...
+2021-08-16 10:45:33,171 DEBUG com.zaxxer.hikari.pool.PoolBase [main] AttendenceManagementHikariCP - Failed to create/setup connection: ORA-01017: invalid username/password; logon denied
+
+2021-08-16 10:45:33,172 DEBUG com.zaxxer.hikari.pool.HikariPool [main] AttendenceManagementHikariCP - Cannot acquire connection from data source
+java.sql.SQLException: ORA-01017: invalid username/password; logon denied
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:628)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:557)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:552)
+	at oracle.jdbc.driver.T4CTTIfun.processError(T4CTTIfun.java:1312)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.processError(T4CTTIoauthenticate.java:699)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:726)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:291)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:389)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTHWithO5Logon(T4CTTIoauthenticate.java:1455)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:1219)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:1173)
+	at oracle.jdbc.driver.T4CConnection.authenticateUserForLogon(T4CConnection.java:1030)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:646)
+	at oracle.jdbc.driver.PhysicalConnection.connect(PhysicalConnection.java:1032)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:90)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:681)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:602)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:43)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.jdbcStatement(GenerationTargetToDatabase.java:77)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:53)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:375)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:359)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:241)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:154)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:126)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:112)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:145)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:318)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:468)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1259)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1845)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at com.ams.AttendanceManagementSystemApplication.main(AttendanceManagementSystemApplication.java:22)
+2021-08-16 10:45:34,176 ERROR com.zaxxer.hikari.pool.HikariPool [main] AttendenceManagementHikariCP - Exception during pool initialization.
+java.sql.SQLException: ORA-01017: invalid username/password; logon denied
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:628)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:557)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:552)
+	at oracle.jdbc.driver.T4CTTIfun.processError(T4CTTIfun.java:1312)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.processError(T4CTTIoauthenticate.java:699)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:726)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:291)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:389)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTHWithO5Logon(T4CTTIoauthenticate.java:1455)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:1219)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:1173)
+	at oracle.jdbc.driver.T4CConnection.authenticateUserForLogon(T4CConnection.java:1030)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:646)
+	at oracle.jdbc.driver.PhysicalConnection.connect(PhysicalConnection.java:1032)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:90)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:681)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:602)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:43)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.jdbcStatement(GenerationTargetToDatabase.java:77)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:53)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:375)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:359)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:241)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:154)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:126)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:112)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:145)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:318)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:468)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1259)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1845)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at com.ams.AttendanceManagementSystemApplication.main(AttendanceManagementSystemApplication.java:22)
+2021-08-16 10:45:34,178 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [main] SQL Error: 1017, SQLState: 72000
+2021-08-16 10:45:34,178 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [main] ORA-01017: invalid username/password; logon denied
+
+2021-08-16 10:45:34,184 ERROR org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution
+2021-08-16 10:45:34,184 WARN org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution
+2021-08-16 10:45:34,186 INFO org.apache.catalina.core.StandardService [main] Stopping service [Tomcat]
+2021-08-16 10:45:34,197 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [main] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-08-16 10:45:34,281 ERROR org.springframework.boot.SpringApplication [main] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at com.ams.AttendanceManagementSystemApplication.main(AttendanceManagementSystemApplication.java:22)
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1845)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	... 16 common frames omitted
+Caused by: org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:47)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:99)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:69)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.jdbcStatement(GenerationTargetToDatabase.java:77)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:53)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:375)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:359)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:241)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:154)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:126)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:112)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:145)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:318)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:468)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1259)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	... 20 common frames omitted
+Caused by: java.sql.SQLException: ORA-01017: invalid username/password; logon denied
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:628)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:557)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:552)
+	at oracle.jdbc.driver.T4CTTIfun.processError(T4CTTIfun.java:1312)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.processError(T4CTTIoauthenticate.java:699)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:726)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:291)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:389)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTHWithO5Logon(T4CTTIoauthenticate.java:1455)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:1219)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:1173)
+	at oracle.jdbc.driver.T4CConnection.authenticateUserForLogon(T4CConnection.java:1030)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:646)
+	at oracle.jdbc.driver.PhysicalConnection.connect(PhysicalConnection.java:1032)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:90)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:681)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:602)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:43)
+	... 36 common frames omitted
+2021-08-16 10:48:13,570 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.0.Final
+2021-08-16 10:48:13,625 INFO com.ams.AttendanceManagementSystemApplication [main] Starting AttendanceManagementSystemApplication using Java 16.0.2 on DIN25000258 with PID 14908 (C:\Users\BHUPSAHU\WorkSpace\eclipse\Sprint1\AttendanceManagementSystem\bin\main started by bhupsahu in C:\Users\BHUPSAHU\WorkSpace\eclipse\Sprint1\AttendanceManagementSystem)
+2021-08-16 10:48:13,625 DEBUG com.ams.AttendanceManagementSystemApplication [main] Running with Spring Boot v2.5.3, Spring v5.3.9
+2021-08-16 10:48:13,626 INFO com.ams.AttendanceManagementSystemApplication [main] No active profile set, falling back to default profiles: default
+2021-08-16 10:48:14,739 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-08-16 10:48:14,826 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 76 ms. Found 6 JPA repository interfaces.
+2021-08-16 10:48:15,514 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 9090 (http)
+2021-08-16 10:48:15,524 INFO org.apache.coyote.http11.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-9090"]
+2021-08-16 10:48:15,525 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2021-08-16 10:48:15,525 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-08-16 10:48:15,659 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2021-08-16 10:48:15,659 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1978 ms
+2021-08-16 10:48:15,795 DEBUG com.zaxxer.hikari.HikariConfig [main] Driver class oracle.jdbc.OracleDriver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@2e5c649
+2021-08-16 10:48:15,940 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-08-16 10:48:16,003 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-08-16 10:48:16,167 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-08-16 10:48:16,310 DEBUG com.zaxxer.hikari.HikariConfig [main] AttendenceManagementHikariCP - configuration:
+2021-08-16 10:48:16,312 DEBUG com.zaxxer.hikari.HikariConfig [main] allowPoolSuspension................................false
+2021-08-16 10:48:16,312 DEBUG com.zaxxer.hikari.HikariConfig [main] autoCommit................................true
+2021-08-16 10:48:16,312 DEBUG com.zaxxer.hikari.HikariConfig [main] catalog................................none
+2021-08-16 10:48:16,313 DEBUG com.zaxxer.hikari.HikariConfig [main] connectionInitSql................................none
+2021-08-16 10:48:16,313 DEBUG com.zaxxer.hikari.HikariConfig [main] connectionTestQuery................................none
+2021-08-16 10:48:16,313 DEBUG com.zaxxer.hikari.HikariConfig [main] connectionTimeout................................30000
+2021-08-16 10:48:16,313 DEBUG com.zaxxer.hikari.HikariConfig [main] dataSource................................none
+2021-08-16 10:48:16,313 DEBUG com.zaxxer.hikari.HikariConfig [main] dataSourceClassName................................none
+2021-08-16 10:48:16,313 DEBUG com.zaxxer.hikari.HikariConfig [main] dataSourceJNDI................................none
+2021-08-16 10:48:16,314 DEBUG com.zaxxer.hikari.HikariConfig [main] dataSourceProperties................................{password=<masked>}
+2021-08-16 10:48:16,314 DEBUG com.zaxxer.hikari.HikariConfig [main] driverClassName................................"oracle.jdbc.OracleDriver"
+2021-08-16 10:48:16,314 DEBUG com.zaxxer.hikari.HikariConfig [main] exceptionOverrideClassName................................none
+2021-08-16 10:48:16,315 DEBUG com.zaxxer.hikari.HikariConfig [main] healthCheckProperties................................{}
+2021-08-16 10:48:16,315 DEBUG com.zaxxer.hikari.HikariConfig [main] healthCheckRegistry................................none
+2021-08-16 10:48:16,315 DEBUG com.zaxxer.hikari.HikariConfig [main] idleTimeout................................30000
+2021-08-16 10:48:16,315 DEBUG com.zaxxer.hikari.HikariConfig [main] initializationFailTimeout................................1
+2021-08-16 10:48:16,316 DEBUG com.zaxxer.hikari.HikariConfig [main] isolateInternalQueries................................false
+2021-08-16 10:48:16,316 DEBUG com.zaxxer.hikari.HikariConfig [main] jdbcUrl................................jdbc:oracle:thin:@localhost:1521:XE
+2021-08-16 10:48:16,316 DEBUG com.zaxxer.hikari.HikariConfig [main] keepaliveTime................................0
+2021-08-16 10:48:16,316 DEBUG com.zaxxer.hikari.HikariConfig [main] leakDetectionThreshold................................0
+2021-08-16 10:48:16,316 DEBUG com.zaxxer.hikari.HikariConfig [main] maxLifetime................................20000000
+2021-08-16 10:48:16,316 DEBUG com.zaxxer.hikari.HikariConfig [main] maximumPoolSize................................20
+2021-08-16 10:48:16,316 DEBUG com.zaxxer.hikari.HikariConfig [main] metricRegistry................................none
+2021-08-16 10:48:16,317 DEBUG com.zaxxer.hikari.HikariConfig [main] metricsTrackerFactory................................none
+2021-08-16 10:48:16,317 DEBUG com.zaxxer.hikari.HikariConfig [main] minimumIdle................................5
+2021-08-16 10:48:16,317 DEBUG com.zaxxer.hikari.HikariConfig [main] password................................<masked>
+2021-08-16 10:48:16,317 DEBUG com.zaxxer.hikari.HikariConfig [main] poolName................................"AttendenceManagementHikariCP"
+2021-08-16 10:48:16,317 DEBUG com.zaxxer.hikari.HikariConfig [main] readOnly................................false
+2021-08-16 10:48:16,317 DEBUG com.zaxxer.hikari.HikariConfig [main] registerMbeans................................false
+2021-08-16 10:48:16,317 DEBUG com.zaxxer.hikari.HikariConfig [main] scheduledExecutor................................none
+2021-08-16 10:48:16,318 DEBUG com.zaxxer.hikari.HikariConfig [main] schema................................none
+2021-08-16 10:48:16,318 DEBUG com.zaxxer.hikari.HikariConfig [main] threadFactory................................internal
+2021-08-16 10:48:16,318 DEBUG com.zaxxer.hikari.HikariConfig [main] transactionIsolation................................default
+2021-08-16 10:48:16,318 DEBUG com.zaxxer.hikari.HikariConfig [main] username................................"SYSTEM"
+2021-08-16 10:48:16,319 DEBUG com.zaxxer.hikari.HikariConfig [main] validationTimeout................................5000
+2021-08-16 10:48:16,319 INFO com.zaxxer.hikari.HikariDataSource [main] AttendenceManagementHikariCP - Starting...
+2021-08-16 10:48:16,595 DEBUG com.zaxxer.hikari.pool.HikariPool [main] AttendenceManagementHikariCP - Added connection oracle.jdbc.driver.T4CConnection@1e194966
+2021-08-16 10:48:16,597 INFO com.zaxxer.hikari.HikariDataSource [main] AttendenceManagementHikariCP - Start completed.
+2021-08-16 10:48:16,615 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2021-08-16 10:48:16,707 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP housekeeper] AttendenceManagementHikariCP - Before cleanup stats (total=1, active=1, idle=0, waiting=0)
+2021-08-16 10:48:16,708 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP housekeeper] AttendenceManagementHikariCP - After cleanup  stats (total=1, active=1, idle=0, waiting=0)
+2021-08-16 10:48:16,731 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP connection adder] AttendenceManagementHikariCP - Added connection oracle.jdbc.driver.T4CConnection@7a409df7
+2021-08-16 10:48:16,752 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP connection adder] AttendenceManagementHikariCP - Added connection oracle.jdbc.driver.T4CConnection@74dd3a71
+2021-08-16 10:48:16,773 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP connection adder] AttendenceManagementHikariCP - Added connection oracle.jdbc.driver.T4CConnection@c465d30
+2021-08-16 10:48:16,794 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP connection adder] AttendenceManagementHikariCP - Added connection oracle.jdbc.driver.T4CConnection@4641cf2a
+2021-08-16 10:48:16,816 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP connection adder] AttendenceManagementHikariCP - Added connection oracle.jdbc.driver.T4CConnection@1742b363
+2021-08-16 10:48:16,816 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP connection adder] AttendenceManagementHikariCP - After adding stats (total=6, active=1, idle=5, waiting=0)
+2021-08-16 10:48:17,937 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-08-16 10:48:17,948 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-08-16 10:48:18,769 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-16 10:48:19,766 INFO org.apache.coyote.http11.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-9090"]
+2021-08-16 10:48:19,790 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 9090 (http) with context path ''
+2021-08-16 10:48:20,484 INFO com.ams.AttendanceManagementSystemApplication [main] Started AttendanceManagementSystemApplication in 7.268 seconds (JVM running for 8.456)
+2021-08-16 10:48:20,487 INFO com.ams.AttendanceManagementSystemApplication [main] 
+~~~~~~~~~~~~~~~~~~~~~
+CONNECTED TO DB
+~~~~~~~~~~~~~~~~~~~~~
+2021-08-16 10:48:42,130 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(2)-127.0.0.1] Application shutdown requested.
+2021-08-16 10:48:42,166 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [RMI TCP Connection(2)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-08-16 10:48:42,168 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(2)-127.0.0.1] AttendenceManagementHikariCP - Shutdown initiated...
+2021-08-16 10:48:42,168 DEBUG com.zaxxer.hikari.pool.HikariPool [RMI TCP Connection(2)-127.0.0.1] AttendenceManagementHikariCP - Before shutdown stats (total=6, active=0, idle=6, waiting=0)
+2021-08-16 10:48:42,170 DEBUG com.zaxxer.hikari.pool.PoolBase [AttendenceManagementHikariCP connection closer] AttendenceManagementHikariCP - Closing connection oracle.jdbc.driver.T4CConnection@1e194966: (connection evicted)
+2021-08-16 10:48:42,171 DEBUG com.zaxxer.hikari.pool.PoolBase [AttendenceManagementHikariCP connection closer] AttendenceManagementHikariCP - Closing connection oracle.jdbc.driver.T4CConnection@7a409df7: (connection evicted)
+2021-08-16 10:48:42,172 DEBUG com.zaxxer.hikari.pool.PoolBase [AttendenceManagementHikariCP connection closer] AttendenceManagementHikariCP - Closing connection oracle.jdbc.driver.T4CConnection@74dd3a71: (connection evicted)
+2021-08-16 10:48:42,172 DEBUG com.zaxxer.hikari.pool.PoolBase [AttendenceManagementHikariCP connection closer] AttendenceManagementHikariCP - Closing connection oracle.jdbc.driver.T4CConnection@c465d30: (connection evicted)
+2021-08-16 10:48:42,173 DEBUG com.zaxxer.hikari.pool.PoolBase [AttendenceManagementHikariCP connection closer] AttendenceManagementHikariCP - Closing connection oracle.jdbc.driver.T4CConnection@4641cf2a: (connection evicted)
+2021-08-16 10:48:42,174 DEBUG com.zaxxer.hikari.pool.PoolBase [AttendenceManagementHikariCP connection closer] AttendenceManagementHikariCP - Closing connection oracle.jdbc.driver.T4CConnection@1742b363: (connection evicted)
+2021-08-16 10:48:42,175 DEBUG com.zaxxer.hikari.pool.HikariPool [RMI TCP Connection(2)-127.0.0.1] AttendenceManagementHikariCP - After shutdown stats (total=0, active=0, idle=0, waiting=0)
+2021-08-16 10:48:42,175 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(2)-127.0.0.1] AttendenceManagementHikariCP - Shutdown completed.
+2021-08-16 10:48:45,721 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.0.Final
+2021-08-16 10:48:45,774 INFO com.ams.AttendanceManagementSystemApplication [main] Starting AttendanceManagementSystemApplication using Java 16.0.2 on DIN25000258 with PID 1756 (C:\Users\BHUPSAHU\WorkSpace\eclipse\Sprint1\AttendanceManagementSystem\bin\main started by bhupsahu in C:\Users\BHUPSAHU\WorkSpace\eclipse\Sprint1\AttendanceManagementSystem)
+2021-08-16 10:48:45,774 DEBUG com.ams.AttendanceManagementSystemApplication [main] Running with Spring Boot v2.5.3, Spring v5.3.9
+2021-08-16 10:48:45,774 INFO com.ams.AttendanceManagementSystemApplication [main] No active profile set, falling back to default profiles: default
+2021-08-16 10:48:47,033 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-08-16 10:48:47,136 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 91 ms. Found 6 JPA repository interfaces.
+2021-08-16 10:48:47,928 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 9090 (http)
+2021-08-16 10:48:47,940 INFO org.apache.coyote.http11.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-9090"]
+2021-08-16 10:48:47,941 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2021-08-16 10:48:47,941 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-08-16 10:48:48,081 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2021-08-16 10:48:48,081 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2254 ms
+2021-08-16 10:48:48,232 DEBUG com.zaxxer.hikari.HikariConfig [main] Driver class oracle.jdbc.OracleDriver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@2e5c649
+2021-08-16 10:48:48,378 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-08-16 10:48:48,443 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-08-16 10:48:48,610 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-08-16 10:48:48,750 DEBUG com.zaxxer.hikari.HikariConfig [main] AttendenceManagementHikariCP - configuration:
+2021-08-16 10:48:48,752 DEBUG com.zaxxer.hikari.HikariConfig [main] allowPoolSuspension................................false
+2021-08-16 10:48:48,753 DEBUG com.zaxxer.hikari.HikariConfig [main] autoCommit................................true
+2021-08-16 10:48:48,753 DEBUG com.zaxxer.hikari.HikariConfig [main] catalog................................none
+2021-08-16 10:48:48,753 DEBUG com.zaxxer.hikari.HikariConfig [main] connectionInitSql................................none
+2021-08-16 10:48:48,754 DEBUG com.zaxxer.hikari.HikariConfig [main] connectionTestQuery................................none
+2021-08-16 10:48:48,754 DEBUG com.zaxxer.hikari.HikariConfig [main] connectionTimeout................................30000
+2021-08-16 10:48:48,754 DEBUG com.zaxxer.hikari.HikariConfig [main] dataSource................................none
+2021-08-16 10:48:48,754 DEBUG com.zaxxer.hikari.HikariConfig [main] dataSourceClassName................................none
+2021-08-16 10:48:48,754 DEBUG com.zaxxer.hikari.HikariConfig [main] dataSourceJNDI................................none
+2021-08-16 10:48:48,755 DEBUG com.zaxxer.hikari.HikariConfig [main] dataSourceProperties................................{password=<masked>}
+2021-08-16 10:48:48,755 DEBUG com.zaxxer.hikari.HikariConfig [main] driverClassName................................"oracle.jdbc.OracleDriver"
+2021-08-16 10:48:48,755 DEBUG com.zaxxer.hikari.HikariConfig [main] exceptionOverrideClassName................................none
+2021-08-16 10:48:48,755 DEBUG com.zaxxer.hikari.HikariConfig [main] healthCheckProperties................................{}
+2021-08-16 10:48:48,755 DEBUG com.zaxxer.hikari.HikariConfig [main] healthCheckRegistry................................none
+2021-08-16 10:48:48,756 DEBUG com.zaxxer.hikari.HikariConfig [main] idleTimeout................................30000
+2021-08-16 10:48:48,756 DEBUG com.zaxxer.hikari.HikariConfig [main] initializationFailTimeout................................1
+2021-08-16 10:48:48,756 DEBUG com.zaxxer.hikari.HikariConfig [main] isolateInternalQueries................................false
+2021-08-16 10:48:48,756 DEBUG com.zaxxer.hikari.HikariConfig [main] jdbcUrl................................jdbc:oracle:thin:@localhost:1521:XE
+2021-08-16 10:48:48,756 DEBUG com.zaxxer.hikari.HikariConfig [main] keepaliveTime................................0
+2021-08-16 10:48:48,756 DEBUG com.zaxxer.hikari.HikariConfig [main] leakDetectionThreshold................................0
+2021-08-16 10:48:48,756 DEBUG com.zaxxer.hikari.HikariConfig [main] maxLifetime................................20000000
+2021-08-16 10:48:48,757 DEBUG com.zaxxer.hikari.HikariConfig [main] maximumPoolSize................................20
+2021-08-16 10:48:48,757 DEBUG com.zaxxer.hikari.HikariConfig [main] metricRegistry................................none
+2021-08-16 10:48:48,757 DEBUG com.zaxxer.hikari.HikariConfig [main] metricsTrackerFactory................................none
+2021-08-16 10:48:48,757 DEBUG com.zaxxer.hikari.HikariConfig [main] minimumIdle................................5
+2021-08-16 10:48:48,757 DEBUG com.zaxxer.hikari.HikariConfig [main] password................................<masked>
+2021-08-16 10:48:48,757 DEBUG com.zaxxer.hikari.HikariConfig [main] poolName................................"AttendenceManagementHikariCP"
+2021-08-16 10:48:48,757 DEBUG com.zaxxer.hikari.HikariConfig [main] readOnly................................false
+2021-08-16 10:48:48,757 DEBUG com.zaxxer.hikari.HikariConfig [main] registerMbeans................................false
+2021-08-16 10:48:48,757 DEBUG com.zaxxer.hikari.HikariConfig [main] scheduledExecutor................................none
+2021-08-16 10:48:48,757 DEBUG com.zaxxer.hikari.HikariConfig [main] schema................................none
+2021-08-16 10:48:48,758 DEBUG com.zaxxer.hikari.HikariConfig [main] threadFactory................................internal
+2021-08-16 10:48:48,758 DEBUG com.zaxxer.hikari.HikariConfig [main] transactionIsolation................................default
+2021-08-16 10:48:48,758 DEBUG com.zaxxer.hikari.HikariConfig [main] username................................"SYSTEM"
+2021-08-16 10:48:48,758 DEBUG com.zaxxer.hikari.HikariConfig [main] validationTimeout................................5000
+2021-08-16 10:48:48,759 INFO com.zaxxer.hikari.HikariDataSource [main] AttendenceManagementHikariCP - Starting...
+2021-08-16 10:48:49,036 DEBUG com.zaxxer.hikari.pool.PoolBase [main] AttendenceManagementHikariCP - Failed to create/setup connection: ORA-01017: invalid username/password; logon denied
+
+2021-08-16 10:48:49,040 DEBUG com.zaxxer.hikari.pool.HikariPool [main] AttendenceManagementHikariCP - Cannot acquire connection from data source
+java.sql.SQLException: ORA-01017: invalid username/password; logon denied
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:628)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:557)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:552)
+	at oracle.jdbc.driver.T4CTTIfun.processError(T4CTTIfun.java:1312)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.processError(T4CTTIoauthenticate.java:699)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:726)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:291)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:389)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTHWithO5Logon(T4CTTIoauthenticate.java:1455)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:1219)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:1173)
+	at oracle.jdbc.driver.T4CConnection.authenticateUserForLogon(T4CConnection.java:1030)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:646)
+	at oracle.jdbc.driver.PhysicalConnection.connect(PhysicalConnection.java:1032)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:90)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:681)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:602)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:176)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:127)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1224)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1255)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1845)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at com.ams.AttendanceManagementSystemApplication.main(AttendanceManagementSystemApplication.java:22)
+2021-08-16 10:48:50,046 ERROR com.zaxxer.hikari.pool.HikariPool [main] AttendenceManagementHikariCP - Exception during pool initialization.
+java.sql.SQLException: ORA-01017: invalid username/password; logon denied
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:628)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:557)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:552)
+	at oracle.jdbc.driver.T4CTTIfun.processError(T4CTTIfun.java:1312)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.processError(T4CTTIoauthenticate.java:699)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:726)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:291)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:389)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTHWithO5Logon(T4CTTIoauthenticate.java:1455)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:1219)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:1173)
+	at oracle.jdbc.driver.T4CConnection.authenticateUserForLogon(T4CConnection.java:1030)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:646)
+	at oracle.jdbc.driver.PhysicalConnection.connect(PhysicalConnection.java:1032)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:90)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:681)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:602)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:176)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:127)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1224)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1255)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1845)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at com.ams.AttendanceManagementSystemApplication.main(AttendanceManagementSystemApplication.java:22)
+2021-08-16 10:48:50,048 WARN org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator [main] HHH000342: Could not obtain connection to query metadata
+java.sql.SQLException: ORA-01017: invalid username/password; logon denied
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:628)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:557)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:552)
+	at oracle.jdbc.driver.T4CTTIfun.processError(T4CTTIfun.java:1312)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.processError(T4CTTIoauthenticate.java:699)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:726)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:291)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:389)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTHWithO5Logon(T4CTTIoauthenticate.java:1455)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:1219)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:1173)
+	at oracle.jdbc.driver.T4CConnection.authenticateUserForLogon(T4CConnection.java:1030)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:646)
+	at oracle.jdbc.driver.PhysicalConnection.connect(PhysicalConnection.java:1032)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:90)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:681)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:602)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:176)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:127)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1224)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1255)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1845)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at com.ams.AttendanceManagementSystemApplication.main(AttendanceManagementSystemApplication.java:22)
+2021-08-16 10:48:50,070 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2021-08-16 10:48:50,956 DEBUG com.zaxxer.hikari.HikariConfig [main] AttendenceManagementHikariCP - configuration:
+2021-08-16 10:48:50,957 DEBUG com.zaxxer.hikari.HikariConfig [main] allowPoolSuspension................................false
+2021-08-16 10:48:50,957 DEBUG com.zaxxer.hikari.HikariConfig [main] autoCommit................................true
+2021-08-16 10:48:50,957 DEBUG com.zaxxer.hikari.HikariConfig [main] catalog................................none
+2021-08-16 10:48:50,957 DEBUG com.zaxxer.hikari.HikariConfig [main] connectionInitSql................................none
+2021-08-16 10:48:50,957 DEBUG com.zaxxer.hikari.HikariConfig [main] connectionTestQuery................................none
+2021-08-16 10:48:50,957 DEBUG com.zaxxer.hikari.HikariConfig [main] connectionTimeout................................30000
+2021-08-16 10:48:50,957 DEBUG com.zaxxer.hikari.HikariConfig [main] dataSource................................none
+2021-08-16 10:48:50,958 DEBUG com.zaxxer.hikari.HikariConfig [main] dataSourceClassName................................none
+2021-08-16 10:48:50,958 DEBUG com.zaxxer.hikari.HikariConfig [main] dataSourceJNDI................................none
+2021-08-16 10:48:50,958 DEBUG com.zaxxer.hikari.HikariConfig [main] dataSourceProperties................................{password=<masked>}
+2021-08-16 10:48:50,958 DEBUG com.zaxxer.hikari.HikariConfig [main] driverClassName................................"oracle.jdbc.OracleDriver"
+2021-08-16 10:48:50,958 DEBUG com.zaxxer.hikari.HikariConfig [main] exceptionOverrideClassName................................none
+2021-08-16 10:48:50,958 DEBUG com.zaxxer.hikari.HikariConfig [main] healthCheckProperties................................{}
+2021-08-16 10:48:50,958 DEBUG com.zaxxer.hikari.HikariConfig [main] healthCheckRegistry................................none
+2021-08-16 10:48:50,958 DEBUG com.zaxxer.hikari.HikariConfig [main] idleTimeout................................30000
+2021-08-16 10:48:50,958 DEBUG com.zaxxer.hikari.HikariConfig [main] initializationFailTimeout................................1
+2021-08-16 10:48:50,958 DEBUG com.zaxxer.hikari.HikariConfig [main] isolateInternalQueries................................false
+2021-08-16 10:48:50,959 DEBUG com.zaxxer.hikari.HikariConfig [main] jdbcUrl................................jdbc:oracle:thin:@localhost:1521:XE
+2021-08-16 10:48:50,959 DEBUG com.zaxxer.hikari.HikariConfig [main] keepaliveTime................................0
+2021-08-16 10:48:50,959 DEBUG com.zaxxer.hikari.HikariConfig [main] leakDetectionThreshold................................0
+2021-08-16 10:48:50,959 DEBUG com.zaxxer.hikari.HikariConfig [main] maxLifetime................................20000000
+2021-08-16 10:48:50,959 DEBUG com.zaxxer.hikari.HikariConfig [main] maximumPoolSize................................20
+2021-08-16 10:48:50,959 DEBUG com.zaxxer.hikari.HikariConfig [main] metricRegistry................................none
+2021-08-16 10:48:50,959 DEBUG com.zaxxer.hikari.HikariConfig [main] metricsTrackerFactory................................none
+2021-08-16 10:48:50,959 DEBUG com.zaxxer.hikari.HikariConfig [main] minimumIdle................................5
+2021-08-16 10:48:50,959 DEBUG com.zaxxer.hikari.HikariConfig [main] password................................<masked>
+2021-08-16 10:48:50,959 DEBUG com.zaxxer.hikari.HikariConfig [main] poolName................................"AttendenceManagementHikariCP"
+2021-08-16 10:48:50,960 DEBUG com.zaxxer.hikari.HikariConfig [main] readOnly................................false
+2021-08-16 10:48:50,960 DEBUG com.zaxxer.hikari.HikariConfig [main] registerMbeans................................false
+2021-08-16 10:48:50,960 DEBUG com.zaxxer.hikari.HikariConfig [main] scheduledExecutor................................none
+2021-08-16 10:48:50,960 DEBUG com.zaxxer.hikari.HikariConfig [main] schema................................none
+2021-08-16 10:48:50,960 DEBUG com.zaxxer.hikari.HikariConfig [main] threadFactory................................internal
+2021-08-16 10:48:50,960 DEBUG com.zaxxer.hikari.HikariConfig [main] transactionIsolation................................default
+2021-08-16 10:48:50,960 DEBUG com.zaxxer.hikari.HikariConfig [main] username................................"SYSTEM"
+2021-08-16 10:48:50,960 DEBUG com.zaxxer.hikari.HikariConfig [main] validationTimeout................................5000
+2021-08-16 10:48:50,960 INFO com.zaxxer.hikari.HikariDataSource [main] AttendenceManagementHikariCP - Starting...
+2021-08-16 10:48:50,981 DEBUG com.zaxxer.hikari.pool.PoolBase [main] AttendenceManagementHikariCP - Failed to create/setup connection: ORA-01017: invalid username/password; logon denied
+
+2021-08-16 10:48:50,982 DEBUG com.zaxxer.hikari.pool.HikariPool [main] AttendenceManagementHikariCP - Cannot acquire connection from data source
+java.sql.SQLException: ORA-01017: invalid username/password; logon denied
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:628)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:557)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:552)
+	at oracle.jdbc.driver.T4CTTIfun.processError(T4CTTIfun.java:1312)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.processError(T4CTTIoauthenticate.java:699)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:726)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:291)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:389)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTHWithO5Logon(T4CTTIoauthenticate.java:1455)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:1219)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:1173)
+	at oracle.jdbc.driver.T4CConnection.authenticateUserForLogon(T4CConnection.java:1030)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:646)
+	at oracle.jdbc.driver.PhysicalConnection.connect(PhysicalConnection.java:1032)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:90)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:681)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:602)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:43)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.jdbcStatement(GenerationTargetToDatabase.java:77)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:53)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:375)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:359)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:241)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:154)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:126)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:112)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:145)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:318)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:468)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1259)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1845)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at com.ams.AttendanceManagementSystemApplication.main(AttendanceManagementSystemApplication.java:22)
+2021-08-16 10:48:51,983 ERROR com.zaxxer.hikari.pool.HikariPool [main] AttendenceManagementHikariCP - Exception during pool initialization.
+java.sql.SQLException: ORA-01017: invalid username/password; logon denied
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:628)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:557)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:552)
+	at oracle.jdbc.driver.T4CTTIfun.processError(T4CTTIfun.java:1312)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.processError(T4CTTIoauthenticate.java:699)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:726)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:291)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:389)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTHWithO5Logon(T4CTTIoauthenticate.java:1455)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:1219)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:1173)
+	at oracle.jdbc.driver.T4CConnection.authenticateUserForLogon(T4CConnection.java:1030)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:646)
+	at oracle.jdbc.driver.PhysicalConnection.connect(PhysicalConnection.java:1032)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:90)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:681)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:602)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:43)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.jdbcStatement(GenerationTargetToDatabase.java:77)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:53)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:375)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:359)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:241)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:154)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:126)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:112)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:145)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:318)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:468)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1259)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1845)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at com.ams.AttendanceManagementSystemApplication.main(AttendanceManagementSystemApplication.java:22)
+2021-08-16 10:48:51,984 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [main] SQL Error: 1017, SQLState: 72000
+2021-08-16 10:48:51,985 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [main] ORA-01017: invalid username/password; logon denied
+
+2021-08-16 10:48:51,992 ERROR org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution
+2021-08-16 10:48:51,992 WARN org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution
+2021-08-16 10:48:51,994 INFO org.apache.catalina.core.StandardService [main] Stopping service [Tomcat]
+2021-08-16 10:48:52,007 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [main] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-08-16 10:48:52,027 ERROR org.springframework.boot.SpringApplication [main] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at com.ams.AttendanceManagementSystemApplication.main(AttendanceManagementSystemApplication.java:22)
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1845)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	... 16 common frames omitted
+Caused by: org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:47)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:99)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:69)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.jdbcStatement(GenerationTargetToDatabase.java:77)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:53)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:375)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:359)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:241)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:154)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:126)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:112)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:145)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:318)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:468)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1259)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	... 20 common frames omitted
+Caused by: java.sql.SQLException: ORA-01017: invalid username/password; logon denied
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:628)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:557)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:552)
+	at oracle.jdbc.driver.T4CTTIfun.processError(T4CTTIfun.java:1312)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.processError(T4CTTIoauthenticate.java:699)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:726)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:291)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:389)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTHWithO5Logon(T4CTTIoauthenticate.java:1455)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:1219)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:1173)
+	at oracle.jdbc.driver.T4CConnection.authenticateUserForLogon(T4CConnection.java:1030)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:646)
+	at oracle.jdbc.driver.PhysicalConnection.connect(PhysicalConnection.java:1032)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:90)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:681)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:602)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:43)
+	... 36 common frames omitted
+2021-08-16 10:49:32,394 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.0.Final
+2021-08-16 10:49:32,445 INFO com.ams.AttendanceManagementSystemApplication [main] Starting AttendanceManagementSystemApplication using Java 16.0.2 on DIN25000258 with PID 16028 (C:\Users\BHUPSAHU\WorkSpace\eclipse\Sprint1\AttendanceManagementSystem\bin\main started by bhupsahu in C:\Users\BHUPSAHU\WorkSpace\eclipse\Sprint1\AttendanceManagementSystem)
+2021-08-16 10:49:32,446 DEBUG com.ams.AttendanceManagementSystemApplication [main] Running with Spring Boot v2.5.3, Spring v5.3.9
+2021-08-16 10:49:32,446 INFO com.ams.AttendanceManagementSystemApplication [main] No active profile set, falling back to default profiles: default
+2021-08-16 10:49:33,548 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-08-16 10:49:33,633 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 75 ms. Found 6 JPA repository interfaces.
+2021-08-16 10:49:34,335 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 9090 (http)
+2021-08-16 10:49:34,346 INFO org.apache.coyote.http11.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-9090"]
+2021-08-16 10:49:34,346 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2021-08-16 10:49:34,347 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-08-16 10:49:34,493 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2021-08-16 10:49:34,494 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1999 ms
+2021-08-16 10:49:34,624 DEBUG com.zaxxer.hikari.HikariConfig [main] Driver class oracle.jdbc.OracleDriver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@2e5c649
+2021-08-16 10:49:34,771 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-08-16 10:49:34,832 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-08-16 10:49:34,998 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-08-16 10:49:35,129 DEBUG com.zaxxer.hikari.HikariConfig [main] AttendenceManagementHikariCP - configuration:
+2021-08-16 10:49:35,131 DEBUG com.zaxxer.hikari.HikariConfig [main] allowPoolSuspension................................false
+2021-08-16 10:49:35,131 DEBUG com.zaxxer.hikari.HikariConfig [main] autoCommit................................true
+2021-08-16 10:49:35,131 DEBUG com.zaxxer.hikari.HikariConfig [main] catalog................................none
+2021-08-16 10:49:35,132 DEBUG com.zaxxer.hikari.HikariConfig [main] connectionInitSql................................none
+2021-08-16 10:49:35,132 DEBUG com.zaxxer.hikari.HikariConfig [main] connectionTestQuery................................none
+2021-08-16 10:49:35,132 DEBUG com.zaxxer.hikari.HikariConfig [main] connectionTimeout................................30000
+2021-08-16 10:49:35,132 DEBUG com.zaxxer.hikari.HikariConfig [main] dataSource................................none
+2021-08-16 10:49:35,132 DEBUG com.zaxxer.hikari.HikariConfig [main] dataSourceClassName................................none
+2021-08-16 10:49:35,132 DEBUG com.zaxxer.hikari.HikariConfig [main] dataSourceJNDI................................none
+2021-08-16 10:49:35,133 DEBUG com.zaxxer.hikari.HikariConfig [main] dataSourceProperties................................{password=<masked>}
+2021-08-16 10:49:35,133 DEBUG com.zaxxer.hikari.HikariConfig [main] driverClassName................................"oracle.jdbc.OracleDriver"
+2021-08-16 10:49:35,133 DEBUG com.zaxxer.hikari.HikariConfig [main] exceptionOverrideClassName................................none
+2021-08-16 10:49:35,133 DEBUG com.zaxxer.hikari.HikariConfig [main] healthCheckProperties................................{}
+2021-08-16 10:49:35,134 DEBUG com.zaxxer.hikari.HikariConfig [main] healthCheckRegistry................................none
+2021-08-16 10:49:35,134 DEBUG com.zaxxer.hikari.HikariConfig [main] idleTimeout................................30000
+2021-08-16 10:49:35,134 DEBUG com.zaxxer.hikari.HikariConfig [main] initializationFailTimeout................................1
+2021-08-16 10:49:35,134 DEBUG com.zaxxer.hikari.HikariConfig [main] isolateInternalQueries................................false
+2021-08-16 10:49:35,134 DEBUG com.zaxxer.hikari.HikariConfig [main] jdbcUrl................................jdbc:oracle:thin:@localhost:1521:XE
+2021-08-16 10:49:35,134 DEBUG com.zaxxer.hikari.HikariConfig [main] keepaliveTime................................0
+2021-08-16 10:49:35,135 DEBUG com.zaxxer.hikari.HikariConfig [main] leakDetectionThreshold................................0
+2021-08-16 10:49:35,135 DEBUG com.zaxxer.hikari.HikariConfig [main] maxLifetime................................20000000
+2021-08-16 10:49:35,135 DEBUG com.zaxxer.hikari.HikariConfig [main] maximumPoolSize................................20
+2021-08-16 10:49:35,135 DEBUG com.zaxxer.hikari.HikariConfig [main] metricRegistry................................none
+2021-08-16 10:49:35,135 DEBUG com.zaxxer.hikari.HikariConfig [main] metricsTrackerFactory................................none
+2021-08-16 10:49:35,135 DEBUG com.zaxxer.hikari.HikariConfig [main] minimumIdle................................5
+2021-08-16 10:49:35,135 DEBUG com.zaxxer.hikari.HikariConfig [main] password................................<masked>
+2021-08-16 10:49:35,135 DEBUG com.zaxxer.hikari.HikariConfig [main] poolName................................"AttendenceManagementHikariCP"
+2021-08-16 10:49:35,135 DEBUG com.zaxxer.hikari.HikariConfig [main] readOnly................................false
+2021-08-16 10:49:35,136 DEBUG com.zaxxer.hikari.HikariConfig [main] registerMbeans................................false
+2021-08-16 10:49:35,136 DEBUG com.zaxxer.hikari.HikariConfig [main] scheduledExecutor................................none
+2021-08-16 10:49:35,136 DEBUG com.zaxxer.hikari.HikariConfig [main] schema................................none
+2021-08-16 10:49:35,136 DEBUG com.zaxxer.hikari.HikariConfig [main] threadFactory................................internal
+2021-08-16 10:49:35,136 DEBUG com.zaxxer.hikari.HikariConfig [main] transactionIsolation................................default
+2021-08-16 10:49:35,136 DEBUG com.zaxxer.hikari.HikariConfig [main] username................................"SYSTEM"
+2021-08-16 10:49:35,136 DEBUG com.zaxxer.hikari.HikariConfig [main] validationTimeout................................5000
+2021-08-16 10:49:35,136 INFO com.zaxxer.hikari.HikariDataSource [main] AttendenceManagementHikariCP - Starting...
+2021-08-16 10:49:35,393 DEBUG com.zaxxer.hikari.pool.PoolBase [main] AttendenceManagementHikariCP - Failed to create/setup connection: ORA-01017: invalid username/password; logon denied
+
+2021-08-16 10:49:35,395 DEBUG com.zaxxer.hikari.pool.HikariPool [main] AttendenceManagementHikariCP - Cannot acquire connection from data source
+java.sql.SQLException: ORA-01017: invalid username/password; logon denied
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:628)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:557)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:552)
+	at oracle.jdbc.driver.T4CTTIfun.processError(T4CTTIfun.java:1312)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.processError(T4CTTIoauthenticate.java:699)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:726)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:291)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:389)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTHWithO5Logon(T4CTTIoauthenticate.java:1455)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:1219)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:1173)
+	at oracle.jdbc.driver.T4CConnection.authenticateUserForLogon(T4CConnection.java:1030)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:646)
+	at oracle.jdbc.driver.PhysicalConnection.connect(PhysicalConnection.java:1032)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:90)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:681)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:602)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:176)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:127)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1224)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1255)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1845)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at com.ams.AttendanceManagementSystemApplication.main(AttendanceManagementSystemApplication.java:22)
+2021-08-16 10:49:36,408 ERROR com.zaxxer.hikari.pool.HikariPool [main] AttendenceManagementHikariCP - Exception during pool initialization.
+java.sql.SQLException: ORA-01017: invalid username/password; logon denied
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:628)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:557)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:552)
+	at oracle.jdbc.driver.T4CTTIfun.processError(T4CTTIfun.java:1312)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.processError(T4CTTIoauthenticate.java:699)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:726)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:291)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:389)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTHWithO5Logon(T4CTTIoauthenticate.java:1455)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:1219)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:1173)
+	at oracle.jdbc.driver.T4CConnection.authenticateUserForLogon(T4CConnection.java:1030)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:646)
+	at oracle.jdbc.driver.PhysicalConnection.connect(PhysicalConnection.java:1032)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:90)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:681)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:602)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:176)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:127)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1224)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1255)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1845)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at com.ams.AttendanceManagementSystemApplication.main(AttendanceManagementSystemApplication.java:22)
+2021-08-16 10:49:36,410 WARN org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator [main] HHH000342: Could not obtain connection to query metadata
+java.sql.SQLException: ORA-01017: invalid username/password; logon denied
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:628)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:557)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:552)
+	at oracle.jdbc.driver.T4CTTIfun.processError(T4CTTIfun.java:1312)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.processError(T4CTTIoauthenticate.java:699)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:726)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:291)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:389)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTHWithO5Logon(T4CTTIoauthenticate.java:1455)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:1219)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:1173)
+	at oracle.jdbc.driver.T4CConnection.authenticateUserForLogon(T4CConnection.java:1030)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:646)
+	at oracle.jdbc.driver.PhysicalConnection.connect(PhysicalConnection.java:1032)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:90)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:681)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:602)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:176)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:127)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1224)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1255)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1845)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at com.ams.AttendanceManagementSystemApplication.main(AttendanceManagementSystemApplication.java:22)
+2021-08-16 10:49:36,438 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2021-08-16 10:49:37,332 DEBUG com.zaxxer.hikari.HikariConfig [main] AttendenceManagementHikariCP - configuration:
+2021-08-16 10:49:37,333 DEBUG com.zaxxer.hikari.HikariConfig [main] allowPoolSuspension................................false
+2021-08-16 10:49:37,333 DEBUG com.zaxxer.hikari.HikariConfig [main] autoCommit................................true
+2021-08-16 10:49:37,333 DEBUG com.zaxxer.hikari.HikariConfig [main] catalog................................none
+2021-08-16 10:49:37,334 DEBUG com.zaxxer.hikari.HikariConfig [main] connectionInitSql................................none
+2021-08-16 10:49:37,334 DEBUG com.zaxxer.hikari.HikariConfig [main] connectionTestQuery................................none
+2021-08-16 10:49:37,334 DEBUG com.zaxxer.hikari.HikariConfig [main] connectionTimeout................................30000
+2021-08-16 10:49:37,334 DEBUG com.zaxxer.hikari.HikariConfig [main] dataSource................................none
+2021-08-16 10:49:37,334 DEBUG com.zaxxer.hikari.HikariConfig [main] dataSourceClassName................................none
+2021-08-16 10:49:37,334 DEBUG com.zaxxer.hikari.HikariConfig [main] dataSourceJNDI................................none
+2021-08-16 10:49:37,335 DEBUG com.zaxxer.hikari.HikariConfig [main] dataSourceProperties................................{password=<masked>}
+2021-08-16 10:49:37,335 DEBUG com.zaxxer.hikari.HikariConfig [main] driverClassName................................"oracle.jdbc.OracleDriver"
+2021-08-16 10:49:37,335 DEBUG com.zaxxer.hikari.HikariConfig [main] exceptionOverrideClassName................................none
+2021-08-16 10:49:37,335 DEBUG com.zaxxer.hikari.HikariConfig [main] healthCheckProperties................................{}
+2021-08-16 10:49:37,335 DEBUG com.zaxxer.hikari.HikariConfig [main] healthCheckRegistry................................none
+2021-08-16 10:49:37,335 DEBUG com.zaxxer.hikari.HikariConfig [main] idleTimeout................................30000
+2021-08-16 10:49:37,336 DEBUG com.zaxxer.hikari.HikariConfig [main] initializationFailTimeout................................1
+2021-08-16 10:49:37,336 DEBUG com.zaxxer.hikari.HikariConfig [main] isolateInternalQueries................................false
+2021-08-16 10:49:37,336 DEBUG com.zaxxer.hikari.HikariConfig [main] jdbcUrl................................jdbc:oracle:thin:@localhost:1521:XE
+2021-08-16 10:49:37,336 DEBUG com.zaxxer.hikari.HikariConfig [main] keepaliveTime................................0
+2021-08-16 10:49:37,336 DEBUG com.zaxxer.hikari.HikariConfig [main] leakDetectionThreshold................................0
+2021-08-16 10:49:37,336 DEBUG com.zaxxer.hikari.HikariConfig [main] maxLifetime................................20000000
+2021-08-16 10:49:37,336 DEBUG com.zaxxer.hikari.HikariConfig [main] maximumPoolSize................................20
+2021-08-16 10:49:37,336 DEBUG com.zaxxer.hikari.HikariConfig [main] metricRegistry................................none
+2021-08-16 10:49:37,336 DEBUG com.zaxxer.hikari.HikariConfig [main] metricsTrackerFactory................................none
+2021-08-16 10:49:37,337 DEBUG com.zaxxer.hikari.HikariConfig [main] minimumIdle................................5
+2021-08-16 10:49:37,337 DEBUG com.zaxxer.hikari.HikariConfig [main] password................................<masked>
+2021-08-16 10:49:37,337 DEBUG com.zaxxer.hikari.HikariConfig [main] poolName................................"AttendenceManagementHikariCP"
+2021-08-16 10:49:37,337 DEBUG com.zaxxer.hikari.HikariConfig [main] readOnly................................false
+2021-08-16 10:49:37,337 DEBUG com.zaxxer.hikari.HikariConfig [main] registerMbeans................................false
+2021-08-16 10:49:37,337 DEBUG com.zaxxer.hikari.HikariConfig [main] scheduledExecutor................................none
+2021-08-16 10:49:37,337 DEBUG com.zaxxer.hikari.HikariConfig [main] schema................................none
+2021-08-16 10:49:37,338 DEBUG com.zaxxer.hikari.HikariConfig [main] threadFactory................................internal
+2021-08-16 10:49:37,338 DEBUG com.zaxxer.hikari.HikariConfig [main] transactionIsolation................................default
+2021-08-16 10:49:37,338 DEBUG com.zaxxer.hikari.HikariConfig [main] username................................"SYSTEM"
+2021-08-16 10:49:37,338 DEBUG com.zaxxer.hikari.HikariConfig [main] validationTimeout................................5000
+2021-08-16 10:49:37,338 INFO com.zaxxer.hikari.HikariDataSource [main] AttendenceManagementHikariCP - Starting...
+2021-08-16 10:49:38,364 DEBUG com.zaxxer.hikari.pool.PoolBase [main] AttendenceManagementHikariCP - Failed to create/setup connection: ORA-01017: invalid username/password; logon denied
+
+2021-08-16 10:49:38,365 DEBUG com.zaxxer.hikari.pool.HikariPool [main] AttendenceManagementHikariCP - Cannot acquire connection from data source
+java.sql.SQLException: ORA-01017: invalid username/password; logon denied
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:628)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:557)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:552)
+	at oracle.jdbc.driver.T4CTTIfun.processError(T4CTTIfun.java:1312)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.processError(T4CTTIoauthenticate.java:699)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:726)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:291)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:389)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTHWithO5Logon(T4CTTIoauthenticate.java:1455)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:1219)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:1173)
+	at oracle.jdbc.driver.T4CConnection.authenticateUserForLogon(T4CConnection.java:1030)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:646)
+	at oracle.jdbc.driver.PhysicalConnection.connect(PhysicalConnection.java:1032)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:90)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:681)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:602)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:43)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.jdbcStatement(GenerationTargetToDatabase.java:77)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:53)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:375)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:359)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:241)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:154)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:126)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:112)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:145)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:318)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:468)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1259)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1845)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at com.ams.AttendanceManagementSystemApplication.main(AttendanceManagementSystemApplication.java:22)
+2021-08-16 10:49:39,379 ERROR com.zaxxer.hikari.pool.HikariPool [main] AttendenceManagementHikariCP - Exception during pool initialization.
+java.sql.SQLException: ORA-01017: invalid username/password; logon denied
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:628)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:557)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:552)
+	at oracle.jdbc.driver.T4CTTIfun.processError(T4CTTIfun.java:1312)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.processError(T4CTTIoauthenticate.java:699)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:726)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:291)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:389)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTHWithO5Logon(T4CTTIoauthenticate.java:1455)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:1219)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:1173)
+	at oracle.jdbc.driver.T4CConnection.authenticateUserForLogon(T4CConnection.java:1030)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:646)
+	at oracle.jdbc.driver.PhysicalConnection.connect(PhysicalConnection.java:1032)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:90)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:681)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:602)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:43)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.jdbcStatement(GenerationTargetToDatabase.java:77)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:53)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:375)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:359)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:241)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:154)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:126)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:112)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:145)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:318)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:468)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1259)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1845)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at com.ams.AttendanceManagementSystemApplication.main(AttendanceManagementSystemApplication.java:22)
+2021-08-16 10:49:39,384 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [main] SQL Error: 1017, SQLState: 72000
+2021-08-16 10:49:39,384 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [main] ORA-01017: invalid username/password; logon denied
+
+2021-08-16 10:49:39,390 ERROR org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution
+2021-08-16 10:49:39,390 WARN org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution
+2021-08-16 10:49:39,392 INFO org.apache.catalina.core.StandardService [main] Stopping service [Tomcat]
+2021-08-16 10:49:42,698 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.0.Final
+2021-08-16 10:49:42,747 INFO com.ams.AttendanceManagementSystemApplication [main] Starting AttendanceManagementSystemApplication using Java 16.0.2 on DIN25000258 with PID 14640 (C:\Users\BHUPSAHU\WorkSpace\eclipse\Sprint1\AttendanceManagementSystem\bin\main started by bhupsahu in C:\Users\BHUPSAHU\WorkSpace\eclipse\Sprint1\AttendanceManagementSystem)
+2021-08-16 10:49:42,748 DEBUG com.ams.AttendanceManagementSystemApplication [main] Running with Spring Boot v2.5.3, Spring v5.3.9
+2021-08-16 10:49:42,748 INFO com.ams.AttendanceManagementSystemApplication [main] No active profile set, falling back to default profiles: default
+2021-08-16 10:49:43,850 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-08-16 10:49:43,938 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 77 ms. Found 6 JPA repository interfaces.
+2021-08-16 10:49:44,621 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 9090 (http)
+2021-08-16 10:49:44,631 INFO org.apache.coyote.http11.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-9090"]
+2021-08-16 10:49:44,632 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2021-08-16 10:49:44,632 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-08-16 10:49:44,763 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2021-08-16 10:49:44,763 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1963 ms
+2021-08-16 10:49:44,905 DEBUG com.zaxxer.hikari.HikariConfig [main] Driver class oracle.jdbc.OracleDriver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@2e5c649
+2021-08-16 10:49:45,051 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-08-16 10:49:45,113 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-08-16 10:49:45,277 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-08-16 10:49:45,410 DEBUG com.zaxxer.hikari.HikariConfig [main] AttendenceManagementHikariCP - configuration:
+2021-08-16 10:49:45,412 DEBUG com.zaxxer.hikari.HikariConfig [main] allowPoolSuspension................................false
+2021-08-16 10:49:45,412 DEBUG com.zaxxer.hikari.HikariConfig [main] autoCommit................................true
+2021-08-16 10:49:45,413 DEBUG com.zaxxer.hikari.HikariConfig [main] catalog................................none
+2021-08-16 10:49:45,413 DEBUG com.zaxxer.hikari.HikariConfig [main] connectionInitSql................................none
+2021-08-16 10:49:45,413 DEBUG com.zaxxer.hikari.HikariConfig [main] connectionTestQuery................................none
+2021-08-16 10:49:45,413 DEBUG com.zaxxer.hikari.HikariConfig [main] connectionTimeout................................30000
+2021-08-16 10:49:45,413 DEBUG com.zaxxer.hikari.HikariConfig [main] dataSource................................none
+2021-08-16 10:49:45,413 DEBUG com.zaxxer.hikari.HikariConfig [main] dataSourceClassName................................none
+2021-08-16 10:49:45,414 DEBUG com.zaxxer.hikari.HikariConfig [main] dataSourceJNDI................................none
+2021-08-16 10:49:45,414 DEBUG com.zaxxer.hikari.HikariConfig [main] dataSourceProperties................................{password=<masked>}
+2021-08-16 10:49:45,415 DEBUG com.zaxxer.hikari.HikariConfig [main] driverClassName................................"oracle.jdbc.OracleDriver"
+2021-08-16 10:49:45,415 DEBUG com.zaxxer.hikari.HikariConfig [main] exceptionOverrideClassName................................none
+2021-08-16 10:49:45,415 DEBUG com.zaxxer.hikari.HikariConfig [main] healthCheckProperties................................{}
+2021-08-16 10:49:45,415 DEBUG com.zaxxer.hikari.HikariConfig [main] healthCheckRegistry................................none
+2021-08-16 10:49:45,415 DEBUG com.zaxxer.hikari.HikariConfig [main] idleTimeout................................30000
+2021-08-16 10:49:45,415 DEBUG com.zaxxer.hikari.HikariConfig [main] initializationFailTimeout................................1
+2021-08-16 10:49:45,416 DEBUG com.zaxxer.hikari.HikariConfig [main] isolateInternalQueries................................false
+2021-08-16 10:49:45,416 DEBUG com.zaxxer.hikari.HikariConfig [main] jdbcUrl................................jdbc:oracle:thin:@localhost:1521:XE
+2021-08-16 10:49:45,416 DEBUG com.zaxxer.hikari.HikariConfig [main] keepaliveTime................................0
+2021-08-16 10:49:45,416 DEBUG com.zaxxer.hikari.HikariConfig [main] leakDetectionThreshold................................0
+2021-08-16 10:49:45,416 DEBUG com.zaxxer.hikari.HikariConfig [main] maxLifetime................................20000000
+2021-08-16 10:49:45,416 DEBUG com.zaxxer.hikari.HikariConfig [main] maximumPoolSize................................20
+2021-08-16 10:49:45,416 DEBUG com.zaxxer.hikari.HikariConfig [main] metricRegistry................................none
+2021-08-16 10:49:45,416 DEBUG com.zaxxer.hikari.HikariConfig [main] metricsTrackerFactory................................none
+2021-08-16 10:49:45,417 DEBUG com.zaxxer.hikari.HikariConfig [main] minimumIdle................................5
+2021-08-16 10:49:45,417 DEBUG com.zaxxer.hikari.HikariConfig [main] password................................<masked>
+2021-08-16 10:49:45,417 DEBUG com.zaxxer.hikari.HikariConfig [main] poolName................................"AttendenceManagementHikariCP"
+2021-08-16 10:49:45,417 DEBUG com.zaxxer.hikari.HikariConfig [main] readOnly................................false
+2021-08-16 10:49:45,417 DEBUG com.zaxxer.hikari.HikariConfig [main] registerMbeans................................false
+2021-08-16 10:49:45,417 DEBUG com.zaxxer.hikari.HikariConfig [main] scheduledExecutor................................none
+2021-08-16 10:49:45,417 DEBUG com.zaxxer.hikari.HikariConfig [main] schema................................none
+2021-08-16 10:49:45,417 DEBUG com.zaxxer.hikari.HikariConfig [main] threadFactory................................internal
+2021-08-16 10:49:45,418 DEBUG com.zaxxer.hikari.HikariConfig [main] transactionIsolation................................default
+2021-08-16 10:49:45,418 DEBUG com.zaxxer.hikari.HikariConfig [main] username................................"SYSTEM"
+2021-08-16 10:49:45,418 DEBUG com.zaxxer.hikari.HikariConfig [main] validationTimeout................................5000
+2021-08-16 10:49:45,418 INFO com.zaxxer.hikari.HikariDataSource [main] AttendenceManagementHikariCP - Starting...
+2021-08-16 10:49:45,690 DEBUG com.zaxxer.hikari.pool.HikariPool [main] AttendenceManagementHikariCP - Added connection oracle.jdbc.driver.T4CConnection@270b8c2a
+2021-08-16 10:49:45,691 INFO com.zaxxer.hikari.HikariDataSource [main] AttendenceManagementHikariCP - Start completed.
+2021-08-16 10:49:45,711 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2021-08-16 10:49:45,801 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP housekeeper] AttendenceManagementHikariCP - Before cleanup stats (total=1, active=1, idle=0, waiting=0)
+2021-08-16 10:49:45,802 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP housekeeper] AttendenceManagementHikariCP - After cleanup  stats (total=1, active=1, idle=0, waiting=0)
+2021-08-16 10:49:45,825 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP connection adder] AttendenceManagementHikariCP - Added connection oracle.jdbc.driver.T4CConnection@6f866124
+2021-08-16 10:49:45,847 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP connection adder] AttendenceManagementHikariCP - Added connection oracle.jdbc.driver.T4CConnection@430cd7c7
+2021-08-16 10:49:45,868 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP connection adder] AttendenceManagementHikariCP - Added connection oracle.jdbc.driver.T4CConnection@3b02e3bc
+2021-08-16 10:49:45,889 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP connection adder] AttendenceManagementHikariCP - Added connection oracle.jdbc.driver.T4CConnection@6b83c0aa
+2021-08-16 10:49:45,916 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP connection adder] AttendenceManagementHikariCP - Added connection oracle.jdbc.driver.T4CConnection@20068839
+2021-08-16 10:49:45,916 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP connection adder] AttendenceManagementHikariCP - After adding stats (total=6, active=1, idle=5, waiting=0)
+2021-08-16 10:49:46,962 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-08-16 10:49:46,972 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-08-16 10:49:47,886 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-16 10:49:48,986 INFO org.apache.coyote.http11.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-9090"]
+2021-08-16 10:49:49,007 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 9090 (http) with context path ''
+2021-08-16 10:49:49,709 INFO com.ams.AttendanceManagementSystemApplication [main] Started AttendanceManagementSystemApplication in 7.41 seconds (JVM running for 8.53)
+2021-08-16 10:49:49,713 INFO com.ams.AttendanceManagementSystemApplication [main] 
+~~~~~~~~~~~~~~~~~~~~~
+CONNECTED TO DB
+~~~~~~~~~~~~~~~~~~~~~
+2021-08-16 10:49:59,343 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-9090-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-16 10:49:59,343 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-9090-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-08-16 10:49:59,345 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-9090-exec-1] Completed initialization in 2 ms
+2021-08-16 10:50:15,806 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP housekeeper] AttendenceManagementHikariCP - Before cleanup stats (total=6, active=0, idle=6, waiting=0)
+2021-08-16 10:50:15,807 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP housekeeper] AttendenceManagementHikariCP - After cleanup  stats (total=6, active=0, idle=6, waiting=0)
+2021-08-16 10:50:15,807 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP housekeeper] AttendenceManagementHikariCP - Fill pool skipped, pool is at sufficient level.
+2021-08-16 10:50:45,808 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP housekeeper] AttendenceManagementHikariCP - Before cleanup stats (total=6, active=0, idle=6, waiting=0)
+2021-08-16 10:50:45,810 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP housekeeper] AttendenceManagementHikariCP - After cleanup  stats (total=5, active=0, idle=5, waiting=0)
