@@ -11,6 +11,7 @@ import javax.validation.constraints.NotNull;
 
 import org.hibernate.validator.constraints.Length;
 
+
 /*
   Entity Definition of ATTENDANCE_ENTITY Table
   @author: Tejaswini 
@@ -22,18 +23,18 @@ public class AttendanceEntity {
 	@GeneratedValue
 	private long attendanceId;
 	
-	@Length(min=3,max=15)
+	@Length(min=3,max=15, message = "\ncourse name should be between 3 and 15 characters")
 	@NotNull(message = "\nSubjectName is required")
 	private String subjectName;
 	
-	@Length(min=2,max=5)
+	@Length(min=2,max=5, message = "\ncourse name should be between 2 and 5 characters")
 	@NotNull(message= "\nSemester is required")
 	private String semester;
 	
 	@NotNull(message = "\nDate is required")
 	private Date attendanceDate;
 	
-	@Length(min=1,max=3)
+	@Length(min=1,max=3, message = "\ncourse name should be between 1 and 3 characters")
 	@NotNull(message= "\nTotalClass is required")
 	private String totalClass;
 	
@@ -42,10 +43,10 @@ public class AttendanceEntity {
 	private long status;
 	
 	@Min(1)
-	@NotNull(message= "\nTotal is required")
+	@NotNull(message= "\nTotal is required Minimum 1")
 	private long total;
 	
-	@Length(min=1,max=2)
+	@Length(min=1,max=4, message = "\ncourse name should be between 1 and 4 characters")
 	@NotNull(message= "\nPercentage is required")
 	private String percentage;
 	
@@ -53,7 +54,7 @@ public class AttendanceEntity {
 	@NotNull(message= "\nCourseId is required")
 	private long courseId;
 	
-	@Length(min=3,max=10)
+	@Length(min=3,max=10, message = "\ncourse name should be between 3 and 10 characters")
 	@NotNull(message= "\nCourseName is required")
 	private String courseName;
 

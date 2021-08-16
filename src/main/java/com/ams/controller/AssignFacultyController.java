@@ -1,10 +1,16 @@
 package com.ams.controller;
 
+import java.time.LocalDateTime;
 import java.util.List;
+import java.util.stream.Collectors;
+
+import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.BindingResult;
+import org.springframework.validation.FieldError;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -15,6 +21,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.ams.entity.FacultyEntity;
+import com.ams.exception.ErrorDetails;
 import com.ams.exception.RecordNotFoundException;
 import com.ams.service.AssignFacultyServiceImpl;
 
@@ -39,8 +46,13 @@ public class AssignFacultyController {
 		return assignfacultyservice.findAllAssignFaculty();
 	}
 
+	@SuppressWarnings({ "rawtypes", "unchecked" })
 	@PostMapping(path = "/faculty/add")
-	public ResponseEntity<Long> create(@RequestBody FacultyEntity assignfaculty) {
+	public ResponseEntity<Long> create(@Valid @RequestBody FacultyEntity assignfaculty,BindingResult result) {
+		if(result.hasErrors()) {
+			ErrorDetails errorDetails = new ErrorDetails(LocalDateTime.now(),result.getFieldErrors().stream().map(FieldError :: getDefaultMessage).collect(Collectors.toList()).toString() ,"ConstraintViolationException"); 
+			return  new ResponseEntity(errorDetails,HttpStatus.BAD_REQUEST);
+		}
 		long id = assignfacultyservice.add(assignfaculty);
 		ResponseEntity<Long> re = new ResponseEntity<Long>(id,HttpStatus.OK);
 		return re;

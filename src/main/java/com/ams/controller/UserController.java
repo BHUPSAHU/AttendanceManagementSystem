@@ -1,10 +1,16 @@
 package com.ams.controller;
 
+import java.time.LocalDateTime;
 import java.util.List;
+import java.util.stream.Collectors;
+
+import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.BindingResult;
+import org.springframework.validation.FieldError;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -13,6 +19,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.ams.entity.UserEntity;
+import com.ams.exception.ErrorDetails;
 import com.ams.service.UserServiceImpl;
 
 
@@ -31,8 +38,13 @@ public class UserController {
 	}
 	
 	
+	@SuppressWarnings({ "unchecked", "rawtypes" })
 	@RequestMapping(value="/user/add",method=RequestMethod.POST)
-	public ResponseEntity<Long> add( @RequestBody UserEntity user) {
+	public ResponseEntity<Long> add(@Valid @RequestBody UserEntity user, BindingResult result) {
+		if(result.hasErrors()) {
+			ErrorDetails errorDetails = new ErrorDetails(LocalDateTime.now(),result.getFieldErrors().stream().map(FieldError :: getDefaultMessage).collect(Collectors.toList()).toString() ,"ConstraintViolationException"); 
+			return  new ResponseEntity(errorDetails,HttpStatus.BAD_REQUEST);
+		}
 		long temp=userService.add(user);
 		ResponseEntity<Long> res=new ResponseEntity<Long>(temp,HttpStatus.CREATED);
 		return res;

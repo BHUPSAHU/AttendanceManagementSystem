@@ -1,10 +1,16 @@
 package com.ams.controller;
 
+import java.time.LocalDateTime;
 import java.util.List;
+import java.util.stream.Collectors;
+
+import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.BindingResult;
+import org.springframework.validation.FieldError;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -15,6 +21,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.ams.entity.SubjectEntity;
+import com.ams.exception.ErrorDetails;
 import com.ams.service.SubjectServiceImpl;
 
 
@@ -32,9 +39,14 @@ public class SubjectController {
 		return str1;
 	}
 	
+	@SuppressWarnings({ "rawtypes", "unchecked" })
 	@PostMapping("/subject/add")
-	public ResponseEntity<Long> addSubject( @RequestBody SubjectEntity subject)
+	public ResponseEntity<Long> addSubject(@Valid @RequestBody SubjectEntity subject,BindingResult result)
 	{
+		if(result.hasErrors()) {
+			ErrorDetails errorDetails = new ErrorDetails(LocalDateTime.now(),result.getFieldErrors().stream().map(FieldError :: getDefaultMessage).collect(Collectors.toList()).toString() ,"ConstraintViolationException"); 
+			return  new ResponseEntity(errorDetails,HttpStatus.BAD_REQUEST);
+		}
 		long s1=subjectservice.add(subject);
 		ResponseEntity<Long> re=new ResponseEntity<Long>(s1,HttpStatus.OK);
 		return re;

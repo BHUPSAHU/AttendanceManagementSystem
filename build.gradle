@@ -20,6 +20,7 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-validation'
 	runtimeOnly 'com.oracle.database.jdbc:ojdbc8'
 	implementation group: 'io.springfox', name: 'springfox-boot-starter', version: '3.0.0'
+	implementation group: 'javax.validation', name: 'validation-api', version: '2.0.1.Final'
 }
 
 test {

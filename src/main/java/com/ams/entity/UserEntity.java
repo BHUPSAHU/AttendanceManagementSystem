@@ -36,8 +36,7 @@ public class UserEntity {
 	private String lastName;
 
 	@NotNull
-	@Length(min = 10, max = 10, message = "\nMobile number should be only 10 digits")
-	@Pattern(regexp="(^$|[0-9]{10})", message = "\nMobile number should be only Numbers")
+	@Pattern(regexp="(^$|[0-9]{10})", message = "\nMobile number should be only 10 digits")
 	private String mobileNo;
 
 	@Length(min = 10, message = "\nProfile Picture URL should be minimum 10 characters ")
@@ -45,7 +44,7 @@ public class UserEntity {
 
 	@DateTimeFormat(pattern = "yyyy-MM-dd")
     @NotNull(message="\ndate of birth is required")
-	@Past(message ="\nDate should be past dates" )
+	@Past
 	private LocalDate dob;
 
 	@Length(min = 6, max = 15)

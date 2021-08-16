@@ -1,10 +1,16 @@
 package com.ams.controller;
 
+import java.time.LocalDateTime;
 import java.util.List;
+import java.util.stream.Collectors;
+
+import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.BindingResult;
+import org.springframework.validation.FieldError;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -15,6 +21,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.ams.entity.AttendanceEntity;
+import com.ams.exception.ErrorDetails;
 import com.ams.service.AttendanceService;
 
 
@@ -32,8 +39,13 @@ public class AttendanceController {
 		return str1;
 	}
 
+	@SuppressWarnings({ "unchecked", "rawtypes" })
 	@PostMapping("/attendance/add")
-	public ResponseEntity<Long> addAttendance(@RequestBody AttendanceEntity ae) {
+	public ResponseEntity<Long> addAttendance(@Valid @RequestBody AttendanceEntity ae , BindingResult result) {
+		if(result.hasErrors()) {
+			ErrorDetails errorDetails = new ErrorDetails(LocalDateTime.now(),result.getFieldErrors().stream().map(FieldError :: getDefaultMessage).collect(Collectors.toList()).toString() ,"ConstraintViolationException"); 
+			return  new ResponseEntity(errorDetails,HttpStatus.BAD_REQUEST);
+			}
 		long data = attendanceService.add(ae);
 		ResponseEntity<Long> responseEntity = new ResponseEntity<Long>(data, HttpStatus.OK);
 		return responseEntity;

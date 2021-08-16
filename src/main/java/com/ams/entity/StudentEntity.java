@@ -41,38 +41,37 @@ public class StudentEntity {
 
 	@DateTimeFormat(pattern = "yyyy-MM-dd")
     @NotNull(message="\ndate of birth is required")
-	@Past(message ="\nDate should be past dates" )
+	@Past(message="\nDate of birth must be past date")
 	private LocalDate dob;
 
 	@NotNull
 	@Length(min = 4, max = 10, message = "\nGender should be between 1 and 10  characters")
 	private String gender;
 
-	@NotNull(message= "\nStudent Mobile Number is required")
+	@NotNull
 	@Length(min = 10, max = 10, message = "\nMobile number should be only 10 digits")
-	@Pattern(regexp="(^$|[0-9]{10})", message = "\nMobile number should be only Numbers")
+	@Pattern(regexp="(^$|[0-9]{10})")
 	private String mobileNo;
 
 	@NotNull(message= "\nCourse Id is required")
 	@Min(3)
 	private long courseId;
 
-	@NotNull(message= "\nCourse Name is required")
+	@NotNull
 	@Length( min=2,max = 30, message = "\ncourse name should be between 2 and 30 characters")
 	private String courseName;
 
-	@NotNull(message= "\nStudent Email is required")
+	@NotNull
 	@Email(message = "\nEmail should be valid")
 	private String emailId;
 
-	@NotNull(message= "\nFather's Email is required")
-	@Email(message = "\nEmail should be valid")
+	@NotNull
+	@Email(message = "\nFather's Email should be valid")
 	private String fatherEmailId;
 
 	
-	@NotNull(message= "\nFathers Mobile Number is required")
-	@Length(min = 10, max = 10, message = "\nMobile number should be only 10 digits")
-	@Pattern(regexp="(^$|[0-9]{10})", message = "\nMobile number should be only Numbers")
+	@NotNull
+	@Pattern(regexp="(^$|[0-9]{10})", message = "\nMobile number should be only 10 digits")
 	private String fatherMobileNo;
 
 	@Length(min = 10, message = "\nProfile Picture URL should be minimum 10 characters ")
