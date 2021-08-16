@@ -3,6 +3,8 @@ package com.ams.service;
 import java.util.List;
 import java.util.function.Supplier;
 
+import javax.transaction.Transactional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -19,6 +21,7 @@ public class UserServiceImpl implements UserService{
 
 	
 	@Override
+	@Transactional
 	public long add(UserEntity user) {
 //		user.getAssignFaculty().getUser().setUserId(user.getUserId());
 		UserEntity tempUser =  userRepo.save(user);
@@ -46,7 +49,7 @@ public class UserServiceImpl implements UserService{
 		existingUser.setProfilePic(user.getProfilePic());
 		existingUser.setUserId(user.getUserId());
 		existingUser.setRoleType(user.getRoleType());	
-		existingUser.setAssignFaculty(user.getAssignFaculty());
+//		existingUser.setAssignFaculty(user.getAssignFaculty());
 		userRepo.save(existingUser);		
 	}
 	
