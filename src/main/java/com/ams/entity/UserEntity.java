@@ -28,32 +28,32 @@ public class UserEntity {
 	private long userId;
 
 	@NotNull
-	@Length(min = 3, max = 30, message = "First name should be between 3 and 30  characters")
+	@Length(min = 3, max = 30, message = "\nFirst name should be between 3 and 30  characters")
 	private String firstName;
 	
 	@NotNull
-	@Length(min = 1, max = 30, message = "Last name should be between 1 and 30  characters")
+	@Length(min = 1, max = 30, message = "\nLast name should be between 1 and 30  characters")
 	private String lastName;
 
 	@NotNull
-	@Length(min = 10, max = 10, message = "Mobile number should be only 10 digits")
-	@Pattern(regexp="(^$|[0-9]{10})", message = "Mobile number should be only Numbers")
+	@Length(min = 10, max = 10, message = "\nMobile number should be only 10 digits")
+	@Pattern(regexp="(^$|[0-9]{10})", message = "\nMobile number should be only Numbers")
 	private String mobileNo;
 
-	@Length(min = 10, message = "Profile Picture URL should be minimum 10 characters ")
+	@Length(min = 10, message = "\nProfile Picture URL should be minimum 10 characters ")
 	private String profilePic;
 
 	@DateTimeFormat(pattern = "yyyy-MM-dd")
-    @NotNull(message="date of birth is required")
-	@Past(message ="Date should be past dates" )
+    @NotNull(message="\ndate of birth is required")
+	@Past(message ="\nDate should be past dates" )
 	private LocalDate dob;
 
 	@Length(min = 6, max = 15)
-	@NotNull(message="password is required")
+	@NotNull(message="\npassword is required")
 	private String password;
 
 	@Min(1)
-	@NotNull(message= "Role Type is required")
+	@NotNull(message= "\nRole Type is required")
 	private long roleType;
 	
 	

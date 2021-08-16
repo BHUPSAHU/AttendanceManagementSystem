@@ -1026,3 +1026,508 @@ CONNECTED TO DB
 2021-08-16 10:06:01,119 DEBUG com.zaxxer.hikari.pool.PoolBase [AttendenceManagementHikariCP connection closer] AttendenceManagementHikariCP - Closing connection oracle.jdbc.driver.T4CConnection@f242d27: (connection evicted)
 2021-08-16 10:06:01,121 DEBUG com.zaxxer.hikari.pool.HikariPool [RMI TCP Connection(6)-127.0.0.1] AttendenceManagementHikariCP - After shutdown stats (total=0, active=0, idle=0, waiting=0)
 2021-08-16 10:06:01,121 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(6)-127.0.0.1] AttendenceManagementHikariCP - Shutdown completed.
+2021-08-16 10:25:51,710 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.0.Final
+2021-08-16 10:25:51,758 INFO com.ams.AttendanceManagementSystemApplication [main] Starting AttendanceManagementSystemApplication using Java 16.0.2 on DIN25000258 with PID 14056 (C:\Users\BHUPSAHU\WorkSpace\eclipse\Sprint1\AttendanceManagementSystem\bin\main started by bhupsahu in C:\Users\BHUPSAHU\WorkSpace\eclipse\Sprint1\AttendanceManagementSystem)
+2021-08-16 10:25:51,759 DEBUG com.ams.AttendanceManagementSystemApplication [main] Running with Spring Boot v2.5.3, Spring v5.3.9
+2021-08-16 10:25:51,759 INFO com.ams.AttendanceManagementSystemApplication [main] No active profile set, falling back to default profiles: default
+2021-08-16 10:25:52,876 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-08-16 10:25:52,958 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 73 ms. Found 6 JPA repository interfaces.
+2021-08-16 10:25:53,616 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 9090 (http)
+2021-08-16 10:25:53,625 INFO org.apache.coyote.http11.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-9090"]
+2021-08-16 10:25:53,626 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2021-08-16 10:25:53,626 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-08-16 10:25:53,764 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2021-08-16 10:25:53,764 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1960 ms
+2021-08-16 10:25:53,905 DEBUG com.zaxxer.hikari.HikariConfig [main] Driver class oracle.jdbc.OracleDriver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@2e5c649
+2021-08-16 10:25:54,042 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-08-16 10:25:54,102 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-08-16 10:25:54,266 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-08-16 10:25:54,456 DEBUG com.zaxxer.hikari.HikariConfig [main] AttendenceManagementHikariCP - configuration:
+2021-08-16 10:25:54,459 DEBUG com.zaxxer.hikari.HikariConfig [main] allowPoolSuspension................................false
+2021-08-16 10:25:54,459 DEBUG com.zaxxer.hikari.HikariConfig [main] autoCommit................................true
+2021-08-16 10:25:54,459 DEBUG com.zaxxer.hikari.HikariConfig [main] catalog................................none
+2021-08-16 10:25:54,459 DEBUG com.zaxxer.hikari.HikariConfig [main] connectionInitSql................................none
+2021-08-16 10:25:54,460 DEBUG com.zaxxer.hikari.HikariConfig [main] connectionTestQuery................................none
+2021-08-16 10:25:54,460 DEBUG com.zaxxer.hikari.HikariConfig [main] connectionTimeout................................30000
+2021-08-16 10:25:54,460 DEBUG com.zaxxer.hikari.HikariConfig [main] dataSource................................none
+2021-08-16 10:25:54,460 DEBUG com.zaxxer.hikari.HikariConfig [main] dataSourceClassName................................none
+2021-08-16 10:25:54,461 DEBUG com.zaxxer.hikari.HikariConfig [main] dataSourceJNDI................................none
+2021-08-16 10:25:54,461 DEBUG com.zaxxer.hikari.HikariConfig [main] dataSourceProperties................................{password=<masked>}
+2021-08-16 10:25:54,462 DEBUG com.zaxxer.hikari.HikariConfig [main] driverClassName................................"oracle.jdbc.OracleDriver"
+2021-08-16 10:25:54,462 DEBUG com.zaxxer.hikari.HikariConfig [main] exceptionOverrideClassName................................none
+2021-08-16 10:25:54,463 DEBUG com.zaxxer.hikari.HikariConfig [main] healthCheckProperties................................{}
+2021-08-16 10:25:54,463 DEBUG com.zaxxer.hikari.HikariConfig [main] healthCheckRegistry................................none
+2021-08-16 10:25:54,463 DEBUG com.zaxxer.hikari.HikariConfig [main] idleTimeout................................30000
+2021-08-16 10:25:54,464 DEBUG com.zaxxer.hikari.HikariConfig [main] initializationFailTimeout................................1
+2021-08-16 10:25:54,464 DEBUG com.zaxxer.hikari.HikariConfig [main] isolateInternalQueries................................false
+2021-08-16 10:25:54,465 DEBUG com.zaxxer.hikari.HikariConfig [main] jdbcUrl................................jdbc:oracle:thin:@localhost:1521:XE
+2021-08-16 10:25:54,465 DEBUG com.zaxxer.hikari.HikariConfig [main] keepaliveTime................................0
+2021-08-16 10:25:54,465 DEBUG com.zaxxer.hikari.HikariConfig [main] leakDetectionThreshold................................0
+2021-08-16 10:25:54,465 DEBUG com.zaxxer.hikari.HikariConfig [main] maxLifetime................................20000000
+2021-08-16 10:25:54,465 DEBUG com.zaxxer.hikari.HikariConfig [main] maximumPoolSize................................20
+2021-08-16 10:25:54,466 DEBUG com.zaxxer.hikari.HikariConfig [main] metricRegistry................................none
+2021-08-16 10:25:54,466 DEBUG com.zaxxer.hikari.HikariConfig [main] metricsTrackerFactory................................none
+2021-08-16 10:25:54,466 DEBUG com.zaxxer.hikari.HikariConfig [main] minimumIdle................................5
+2021-08-16 10:25:54,466 DEBUG com.zaxxer.hikari.HikariConfig [main] password................................<masked>
+2021-08-16 10:25:54,466 DEBUG com.zaxxer.hikari.HikariConfig [main] poolName................................"AttendenceManagementHikariCP"
+2021-08-16 10:25:54,466 DEBUG com.zaxxer.hikari.HikariConfig [main] readOnly................................false
+2021-08-16 10:25:54,467 DEBUG com.zaxxer.hikari.HikariConfig [main] registerMbeans................................false
+2021-08-16 10:25:54,467 DEBUG com.zaxxer.hikari.HikariConfig [main] scheduledExecutor................................none
+2021-08-16 10:25:54,467 DEBUG com.zaxxer.hikari.HikariConfig [main] schema................................none
+2021-08-16 10:25:54,468 DEBUG com.zaxxer.hikari.HikariConfig [main] threadFactory................................internal
+2021-08-16 10:25:54,468 DEBUG com.zaxxer.hikari.HikariConfig [main] transactionIsolation................................default
+2021-08-16 10:25:54,468 DEBUG com.zaxxer.hikari.HikariConfig [main] username................................"SYSTEM"
+2021-08-16 10:25:54,469 DEBUG com.zaxxer.hikari.HikariConfig [main] validationTimeout................................5000
+2021-08-16 10:25:54,469 INFO com.zaxxer.hikari.HikariDataSource [main] AttendenceManagementHikariCP - Starting...
+2021-08-16 10:25:54,828 DEBUG com.zaxxer.hikari.pool.HikariPool [main] AttendenceManagementHikariCP - Added connection oracle.jdbc.driver.T4CConnection@25df2014
+2021-08-16 10:25:54,829 INFO com.zaxxer.hikari.HikariDataSource [main] AttendenceManagementHikariCP - Start completed.
+2021-08-16 10:25:54,855 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2021-08-16 10:25:54,942 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP housekeeper] AttendenceManagementHikariCP - Before cleanup stats (total=1, active=1, idle=0, waiting=0)
+2021-08-16 10:25:54,944 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP housekeeper] AttendenceManagementHikariCP - After cleanup  stats (total=1, active=1, idle=0, waiting=0)
+2021-08-16 10:25:54,966 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP connection adder] AttendenceManagementHikariCP - Added connection oracle.jdbc.driver.T4CConnection@cc9f7fb
+2021-08-16 10:25:54,985 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP connection adder] AttendenceManagementHikariCP - Added connection oracle.jdbc.driver.T4CConnection@3fc67dfd
+2021-08-16 10:25:55,004 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP connection adder] AttendenceManagementHikariCP - Added connection oracle.jdbc.driver.T4CConnection@472bed57
+2021-08-16 10:25:55,029 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP connection adder] AttendenceManagementHikariCP - Added connection oracle.jdbc.driver.T4CConnection@217eab5c
+2021-08-16 10:25:55,049 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP connection adder] AttendenceManagementHikariCP - Added connection oracle.jdbc.driver.T4CConnection@5c2f6595
+2021-08-16 10:25:55,050 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP connection adder] AttendenceManagementHikariCP - After adding stats (total=6, active=1, idle=5, waiting=0)
+2021-08-16 10:25:56,206 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-08-16 10:25:56,217 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-08-16 10:25:57,019 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-16 10:25:57,977 INFO org.apache.coyote.http11.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-9090"]
+2021-08-16 10:25:58,008 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 9090 (http) with context path ''
+2021-08-16 10:25:58,686 INFO com.ams.AttendanceManagementSystemApplication [main] Started AttendanceManagementSystemApplication in 7.276 seconds (JVM running for 8.313)
+2021-08-16 10:25:58,690 INFO com.ams.AttendanceManagementSystemApplication [main] 
+~~~~~~~~~~~~~~~~~~~~~
+CONNECTED TO DB
+~~~~~~~~~~~~~~~~~~~~~
+2021-08-16 10:26:23,478 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-9090-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-16 10:26:23,478 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-9090-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-08-16 10:26:23,479 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-9090-exec-1] Completed initialization in 1 ms
+2021-08-16 10:26:24,950 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP housekeeper] AttendenceManagementHikariCP - Before cleanup stats (total=6, active=0, idle=6, waiting=0)
+2021-08-16 10:26:24,951 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP housekeeper] AttendenceManagementHikariCP - After cleanup  stats (total=6, active=0, idle=6, waiting=0)
+2021-08-16 10:26:24,952 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP housekeeper] AttendenceManagementHikariCP - Fill pool skipped, pool is at sufficient level.
+2021-08-16 10:26:54,954 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP housekeeper] AttendenceManagementHikariCP - Before cleanup stats (total=6, active=0, idle=6, waiting=0)
+2021-08-16 10:26:54,956 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP housekeeper] AttendenceManagementHikariCP - After cleanup  stats (total=5, active=0, idle=5, waiting=0)
+2021-08-16 10:26:54,957 DEBUG com.zaxxer.hikari.pool.PoolBase [AttendenceManagementHikariCP connection closer] AttendenceManagementHikariCP - Closing connection oracle.jdbc.driver.T4CConnection@5c2f6595: (connection has passed idleTimeout)
+2021-08-16 10:26:54,957 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP housekeeper] AttendenceManagementHikariCP - Fill pool skipped, pool is at sufficient level.
+2021-08-16 10:26:54,959 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP connection closer] AttendenceManagementHikariCP - Fill pool skipped, pool is at sufficient level.
+2021-08-16 10:27:24,958 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP housekeeper] AttendenceManagementHikariCP - Before cleanup stats (total=5, active=0, idle=5, waiting=0)
+2021-08-16 10:27:24,959 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP housekeeper] AttendenceManagementHikariCP - After cleanup  stats (total=5, active=0, idle=5, waiting=0)
+2021-08-16 10:27:24,960 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP housekeeper] AttendenceManagementHikariCP - Fill pool skipped, pool is at sufficient level.
+2021-08-16 10:27:54,963 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP housekeeper] AttendenceManagementHikariCP - Before cleanup stats (total=5, active=0, idle=5, waiting=0)
+2021-08-16 10:27:54,963 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP housekeeper] AttendenceManagementHikariCP - After cleanup  stats (total=5, active=0, idle=5, waiting=0)
+2021-08-16 10:27:54,963 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP housekeeper] AttendenceManagementHikariCP - Fill pool skipped, pool is at sufficient level.
+2021-08-16 10:28:24,966 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP housekeeper] AttendenceManagementHikariCP - Before cleanup stats (total=5, active=0, idle=5, waiting=0)
+2021-08-16 10:28:24,967 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP housekeeper] AttendenceManagementHikariCP - After cleanup  stats (total=5, active=0, idle=5, waiting=0)
+2021-08-16 10:28:24,967 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP housekeeper] AttendenceManagementHikariCP - Fill pool skipped, pool is at sufficient level.
+2021-08-16 10:28:46,316 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(7)-127.0.0.1] Application shutdown requested.
+2021-08-16 10:28:46,354 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [RMI TCP Connection(7)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-08-16 10:28:46,355 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(7)-127.0.0.1] AttendenceManagementHikariCP - Shutdown initiated...
+2021-08-16 10:28:46,356 DEBUG com.zaxxer.hikari.pool.HikariPool [RMI TCP Connection(7)-127.0.0.1] AttendenceManagementHikariCP - Before shutdown stats (total=5, active=0, idle=5, waiting=0)
+2021-08-16 10:28:46,357 DEBUG com.zaxxer.hikari.pool.PoolBase [AttendenceManagementHikariCP connection closer] AttendenceManagementHikariCP - Closing connection oracle.jdbc.driver.T4CConnection@25df2014: (connection evicted)
+2021-08-16 10:28:46,359 DEBUG com.zaxxer.hikari.pool.PoolBase [AttendenceManagementHikariCP connection closer] AttendenceManagementHikariCP - Closing connection oracle.jdbc.driver.T4CConnection@cc9f7fb: (connection evicted)
+2021-08-16 10:28:46,360 DEBUG com.zaxxer.hikari.pool.PoolBase [AttendenceManagementHikariCP connection closer] AttendenceManagementHikariCP - Closing connection oracle.jdbc.driver.T4CConnection@3fc67dfd: (connection evicted)
+2021-08-16 10:28:46,361 DEBUG com.zaxxer.hikari.pool.PoolBase [AttendenceManagementHikariCP connection closer] AttendenceManagementHikariCP - Closing connection oracle.jdbc.driver.T4CConnection@472bed57: (connection evicted)
+2021-08-16 10:28:46,361 DEBUG com.zaxxer.hikari.pool.PoolBase [AttendenceManagementHikariCP connection closer] AttendenceManagementHikariCP - Closing connection oracle.jdbc.driver.T4CConnection@217eab5c: (connection evicted)
+2021-08-16 10:28:46,363 DEBUG com.zaxxer.hikari.pool.HikariPool [RMI TCP Connection(7)-127.0.0.1] AttendenceManagementHikariCP - After shutdown stats (total=0, active=0, idle=0, waiting=0)
+2021-08-16 10:28:46,363 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(7)-127.0.0.1] AttendenceManagementHikariCP - Shutdown completed.
+2021-08-16 10:29:07,867 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.0.Final
+2021-08-16 10:29:07,917 INFO com.ams.AttendanceManagementSystemApplication [main] Starting AttendanceManagementSystemApplication using Java 16.0.2 on DIN25000258 with PID 14692 (C:\Users\BHUPSAHU\WorkSpace\eclipse\Sprint1\AttendanceManagementSystem\bin\main started by bhupsahu in C:\Users\BHUPSAHU\WorkSpace\eclipse\Sprint1\AttendanceManagementSystem)
+2021-08-16 10:29:07,918 DEBUG com.ams.AttendanceManagementSystemApplication [main] Running with Spring Boot v2.5.3, Spring v5.3.9
+2021-08-16 10:29:07,918 INFO com.ams.AttendanceManagementSystemApplication [main] No active profile set, falling back to default profiles: default
+2021-08-16 10:29:08,972 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-08-16 10:29:09,055 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 74 ms. Found 6 JPA repository interfaces.
+2021-08-16 10:29:09,717 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 9090 (http)
+2021-08-16 10:29:09,727 INFO org.apache.coyote.http11.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-9090"]
+2021-08-16 10:29:09,727 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2021-08-16 10:29:09,727 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-08-16 10:29:09,860 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2021-08-16 10:29:09,860 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1896 ms
+2021-08-16 10:29:09,998 DEBUG com.zaxxer.hikari.HikariConfig [main] Driver class oracle.jdbc.OracleDriver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@2e5c649
+2021-08-16 10:29:10,141 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-08-16 10:29:10,201 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-08-16 10:29:10,360 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-08-16 10:29:10,484 DEBUG com.zaxxer.hikari.HikariConfig [main] AttendenceManagementHikariCP - configuration:
+2021-08-16 10:29:10,486 DEBUG com.zaxxer.hikari.HikariConfig [main] allowPoolSuspension................................false
+2021-08-16 10:29:10,487 DEBUG com.zaxxer.hikari.HikariConfig [main] autoCommit................................true
+2021-08-16 10:29:10,487 DEBUG com.zaxxer.hikari.HikariConfig [main] catalog................................none
+2021-08-16 10:29:10,487 DEBUG com.zaxxer.hikari.HikariConfig [main] connectionInitSql................................none
+2021-08-16 10:29:10,487 DEBUG com.zaxxer.hikari.HikariConfig [main] connectionTestQuery................................none
+2021-08-16 10:29:10,487 DEBUG com.zaxxer.hikari.HikariConfig [main] connectionTimeout................................30000
+2021-08-16 10:29:10,488 DEBUG com.zaxxer.hikari.HikariConfig [main] dataSource................................none
+2021-08-16 10:29:10,488 DEBUG com.zaxxer.hikari.HikariConfig [main] dataSourceClassName................................none
+2021-08-16 10:29:10,488 DEBUG com.zaxxer.hikari.HikariConfig [main] dataSourceJNDI................................none
+2021-08-16 10:29:10,488 DEBUG com.zaxxer.hikari.HikariConfig [main] dataSourceProperties................................{password=<masked>}
+2021-08-16 10:29:10,489 DEBUG com.zaxxer.hikari.HikariConfig [main] driverClassName................................"oracle.jdbc.OracleDriver"
+2021-08-16 10:29:10,489 DEBUG com.zaxxer.hikari.HikariConfig [main] exceptionOverrideClassName................................none
+2021-08-16 10:29:10,489 DEBUG com.zaxxer.hikari.HikariConfig [main] healthCheckProperties................................{}
+2021-08-16 10:29:10,489 DEBUG com.zaxxer.hikari.HikariConfig [main] healthCheckRegistry................................none
+2021-08-16 10:29:10,489 DEBUG com.zaxxer.hikari.HikariConfig [main] idleTimeout................................30000
+2021-08-16 10:29:10,490 DEBUG com.zaxxer.hikari.HikariConfig [main] initializationFailTimeout................................1
+2021-08-16 10:29:10,490 DEBUG com.zaxxer.hikari.HikariConfig [main] isolateInternalQueries................................false
+2021-08-16 10:29:10,490 DEBUG com.zaxxer.hikari.HikariConfig [main] jdbcUrl................................jdbc:oracle:thin:@localhost:1521:XE
+2021-08-16 10:29:10,490 DEBUG com.zaxxer.hikari.HikariConfig [main] keepaliveTime................................0
+2021-08-16 10:29:10,490 DEBUG com.zaxxer.hikari.HikariConfig [main] leakDetectionThreshold................................0
+2021-08-16 10:29:10,490 DEBUG com.zaxxer.hikari.HikariConfig [main] maxLifetime................................20000000
+2021-08-16 10:29:10,490 DEBUG com.zaxxer.hikari.HikariConfig [main] maximumPoolSize................................20
+2021-08-16 10:29:10,491 DEBUG com.zaxxer.hikari.HikariConfig [main] metricRegistry................................none
+2021-08-16 10:29:10,491 DEBUG com.zaxxer.hikari.HikariConfig [main] metricsTrackerFactory................................none
+2021-08-16 10:29:10,491 DEBUG com.zaxxer.hikari.HikariConfig [main] minimumIdle................................5
+2021-08-16 10:29:10,491 DEBUG com.zaxxer.hikari.HikariConfig [main] password................................<masked>
+2021-08-16 10:29:10,491 DEBUG com.zaxxer.hikari.HikariConfig [main] poolName................................"AttendenceManagementHikariCP"
+2021-08-16 10:29:10,491 DEBUG com.zaxxer.hikari.HikariConfig [main] readOnly................................false
+2021-08-16 10:29:10,491 DEBUG com.zaxxer.hikari.HikariConfig [main] registerMbeans................................false
+2021-08-16 10:29:10,491 DEBUG com.zaxxer.hikari.HikariConfig [main] scheduledExecutor................................none
+2021-08-16 10:29:10,491 DEBUG com.zaxxer.hikari.HikariConfig [main] schema................................none
+2021-08-16 10:29:10,492 DEBUG com.zaxxer.hikari.HikariConfig [main] threadFactory................................internal
+2021-08-16 10:29:10,492 DEBUG com.zaxxer.hikari.HikariConfig [main] transactionIsolation................................default
+2021-08-16 10:29:10,492 DEBUG com.zaxxer.hikari.HikariConfig [main] username................................"SYSTEM"
+2021-08-16 10:29:10,492 DEBUG com.zaxxer.hikari.HikariConfig [main] validationTimeout................................5000
+2021-08-16 10:29:10,492 INFO com.zaxxer.hikari.HikariDataSource [main] AttendenceManagementHikariCP - Starting...
+2021-08-16 10:29:10,755 DEBUG com.zaxxer.hikari.pool.HikariPool [main] AttendenceManagementHikariCP - Added connection oracle.jdbc.driver.T4CConnection@270b8c2a
+2021-08-16 10:29:10,756 INFO com.zaxxer.hikari.HikariDataSource [main] AttendenceManagementHikariCP - Start completed.
+2021-08-16 10:29:10,775 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2021-08-16 10:29:10,870 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP housekeeper] AttendenceManagementHikariCP - Before cleanup stats (total=1, active=1, idle=0, waiting=0)
+2021-08-16 10:29:10,871 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP housekeeper] AttendenceManagementHikariCP - After cleanup  stats (total=1, active=1, idle=0, waiting=0)
+2021-08-16 10:29:10,893 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP connection adder] AttendenceManagementHikariCP - Added connection oracle.jdbc.driver.T4CConnection@3189805e
+2021-08-16 10:29:10,913 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP connection adder] AttendenceManagementHikariCP - Added connection oracle.jdbc.driver.T4CConnection@3c7855f5
+2021-08-16 10:29:10,934 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP connection adder] AttendenceManagementHikariCP - Added connection oracle.jdbc.driver.T4CConnection@44283868
+2021-08-16 10:29:10,954 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP connection adder] AttendenceManagementHikariCP - Added connection oracle.jdbc.driver.T4CConnection@6e325d31
+2021-08-16 10:29:10,974 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP connection adder] AttendenceManagementHikariCP - Added connection oracle.jdbc.driver.T4CConnection@5f2c15f2
+2021-08-16 10:29:10,974 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP connection adder] AttendenceManagementHikariCP - After adding stats (total=6, active=1, idle=5, waiting=0)
+2021-08-16 10:29:12,030 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-08-16 10:29:12,040 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-08-16 10:29:12,834 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-16 10:29:13,785 INFO org.apache.coyote.http11.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-9090"]
+2021-08-16 10:29:13,810 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 9090 (http) with context path ''
+2021-08-16 10:29:14,479 INFO com.ams.AttendanceManagementSystemApplication [main] Started AttendanceManagementSystemApplication in 6.914 seconds (JVM running for 8.025)
+2021-08-16 10:29:14,483 INFO com.ams.AttendanceManagementSystemApplication [main] 
+~~~~~~~~~~~~~~~~~~~~~
+CONNECTED TO DB
+~~~~~~~~~~~~~~~~~~~~~
+2021-08-16 10:29:22,391 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-9090-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-16 10:29:22,391 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-9090-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-08-16 10:29:22,392 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-9090-exec-1] Completed initialization in 1 ms
+2021-08-16 10:29:40,873 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP housekeeper] AttendenceManagementHikariCP - Before cleanup stats (total=6, active=0, idle=6, waiting=0)
+2021-08-16 10:29:40,874 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP housekeeper] AttendenceManagementHikariCP - After cleanup  stats (total=6, active=0, idle=6, waiting=0)
+2021-08-16 10:29:40,875 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP housekeeper] AttendenceManagementHikariCP - Fill pool skipped, pool is at sufficient level.
+2021-08-16 10:29:57,783 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(3)-127.0.0.1] Application shutdown requested.
+2021-08-16 10:29:57,816 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [RMI TCP Connection(3)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-08-16 10:29:57,817 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(3)-127.0.0.1] AttendenceManagementHikariCP - Shutdown initiated...
+2021-08-16 10:29:57,817 DEBUG com.zaxxer.hikari.pool.HikariPool [RMI TCP Connection(3)-127.0.0.1] AttendenceManagementHikariCP - Before shutdown stats (total=6, active=0, idle=6, waiting=0)
+2021-08-16 10:29:57,819 DEBUG com.zaxxer.hikari.pool.PoolBase [AttendenceManagementHikariCP connection closer] AttendenceManagementHikariCP - Closing connection oracle.jdbc.driver.T4CConnection@270b8c2a: (connection evicted)
+2021-08-16 10:29:57,820 DEBUG com.zaxxer.hikari.pool.PoolBase [AttendenceManagementHikariCP connection closer] AttendenceManagementHikariCP - Closing connection oracle.jdbc.driver.T4CConnection@3189805e: (connection evicted)
+2021-08-16 10:29:57,821 DEBUG com.zaxxer.hikari.pool.PoolBase [AttendenceManagementHikariCP connection closer] AttendenceManagementHikariCP - Closing connection oracle.jdbc.driver.T4CConnection@3c7855f5: (connection evicted)
+2021-08-16 10:29:57,822 DEBUG com.zaxxer.hikari.pool.PoolBase [AttendenceManagementHikariCP connection closer] AttendenceManagementHikariCP - Closing connection oracle.jdbc.driver.T4CConnection@44283868: (connection evicted)
+2021-08-16 10:29:57,822 DEBUG com.zaxxer.hikari.pool.PoolBase [AttendenceManagementHikariCP connection closer] AttendenceManagementHikariCP - Closing connection oracle.jdbc.driver.T4CConnection@6e325d31: (connection evicted)
+2021-08-16 10:29:57,824 DEBUG com.zaxxer.hikari.pool.PoolBase [AttendenceManagementHikariCP connection closer] AttendenceManagementHikariCP - Closing connection oracle.jdbc.driver.T4CConnection@5f2c15f2: (connection evicted)
+2021-08-16 10:29:57,825 DEBUG com.zaxxer.hikari.pool.HikariPool [RMI TCP Connection(3)-127.0.0.1] AttendenceManagementHikariCP - After shutdown stats (total=0, active=0, idle=0, waiting=0)
+2021-08-16 10:29:57,825 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(3)-127.0.0.1] AttendenceManagementHikariCP - Shutdown completed.
+2021-08-16 10:30:01,266 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.0.Final
+2021-08-16 10:30:01,316 INFO com.ams.AttendanceManagementSystemApplication [main] Starting AttendanceManagementSystemApplication using Java 16.0.2 on DIN25000258 with PID 14116 (C:\Users\BHUPSAHU\WorkSpace\eclipse\Sprint1\AttendanceManagementSystem\bin\main started by bhupsahu in C:\Users\BHUPSAHU\WorkSpace\eclipse\Sprint1\AttendanceManagementSystem)
+2021-08-16 10:30:01,316 DEBUG com.ams.AttendanceManagementSystemApplication [main] Running with Spring Boot v2.5.3, Spring v5.3.9
+2021-08-16 10:30:01,316 INFO com.ams.AttendanceManagementSystemApplication [main] No active profile set, falling back to default profiles: default
+2021-08-16 10:30:02,409 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-08-16 10:30:02,493 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 75 ms. Found 6 JPA repository interfaces.
+2021-08-16 10:30:03,160 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 9090 (http)
+2021-08-16 10:30:03,169 INFO org.apache.coyote.http11.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-9090"]
+2021-08-16 10:30:03,170 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2021-08-16 10:30:03,170 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-08-16 10:30:03,302 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2021-08-16 10:30:03,302 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1926 ms
+2021-08-16 10:30:03,439 DEBUG com.zaxxer.hikari.HikariConfig [main] Driver class oracle.jdbc.OracleDriver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@2e5c649
+2021-08-16 10:30:03,581 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-08-16 10:30:03,645 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-08-16 10:30:03,806 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-08-16 10:30:03,930 DEBUG com.zaxxer.hikari.HikariConfig [main] AttendenceManagementHikariCP - configuration:
+2021-08-16 10:30:03,932 DEBUG com.zaxxer.hikari.HikariConfig [main] allowPoolSuspension................................false
+2021-08-16 10:30:03,932 DEBUG com.zaxxer.hikari.HikariConfig [main] autoCommit................................true
+2021-08-16 10:30:03,933 DEBUG com.zaxxer.hikari.HikariConfig [main] catalog................................none
+2021-08-16 10:30:03,933 DEBUG com.zaxxer.hikari.HikariConfig [main] connectionInitSql................................none
+2021-08-16 10:30:03,933 DEBUG com.zaxxer.hikari.HikariConfig [main] connectionTestQuery................................none
+2021-08-16 10:30:03,933 DEBUG com.zaxxer.hikari.HikariConfig [main] connectionTimeout................................30000
+2021-08-16 10:30:03,934 DEBUG com.zaxxer.hikari.HikariConfig [main] dataSource................................none
+2021-08-16 10:30:03,934 DEBUG com.zaxxer.hikari.HikariConfig [main] dataSourceClassName................................none
+2021-08-16 10:30:03,934 DEBUG com.zaxxer.hikari.HikariConfig [main] dataSourceJNDI................................none
+2021-08-16 10:30:03,934 DEBUG com.zaxxer.hikari.HikariConfig [main] dataSourceProperties................................{password=<masked>}
+2021-08-16 10:30:03,935 DEBUG com.zaxxer.hikari.HikariConfig [main] driverClassName................................"oracle.jdbc.OracleDriver"
+2021-08-16 10:30:03,935 DEBUG com.zaxxer.hikari.HikariConfig [main] exceptionOverrideClassName................................none
+2021-08-16 10:30:03,935 DEBUG com.zaxxer.hikari.HikariConfig [main] healthCheckProperties................................{}
+2021-08-16 10:30:03,935 DEBUG com.zaxxer.hikari.HikariConfig [main] healthCheckRegistry................................none
+2021-08-16 10:30:03,935 DEBUG com.zaxxer.hikari.HikariConfig [main] idleTimeout................................30000
+2021-08-16 10:30:03,936 DEBUG com.zaxxer.hikari.HikariConfig [main] initializationFailTimeout................................1
+2021-08-16 10:30:03,936 DEBUG com.zaxxer.hikari.HikariConfig [main] isolateInternalQueries................................false
+2021-08-16 10:30:03,936 DEBUG com.zaxxer.hikari.HikariConfig [main] jdbcUrl................................jdbc:oracle:thin:@localhost:1521:XE
+2021-08-16 10:30:03,936 DEBUG com.zaxxer.hikari.HikariConfig [main] keepaliveTime................................0
+2021-08-16 10:30:03,936 DEBUG com.zaxxer.hikari.HikariConfig [main] leakDetectionThreshold................................0
+2021-08-16 10:30:03,937 DEBUG com.zaxxer.hikari.HikariConfig [main] maxLifetime................................20000000
+2021-08-16 10:30:03,937 DEBUG com.zaxxer.hikari.HikariConfig [main] maximumPoolSize................................20
+2021-08-16 10:30:03,937 DEBUG com.zaxxer.hikari.HikariConfig [main] metricRegistry................................none
+2021-08-16 10:30:03,937 DEBUG com.zaxxer.hikari.HikariConfig [main] metricsTrackerFactory................................none
+2021-08-16 10:30:03,937 DEBUG com.zaxxer.hikari.HikariConfig [main] minimumIdle................................5
+2021-08-16 10:30:03,937 DEBUG com.zaxxer.hikari.HikariConfig [main] password................................<masked>
+2021-08-16 10:30:03,937 DEBUG com.zaxxer.hikari.HikariConfig [main] poolName................................"AttendenceManagementHikariCP"
+2021-08-16 10:30:03,937 DEBUG com.zaxxer.hikari.HikariConfig [main] readOnly................................false
+2021-08-16 10:30:03,937 DEBUG com.zaxxer.hikari.HikariConfig [main] registerMbeans................................false
+2021-08-16 10:30:03,938 DEBUG com.zaxxer.hikari.HikariConfig [main] scheduledExecutor................................none
+2021-08-16 10:30:03,938 DEBUG com.zaxxer.hikari.HikariConfig [main] schema................................none
+2021-08-16 10:30:03,938 DEBUG com.zaxxer.hikari.HikariConfig [main] threadFactory................................internal
+2021-08-16 10:30:03,938 DEBUG com.zaxxer.hikari.HikariConfig [main] transactionIsolation................................default
+2021-08-16 10:30:03,938 DEBUG com.zaxxer.hikari.HikariConfig [main] username................................"SYSTEM"
+2021-08-16 10:30:03,938 DEBUG com.zaxxer.hikari.HikariConfig [main] validationTimeout................................5000
+2021-08-16 10:30:03,938 INFO com.zaxxer.hikari.HikariDataSource [main] AttendenceManagementHikariCP - Starting...
+2021-08-16 10:30:04,199 DEBUG com.zaxxer.hikari.pool.HikariPool [main] AttendenceManagementHikariCP - Added connection oracle.jdbc.driver.T4CConnection@270b8c2a
+2021-08-16 10:30:04,201 INFO com.zaxxer.hikari.HikariDataSource [main] AttendenceManagementHikariCP - Start completed.
+2021-08-16 10:30:04,219 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2021-08-16 10:30:04,306 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP housekeeper] AttendenceManagementHikariCP - Before cleanup stats (total=1, active=1, idle=0, waiting=0)
+2021-08-16 10:30:04,307 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP housekeeper] AttendenceManagementHikariCP - After cleanup  stats (total=1, active=1, idle=0, waiting=0)
+2021-08-16 10:30:04,329 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP connection adder] AttendenceManagementHikariCP - Added connection oracle.jdbc.driver.T4CConnection@215677c8
+2021-08-16 10:30:04,349 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP connection adder] AttendenceManagementHikariCP - Added connection oracle.jdbc.driver.T4CConnection@433bce78
+2021-08-16 10:30:04,368 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP connection adder] AttendenceManagementHikariCP - Added connection oracle.jdbc.driver.T4CConnection@3bfbf4d5
+2021-08-16 10:30:04,387 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP connection adder] AttendenceManagementHikariCP - Added connection oracle.jdbc.driver.T4CConnection@1d91d4c2
+2021-08-16 10:30:04,407 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP connection adder] AttendenceManagementHikariCP - Added connection oracle.jdbc.driver.T4CConnection@20ff5998
+2021-08-16 10:30:04,408 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP connection adder] AttendenceManagementHikariCP - After adding stats (total=6, active=1, idle=5, waiting=0)
+2021-08-16 10:30:05,408 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-08-16 10:30:05,419 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-08-16 10:30:06,220 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-16 10:30:07,160 INFO org.apache.coyote.http11.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-9090"]
+2021-08-16 10:30:07,187 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 9090 (http) with context path ''
+2021-08-16 10:30:07,869 INFO com.ams.AttendanceManagementSystemApplication [main] Started AttendanceManagementSystemApplication in 6.914 seconds (JVM running for 7.982)
+2021-08-16 10:30:07,872 INFO com.ams.AttendanceManagementSystemApplication [main] 
+~~~~~~~~~~~~~~~~~~~~~
+CONNECTED TO DB
+~~~~~~~~~~~~~~~~~~~~~
+2021-08-16 10:30:11,660 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-9090-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-16 10:30:11,660 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-9090-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-08-16 10:30:11,661 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-9090-exec-1] Completed initialization in 1 ms
+2021-08-16 10:30:11,887 ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] [http-nio-9090-exec-1] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.transaction.TransactionSystemException: Could not commit JPA transaction; nested exception is javax.persistence.RollbackException: Error while committing the transaction] with root cause
+javax.validation.ConstraintViolationException: Validation failed for classes [com.ams.entity.StudentEntity] during persist time for groups [javax.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='must be greater than or equal to 3', propertyPath=courseId, rootBeanClass=class com.ams.entity.StudentEntity, messageTemplate='{javax.validation.constraints.Min.message}'}
+	ConstraintViolationImpl{interpolatedMessage='Mobile number should be only 10 digits', propertyPath=fatherMobileNo, rootBeanClass=class com.ams.entity.StudentEntity, messageTemplate='Mobile number should be only 10 digits'}
+	ConstraintViolationImpl{interpolatedMessage='Mobile number should be only 10 digits', propertyPath=mobileNo, rootBeanClass=class com.ams.entity.StudentEntity, messageTemplate='Mobile number should be only 10 digits'}
+	ConstraintViolationImpl{interpolatedMessage='must be greater than or equal to 3', propertyPath=rollNo, rootBeanClass=class com.ams.entity.StudentEntity, messageTemplate='{javax.validation.constraints.Min.message}'}
+	ConstraintViolationImpl{interpolatedMessage='Email should be valid', propertyPath=emailId, rootBeanClass=class com.ams.entity.StudentEntity, messageTemplate='Email should be valid'}
+	ConstraintViolationImpl{interpolatedMessage='Mobile number should be only Numbers', propertyPath=mobileNo, rootBeanClass=class com.ams.entity.StudentEntity, messageTemplate='Mobile number should be only Numbers'}
+	ConstraintViolationImpl{interpolatedMessage='Mobile number should be only Numbers', propertyPath=fatherMobileNo, rootBeanClass=class com.ams.entity.StudentEntity, messageTemplate='Mobile number should be only Numbers'}
+	ConstraintViolationImpl{interpolatedMessage='Email should be valid', propertyPath=fatherEmailId, rootBeanClass=class com.ams.entity.StudentEntity, messageTemplate='Email should be valid'}
+	ConstraintViolationImpl{interpolatedMessage='Date should be past dates', propertyPath=dob, rootBeanClass=class com.ams.entity.StudentEntity, messageTemplate='Date should be past dates'}
+	ConstraintViolationImpl{interpolatedMessage='Profile Picture URL should be minimum 10 characters ', propertyPath=profilePic, rootBeanClass=class com.ams.entity.StudentEntity, messageTemplate='Profile Picture URL should be minimum 10 characters '}
+]
+	at org.hibernate.cfg.beanvalidation.BeanValidationEventListener.validate(BeanValidationEventListener.java:140)
+	at org.hibernate.cfg.beanvalidation.BeanValidationEventListener.onPreInsert(BeanValidationEventListener.java:80)
+	at org.hibernate.action.internal.EntityInsertAction.preInsert(EntityInsertAction.java:214)
+	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:100)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:604)
+	at org.hibernate.engine.spi.ActionQueue.lambda$executeActions$1(ActionQueue.java:478)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:723)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:475)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:344)
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:40)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:99)
+	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1362)
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:453)
+	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:3212)
+	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:2380)
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:448)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:183)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.access$300(JdbcResourceLocalTransactionCoordinatorImpl.java:40)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:281)
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:101)
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:562)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:743)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:711)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:654)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:407)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at jdk.proxy2/jdk.proxy2.$Proxy111.save(Unknown Source)
+	at com.ams.service.StudentServiceImpl.add(StudentServiceImpl.java:24)
+	at com.ams.controller.StudentController.addStudent(StudentController.java:38)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1064)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:228)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1723)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+2021-08-16 10:30:34,313 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP housekeeper] AttendenceManagementHikariCP - Before cleanup stats (total=6, active=0, idle=6, waiting=0)
+2021-08-16 10:30:34,314 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP housekeeper] AttendenceManagementHikariCP - After cleanup  stats (total=6, active=0, idle=6, waiting=0)
+2021-08-16 10:30:34,315 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP housekeeper] AttendenceManagementHikariCP - Fill pool skipped, pool is at sufficient level.
+2021-08-16 10:31:04,324 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP housekeeper] AttendenceManagementHikariCP - Before cleanup stats (total=6, active=0, idle=6, waiting=0)
+2021-08-16 10:31:04,326 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP housekeeper] AttendenceManagementHikariCP - After cleanup  stats (total=5, active=0, idle=5, waiting=0)
+2021-08-16 10:31:04,327 DEBUG com.zaxxer.hikari.pool.PoolBase [AttendenceManagementHikariCP connection closer] AttendenceManagementHikariCP - Closing connection oracle.jdbc.driver.T4CConnection@20ff5998: (connection has passed idleTimeout)
+2021-08-16 10:31:04,327 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP housekeeper] AttendenceManagementHikariCP - Fill pool skipped, pool is at sufficient level.
+2021-08-16 10:31:04,329 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP connection closer] AttendenceManagementHikariCP - Fill pool skipped, pool is at sufficient level.
+2021-08-16 10:31:34,332 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP housekeeper] AttendenceManagementHikariCP - Before cleanup stats (total=5, active=0, idle=5, waiting=0)
+2021-08-16 10:31:34,333 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP housekeeper] AttendenceManagementHikariCP - After cleanup  stats (total=5, active=0, idle=5, waiting=0)
+2021-08-16 10:31:34,333 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP housekeeper] AttendenceManagementHikariCP - Fill pool skipped, pool is at sufficient level.
+2021-08-16 10:31:48,515 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(5)-127.0.0.1] Application shutdown requested.
+2021-08-16 10:31:48,543 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [RMI TCP Connection(5)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-08-16 10:31:48,544 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(5)-127.0.0.1] AttendenceManagementHikariCP - Shutdown initiated...
+2021-08-16 10:31:48,544 DEBUG com.zaxxer.hikari.pool.HikariPool [RMI TCP Connection(5)-127.0.0.1] AttendenceManagementHikariCP - Before shutdown stats (total=5, active=0, idle=5, waiting=0)
+2021-08-16 10:31:48,546 DEBUG com.zaxxer.hikari.pool.PoolBase [AttendenceManagementHikariCP connection closer] AttendenceManagementHikariCP - Closing connection oracle.jdbc.driver.T4CConnection@270b8c2a: (connection evicted)
+2021-08-16 10:31:48,547 DEBUG com.zaxxer.hikari.pool.PoolBase [AttendenceManagementHikariCP connection closer] AttendenceManagementHikariCP - Closing connection oracle.jdbc.driver.T4CConnection@215677c8: (connection evicted)
+2021-08-16 10:31:48,548 DEBUG com.zaxxer.hikari.pool.PoolBase [AttendenceManagementHikariCP connection closer] AttendenceManagementHikariCP - Closing connection oracle.jdbc.driver.T4CConnection@433bce78: (connection evicted)
+2021-08-16 10:31:48,548 DEBUG com.zaxxer.hikari.pool.PoolBase [AttendenceManagementHikariCP connection closer] AttendenceManagementHikariCP - Closing connection oracle.jdbc.driver.T4CConnection@3bfbf4d5: (connection evicted)
+2021-08-16 10:31:48,549 DEBUG com.zaxxer.hikari.pool.PoolBase [AttendenceManagementHikariCP connection closer] AttendenceManagementHikariCP - Closing connection oracle.jdbc.driver.T4CConnection@1d91d4c2: (connection evicted)
+2021-08-16 10:31:48,551 DEBUG com.zaxxer.hikari.pool.HikariPool [RMI TCP Connection(5)-127.0.0.1] AttendenceManagementHikariCP - After shutdown stats (total=0, active=0, idle=0, waiting=0)
+2021-08-16 10:31:48,551 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(5)-127.0.0.1] AttendenceManagementHikariCP - Shutdown completed.
+2021-08-16 10:31:52,042 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.0.Final
+2021-08-16 10:31:52,096 INFO com.ams.AttendanceManagementSystemApplication [main] Starting AttendanceManagementSystemApplication using Java 16.0.2 on DIN25000258 with PID 11812 (C:\Users\BHUPSAHU\WorkSpace\eclipse\Sprint1\AttendanceManagementSystem\bin\main started by bhupsahu in C:\Users\BHUPSAHU\WorkSpace\eclipse\Sprint1\AttendanceManagementSystem)
+2021-08-16 10:31:52,096 DEBUG com.ams.AttendanceManagementSystemApplication [main] Running with Spring Boot v2.5.3, Spring v5.3.9
+2021-08-16 10:31:52,097 INFO com.ams.AttendanceManagementSystemApplication [main] No active profile set, falling back to default profiles: default
+2021-08-16 10:31:53,181 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-08-16 10:31:53,265 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 75 ms. Found 6 JPA repository interfaces.
+2021-08-16 10:31:53,929 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 9090 (http)
+2021-08-16 10:31:53,938 INFO org.apache.coyote.http11.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-9090"]
+2021-08-16 10:31:53,939 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2021-08-16 10:31:53,939 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-08-16 10:31:54,070 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2021-08-16 10:31:54,070 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1920 ms
+2021-08-16 10:31:54,202 DEBUG com.zaxxer.hikari.HikariConfig [main] Driver class oracle.jdbc.OracleDriver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@2e5c649
+2021-08-16 10:31:54,346 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-08-16 10:31:54,410 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-08-16 10:31:54,570 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-08-16 10:31:54,698 DEBUG com.zaxxer.hikari.HikariConfig [main] AttendenceManagementHikariCP - configuration:
+2021-08-16 10:31:54,700 DEBUG com.zaxxer.hikari.HikariConfig [main] allowPoolSuspension................................false
+2021-08-16 10:31:54,700 DEBUG com.zaxxer.hikari.HikariConfig [main] autoCommit................................true
+2021-08-16 10:31:54,700 DEBUG com.zaxxer.hikari.HikariConfig [main] catalog................................none
+2021-08-16 10:31:54,701 DEBUG com.zaxxer.hikari.HikariConfig [main] connectionInitSql................................none
+2021-08-16 10:31:54,701 DEBUG com.zaxxer.hikari.HikariConfig [main] connectionTestQuery................................none
+2021-08-16 10:31:54,701 DEBUG com.zaxxer.hikari.HikariConfig [main] connectionTimeout................................30000
+2021-08-16 10:31:54,701 DEBUG com.zaxxer.hikari.HikariConfig [main] dataSource................................none
+2021-08-16 10:31:54,701 DEBUG com.zaxxer.hikari.HikariConfig [main] dataSourceClassName................................none
+2021-08-16 10:31:54,701 DEBUG com.zaxxer.hikari.HikariConfig [main] dataSourceJNDI................................none
+2021-08-16 10:31:54,702 DEBUG com.zaxxer.hikari.HikariConfig [main] dataSourceProperties................................{password=<masked>}
+2021-08-16 10:31:54,702 DEBUG com.zaxxer.hikari.HikariConfig [main] driverClassName................................"oracle.jdbc.OracleDriver"
+2021-08-16 10:31:54,702 DEBUG com.zaxxer.hikari.HikariConfig [main] exceptionOverrideClassName................................none
+2021-08-16 10:31:54,702 DEBUG com.zaxxer.hikari.HikariConfig [main] healthCheckProperties................................{}
+2021-08-16 10:31:54,702 DEBUG com.zaxxer.hikari.HikariConfig [main] healthCheckRegistry................................none
+2021-08-16 10:31:54,702 DEBUG com.zaxxer.hikari.HikariConfig [main] idleTimeout................................30000
+2021-08-16 10:31:54,703 DEBUG com.zaxxer.hikari.HikariConfig [main] initializationFailTimeout................................1
+2021-08-16 10:31:54,704 DEBUG com.zaxxer.hikari.HikariConfig [main] isolateInternalQueries................................false
+2021-08-16 10:31:54,704 DEBUG com.zaxxer.hikari.HikariConfig [main] jdbcUrl................................jdbc:oracle:thin:@localhost:1521:XE
+2021-08-16 10:31:54,704 DEBUG com.zaxxer.hikari.HikariConfig [main] keepaliveTime................................0
+2021-08-16 10:31:54,704 DEBUG com.zaxxer.hikari.HikariConfig [main] leakDetectionThreshold................................0
+2021-08-16 10:31:54,704 DEBUG com.zaxxer.hikari.HikariConfig [main] maxLifetime................................20000000
+2021-08-16 10:31:54,704 DEBUG com.zaxxer.hikari.HikariConfig [main] maximumPoolSize................................20
+2021-08-16 10:31:54,704 DEBUG com.zaxxer.hikari.HikariConfig [main] metricRegistry................................none
+2021-08-16 10:31:54,705 DEBUG com.zaxxer.hikari.HikariConfig [main] metricsTrackerFactory................................none
+2021-08-16 10:31:54,705 DEBUG com.zaxxer.hikari.HikariConfig [main] minimumIdle................................5
+2021-08-16 10:31:54,705 DEBUG com.zaxxer.hikari.HikariConfig [main] password................................<masked>
+2021-08-16 10:31:54,705 DEBUG com.zaxxer.hikari.HikariConfig [main] poolName................................"AttendenceManagementHikariCP"
+2021-08-16 10:31:54,705 DEBUG com.zaxxer.hikari.HikariConfig [main] readOnly................................false
+2021-08-16 10:31:54,705 DEBUG com.zaxxer.hikari.HikariConfig [main] registerMbeans................................false
+2021-08-16 10:31:54,705 DEBUG com.zaxxer.hikari.HikariConfig [main] scheduledExecutor................................none
+2021-08-16 10:31:54,705 DEBUG com.zaxxer.hikari.HikariConfig [main] schema................................none
+2021-08-16 10:31:54,706 DEBUG com.zaxxer.hikari.HikariConfig [main] threadFactory................................internal
+2021-08-16 10:31:54,706 DEBUG com.zaxxer.hikari.HikariConfig [main] transactionIsolation................................default
+2021-08-16 10:31:54,706 DEBUG com.zaxxer.hikari.HikariConfig [main] username................................"SYSTEM"
+2021-08-16 10:31:54,706 DEBUG com.zaxxer.hikari.HikariConfig [main] validationTimeout................................5000
+2021-08-16 10:31:54,706 INFO com.zaxxer.hikari.HikariDataSource [main] AttendenceManagementHikariCP - Starting...
+2021-08-16 10:31:54,966 DEBUG com.zaxxer.hikari.pool.HikariPool [main] AttendenceManagementHikariCP - Added connection oracle.jdbc.driver.T4CConnection@3dd750ba
+2021-08-16 10:31:54,967 INFO com.zaxxer.hikari.HikariDataSource [main] AttendenceManagementHikariCP - Start completed.
+2021-08-16 10:31:54,985 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2021-08-16 10:31:55,070 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP housekeeper] AttendenceManagementHikariCP - Before cleanup stats (total=1, active=1, idle=0, waiting=0)
+2021-08-16 10:31:55,071 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP housekeeper] AttendenceManagementHikariCP - After cleanup  stats (total=1, active=1, idle=0, waiting=0)
+2021-08-16 10:31:55,093 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP connection adder] AttendenceManagementHikariCP - Added connection oracle.jdbc.driver.T4CConnection@5937035b
+2021-08-16 10:31:55,114 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP connection adder] AttendenceManagementHikariCP - Added connection oracle.jdbc.driver.T4CConnection@48948bfb
+2021-08-16 10:31:55,135 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP connection adder] AttendenceManagementHikariCP - Added connection oracle.jdbc.driver.T4CConnection@302ca843
+2021-08-16 10:31:55,155 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP connection adder] AttendenceManagementHikariCP - Added connection oracle.jdbc.driver.T4CConnection@14027183
+2021-08-16 10:31:55,183 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP connection adder] AttendenceManagementHikariCP - Added connection oracle.jdbc.driver.T4CConnection@2b286577
+2021-08-16 10:31:55,183 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP connection adder] AttendenceManagementHikariCP - After adding stats (total=6, active=1, idle=5, waiting=0)
+2021-08-16 10:31:56,284 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-08-16 10:31:56,295 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-08-16 10:31:57,079 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-16 10:31:58,023 INFO org.apache.coyote.http11.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-9090"]
+2021-08-16 10:31:58,048 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 9090 (http) with context path ''
+2021-08-16 10:31:58,725 INFO com.ams.AttendanceManagementSystemApplication [main] Started AttendanceManagementSystemApplication in 6.998 seconds (JVM running for 8.088)
+2021-08-16 10:31:58,729 INFO com.ams.AttendanceManagementSystemApplication [main] 
+~~~~~~~~~~~~~~~~~~~~~
+CONNECTED TO DB
+~~~~~~~~~~~~~~~~~~~~~
+2021-08-16 10:32:03,273 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-9090-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-16 10:32:03,274 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-9090-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-08-16 10:32:03,275 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-9090-exec-1] Completed initialization in 1 ms
+2021-08-16 10:32:25,083 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP housekeeper] AttendenceManagementHikariCP - Before cleanup stats (total=6, active=0, idle=6, waiting=0)
+2021-08-16 10:32:25,084 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP housekeeper] AttendenceManagementHikariCP - After cleanup  stats (total=6, active=0, idle=6, waiting=0)
+2021-08-16 10:32:25,085 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP housekeeper] AttendenceManagementHikariCP - Fill pool skipped, pool is at sufficient level.
+2021-08-16 10:32:55,088 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP housekeeper] AttendenceManagementHikariCP - Before cleanup stats (total=6, active=0, idle=6, waiting=0)
+2021-08-16 10:32:55,090 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP housekeeper] AttendenceManagementHikariCP - After cleanup  stats (total=5, active=0, idle=5, waiting=0)
+2021-08-16 10:32:55,090 DEBUG com.zaxxer.hikari.pool.PoolBase [AttendenceManagementHikariCP connection closer] AttendenceManagementHikariCP - Closing connection oracle.jdbc.driver.T4CConnection@2b286577: (connection has passed idleTimeout)
+2021-08-16 10:32:55,090 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP housekeeper] AttendenceManagementHikariCP - Fill pool skipped, pool is at sufficient level.
+2021-08-16 10:32:55,091 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP connection closer] AttendenceManagementHikariCP - Fill pool skipped, pool is at sufficient level.
+2021-08-16 10:33:25,100 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP housekeeper] AttendenceManagementHikariCP - Before cleanup stats (total=5, active=0, idle=5, waiting=0)
+2021-08-16 10:33:25,100 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP housekeeper] AttendenceManagementHikariCP - After cleanup  stats (total=5, active=0, idle=5, waiting=0)
+2021-08-16 10:33:25,101 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP housekeeper] AttendenceManagementHikariCP - Fill pool skipped, pool is at sufficient level.
+2021-08-16 10:33:55,112 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP housekeeper] AttendenceManagementHikariCP - Before cleanup stats (total=5, active=0, idle=5, waiting=0)
+2021-08-16 10:33:55,113 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP housekeeper] AttendenceManagementHikariCP - After cleanup  stats (total=5, active=0, idle=5, waiting=0)
+2021-08-16 10:33:55,114 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP housekeeper] AttendenceManagementHikariCP - Fill pool skipped, pool is at sufficient level.
+2021-08-16 10:34:25,121 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP housekeeper] AttendenceManagementHikariCP - Before cleanup stats (total=5, active=0, idle=5, waiting=0)
+2021-08-16 10:34:25,121 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP housekeeper] AttendenceManagementHikariCP - After cleanup  stats (total=5, active=0, idle=5, waiting=0)
+2021-08-16 10:34:25,122 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP housekeeper] AttendenceManagementHikariCP - Fill pool skipped, pool is at sufficient level.
+2021-08-16 10:34:55,134 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP housekeeper] AttendenceManagementHikariCP - Before cleanup stats (total=5, active=0, idle=5, waiting=0)
+2021-08-16 10:34:55,135 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP housekeeper] AttendenceManagementHikariCP - After cleanup  stats (total=5, active=0, idle=5, waiting=0)
+2021-08-16 10:34:55,136 DEBUG com.zaxxer.hikari.pool.HikariPool [AttendenceManagementHikariCP housekeeper] AttendenceManagementHikariCP - Fill pool skipped, pool is at sufficient level.
+2021-08-16 10:34:58,999 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(5)-127.0.0.1] Application shutdown requested.
+2021-08-16 10:34:59,029 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [RMI TCP Connection(5)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-08-16 10:34:59,032 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(5)-127.0.0.1] AttendenceManagementHikariCP - Shutdown initiated...
+2021-08-16 10:34:59,032 DEBUG com.zaxxer.hikari.pool.HikariPool [RMI TCP Connection(5)-127.0.0.1] AttendenceManagementHikariCP - Before shutdown stats (total=5, active=0, idle=5, waiting=0)
+2021-08-16 10:34:59,033 DEBUG com.zaxxer.hikari.pool.PoolBase [AttendenceManagementHikariCP connection closer] AttendenceManagementHikariCP - Closing connection oracle.jdbc.driver.T4CConnection@3dd750ba: (connection evicted)
+2021-08-16 10:34:59,035 DEBUG com.zaxxer.hikari.pool.PoolBase [AttendenceManagementHikariCP connection closer] AttendenceManagementHikariCP - Closing connection oracle.jdbc.driver.T4CConnection@5937035b: (connection evicted)
+2021-08-16 10:34:59,036 DEBUG com.zaxxer.hikari.pool.PoolBase [AttendenceManagementHikariCP connection closer] AttendenceManagementHikariCP - Closing connection oracle.jdbc.driver.T4CConnection@48948bfb: (connection evicted)
+2021-08-16 10:34:59,036 DEBUG com.zaxxer.hikari.pool.PoolBase [AttendenceManagementHikariCP connection closer] AttendenceManagementHikariCP - Closing connection oracle.jdbc.driver.T4CConnection@302ca843: (connection evicted)
+2021-08-16 10:34:59,037 DEBUG com.zaxxer.hikari.pool.PoolBase [AttendenceManagementHikariCP connection closer] AttendenceManagementHikariCP - Closing connection oracle.jdbc.driver.T4CConnection@14027183: (connection evicted)
+2021-08-16 10:34:59,039 DEBUG com.zaxxer.hikari.pool.HikariPool [RMI TCP Connection(5)-127.0.0.1] AttendenceManagementHikariCP - After shutdown stats (total=0, active=0, idle=0, waiting=0)
+2021-08-16 10:34:59,040 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(5)-127.0.0.1] AttendenceManagementHikariCP - Shutdown completed.

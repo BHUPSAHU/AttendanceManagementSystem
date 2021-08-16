@@ -23,38 +23,38 @@ public class AttendanceEntity {
 	private long attendanceId;
 	
 	@Length(min=3,max=15)
-	@NotNull(message = "SubjectName is required")
+	@NotNull(message = "\nSubjectName is required")
 	private String subjectName;
 	
 	@Length(min=2,max=5)
-	@NotNull(message= "Semester is required")
+	@NotNull(message= "\nSemester is required")
 	private String semester;
 	
-	@NotNull(message = "Date is required")
+	@NotNull(message = "\nDate is required")
 	private Date attendanceDate;
 	
 	@Length(min=1,max=3)
-	@NotNull(message= "TotalClass is required")
+	@NotNull(message= "\nTotalClass is required")
 	private String totalClass;
 	
 	@Min(1)
-	@NotNull(message= "Status is required")
+	@NotNull(message= "\nStatus is required")
 	private long status;
 	
 	@Min(1)
-	@NotNull(message= "Total is required")
+	@NotNull(message= "\nTotal is required")
 	private long total;
 	
 	@Length(min=1,max=2)
-	@NotNull(message= "Percentage is required")
+	@NotNull(message= "\nPercentage is required")
 	private String percentage;
 	
 	@Min(2)
-	@NotNull(message= "CourseId is required")
+	@NotNull(message= "\nCourseId is required")
 	private long courseId;
 	
 	@Length(min=3,max=10)
-	@NotNull(message= "CourseName is required")
+	@NotNull(message= "\nCourseName is required")
 	private String courseName;
 
 /*

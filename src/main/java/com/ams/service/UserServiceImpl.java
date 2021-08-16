@@ -23,7 +23,6 @@ public class UserServiceImpl implements UserService{
 	@Override
 	@Transactional
 	public long add(UserEntity user) {
-//		user.getAssignFaculty().getUser().setUserId(user.getUserId());
 		UserEntity tempUser =  userRepo.save(user);
 		return tempUser.getUserId();
 	}
@@ -49,7 +48,7 @@ public class UserServiceImpl implements UserService{
 		existingUser.setProfilePic(user.getProfilePic());
 		existingUser.setUserId(user.getUserId());
 		existingUser.setRoleType(user.getRoleType());	
-//		existingUser.setAssignFaculty(user.getAssignFaculty());
+		existingUser.setAssignFaculty(user.getAssignFaculty());
 		userRepo.save(existingUser);		
 	}
 	

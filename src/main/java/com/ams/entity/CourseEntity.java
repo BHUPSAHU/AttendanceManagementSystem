@@ -19,11 +19,11 @@ public class CourseEntity {
 	private long courseId;
 
 	@NotNull
-	@Length( min=2,max = 30, message = "course name should be between 2 and 30 characters")
+	@Length( min=2,max = 30, message = "\ncourse name should be between 2 and 30 characters")
 	private String courseName;
 
 	@NotNull		
-	@Length( max = 200, message = "course description should be max 200 characters")
+	@Length( max = 200, message = "\ncourse description should be max 200 characters")
 	private String description;
 
 

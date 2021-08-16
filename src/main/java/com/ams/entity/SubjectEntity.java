@@ -21,19 +21,19 @@ public class SubjectEntity {
 	private long subjectId;
 
 	@NotNull
-	@Length(min = 2, max = 30, message = "Subject name should be between 2 and 30  characters")
+	@Length(min = 2, max = 30, message = "\nSubject name should be between 2 and 30  characters")
 	private String subjectName;
 
 	@NotNull
-	@Length(min = 2, max = 30, message = "Subject Code should be between 2 and 30  characters")
+	@Length(min = 2, max = 30, message = "\nSubject Code should be between 2 and 30  characters")
 	private String subjectCode;
 
 	@NotNull
-	@Length(min = 2, max = 30, message = "Semester should be between 2 and 30  characters")
+	@Length(min = 2, max = 30, message = "\nSemester should be between 2 and 30  characters")
 	private String semester;
 
 	@NotNull
-	@Length(min = 2, max = 200, message = "Description should be between 2 and 200  characters")
+	@Length(min = 2, max = 200, message = "\nDescription should be between 2 and 200  characters")
 	private String description;
 
 /*

@@ -21,11 +21,11 @@ public class FacultyEntity {
 	private long facultyid;
 
 	@NotNull
-	@Length(min = 2, max = 10, message = "User name should be between 2 and 10  characters")
+	@Length(min = 2, max = 10, message = "\nUser name should be between 2 and 10  characters")
 	private String userName;
 
 	@NotNull
-	@Length(min = 2, max = 10, message = "totalclass should be between 2 and 10  characters")
+	@Length(min = 2, max = 10, message = "\ntotalclass should be between 2 and 10  characters")
 	private String totalClass;
 	
 /*
