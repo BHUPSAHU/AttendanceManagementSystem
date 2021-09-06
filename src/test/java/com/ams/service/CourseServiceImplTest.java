@@ -55,7 +55,7 @@ class CourseServiceImplTest {
 		CourseEntity temp = dataCourse();
 		Optional<CourseEntity> tempopt = Optional.of(temp);
 		Mockito.when(sub.findById(temp.getCourseId())).thenReturn(tempopt);
-		courseservice.delete(temp);
+		courseservice.delete(temp.getCourseId());
 		verify(sub, times(1)).delete(temp);
 		;
 	}

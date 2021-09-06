@@ -57,8 +57,9 @@ public class UserServiceImpl implements UserService {
 
 	// deleting a specific record by using the method deleteById()
 	@Override
-	public void delete(Long userId) {
+	public long delete(long userId) {
 		userRepo.deleteById(userId);
+		return userId;
 	}
 
 	// getting a specific record by using the method findByName()

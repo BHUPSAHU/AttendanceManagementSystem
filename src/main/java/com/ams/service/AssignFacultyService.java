@@ -10,7 +10,7 @@ public interface AssignFacultyService {
 
 	public void update(FacultyEntity assignfaculty) throws Exception;
 
-	public void delete(FacultyEntity assignfaculty) throws Exception;
+	public long delete(long id) throws Exception;
 
 	FacultyEntity findByPK(long id) throws Exception;
 

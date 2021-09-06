@@ -41,9 +41,9 @@ public class SubjectServiceImpl implements SubjectService {
 
 	// deleting a specific record by using the method deleteById()
 	@Override
-	public void delete(SubjectEntity subject) throws Exception {
-		SubjectEntity s = sub.findById(subject.getSubjectId()).orElseThrow(s1);
-		sub.deleteById(s.getSubjectId());
+	public long delete(long id) throws Exception {
+		sub.deleteById(id);
+		return id;
 	}
 
 	// getting a specific record by using the method findByName()

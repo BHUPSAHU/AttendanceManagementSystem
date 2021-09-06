@@ -44,9 +44,9 @@ public class AttendanceServiceImpl implements AttendanceService {
 
 	// deleting a specific record by using the method deleteById()
 	@Override
-	public void delete(AttendanceEntity attendance) throws Exception {
-		AttendanceEntity ae = attendanceDao.findById(attendance.getAttendanceId()).orElseThrow(s1);
-		attendanceDao.deleteById(ae.getAttendanceId());
+	public long delete(long id) throws Exception {
+		attendanceDao.deleteById(id);
+		return id;
 
 	}
 

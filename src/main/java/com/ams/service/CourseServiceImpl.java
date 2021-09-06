@@ -39,9 +39,9 @@ public class CourseServiceImpl implements CourseService {
 
 	// deleting a specific record by using the method deleteById()
 	@Override
-	public void delete(CourseEntity course) throws Exception {
-		CourseEntity c = sub.findById(course.getCourseId()).orElseThrow(s1);
-		sub.delete(c);
+	public long delete(long id) throws Exception {
+		sub.deleteById(id);
+		return id;
 	}
 
 	// getting a specific record by using the method findByName()

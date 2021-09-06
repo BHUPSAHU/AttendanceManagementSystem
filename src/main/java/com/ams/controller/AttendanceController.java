@@ -64,9 +64,9 @@ public class AttendanceController {
 		attendanceService.update(ae);
 	}
 	// creating delete mapping that deletes on DB
-	@DeleteMapping("/attendance/delete")
-	public void deleteAttendance(@RequestBody AttendanceEntity ae) throws Exception {
-		attendanceService.delete(ae);
+	@DeleteMapping("/attendance/delete/{id}")
+	public void deleteAttendance(@PathVariable("id") long id) throws Exception {
+		attendanceService.delete(id);
 	}
 	// creating get mapping through attendance Name
 	@GetMapping("/attendance/byName/{name}")

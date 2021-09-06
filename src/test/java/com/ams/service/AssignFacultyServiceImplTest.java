@@ -47,7 +47,7 @@ class AssignFacultyServiceImplTest {
 		FacultyEntity temp = createAndSaveAssignFaculty();
 		Optional<FacultyEntity> tempopt =Optional.of(temp);
 		Mockito.when(repo.findById(temp.getFacultyid())).thenReturn(tempopt);
-		assignfacultyservice.delete(temp);
+		assignfacultyservice.delete(temp.getFacultyid());
 		verify(repo,times(1)).deleteById(temp.getFacultyid());
 	}
 	

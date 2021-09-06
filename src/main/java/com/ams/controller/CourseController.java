@@ -63,9 +63,9 @@ public class CourseController {
 
 	}
 	// creating delete mapping that deletes on DB
-	@DeleteMapping("/course/delete")
-	public void deleteCourse(@RequestBody CourseEntity course) throws Exception {
-		courseservice.delete(course);
+	@DeleteMapping("/course/delete/{id}")
+	public void deleteCourse(@PathVariable("id") long id) throws Exception {
+		courseservice.delete(id);
 	}
 	// creating get mapping through Course Id
 	@GetMapping("/course/byId/{id}")

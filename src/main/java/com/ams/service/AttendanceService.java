@@ -7,7 +7,7 @@ import com.ams.entity.AttendanceEntity;
 public interface AttendanceService {
 	public long add(AttendanceEntity attendance);
 	public void update(AttendanceEntity attendance) throws Exception;
-	public void delete(AttendanceEntity attendance) throws Exception;
+	public long delete(long id) throws Exception;
 	public AttendanceEntity findByName(String name);
 	public AttendanceEntity findByPk(long id) throws Exception;
 	public List<AttendanceEntity> findAllAttendances();

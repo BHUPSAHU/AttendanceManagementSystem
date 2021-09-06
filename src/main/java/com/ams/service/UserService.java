@@ -12,7 +12,7 @@ public interface UserService {
 
 	public void update(UserEntity user) throws Exception;
 
-	public void delete(Long userId);
+	public long delete(long userId);
 
 	public Boolean authenticate(String userName);
 

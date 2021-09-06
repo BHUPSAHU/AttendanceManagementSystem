@@ -33,6 +33,7 @@ import com.ams.service.AssignFacultyServiceImpl;
 
 @RestController
 @RequestMapping(path = "/api")
+
 public class AssignFacultyController {
 	// @Autowire the SubjectService class
 	@Autowired
@@ -73,9 +74,9 @@ public class AssignFacultyController {
 	}
 
 	// creating delete mapping that deletes on DB
-	@DeleteMapping("/faculty/delete")
-	public void deleteAssignFaculty(@RequestBody FacultyEntity assignfaculty) throws Exception {
-		assignfacultyservice.delete(assignfaculty);
+	@DeleteMapping("/faculty/delete/{id}")
+	public void deleteAssignFaculty(@PathVariable("id") Long id) throws Exception {
+		assignfacultyservice.delete(id);
 	}
 
 	// creating get mapping through subjectId

@@ -45,9 +45,9 @@ public class AssignFacultyServiceImpl implements AssignFacultyService {
 
 	// deleting a specific record by using the method deleteById()
 	@Override
-	public void delete(FacultyEntity assignfaculty) throws Exception {
-		FacultyEntity temp = repo.findById(assignfaculty.getFacultyid()).orElseThrow(s1);
-		repo.deleteById(temp.getFacultyid());
+	public long delete(long id) throws Exception {
+		repo.deleteById(id);
+		return id;
 	}
 
 	// getting a specific record by using the method findByName()

@@ -7,7 +7,7 @@ import com.ams.entity.SubjectEntity;
 public interface SubjectService {
 	public long add(SubjectEntity subject);
 	public void update(SubjectEntity subject) throws Exception;
-	public void delete(SubjectEntity subject) throws Exception;
+	public long delete(long id) throws Exception;
 	public SubjectEntity findByName(String subject);
 	public SubjectEntity findByPk(long subjectId) throws Exception;
 	public List<SubjectEntity> findAllSubject() throws Exception;

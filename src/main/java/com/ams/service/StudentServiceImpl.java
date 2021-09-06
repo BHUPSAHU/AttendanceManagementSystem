@@ -48,8 +48,9 @@ public class StudentServiceImpl implements StudentService {
 	}
 	// deleting a specific record by using the method deleteById()
 	@Override
-	public void delete(StudentEntity entity) {
-		repo.deleteById(entity.getStudentId());
+	public long delete(long id) {
+		repo.deleteById(id);
+		return id;
 	}
 	// getting a specific record by using the method findByName()
 	@Override

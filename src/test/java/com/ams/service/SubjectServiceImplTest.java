@@ -61,7 +61,7 @@ class SubjectServiceImplTest {
 		SubjectEntity temp=dataSubject();
 		Optional<SubjectEntity> tempOpt= Optional.of(temp);
 		Mockito.when(sub.findById(temp.getSubjectId())).thenReturn(tempOpt);
-		subjectservice.delete(temp);
+		subjectservice.delete(temp.getSubjectId());
 		verify(sub,times(1)).deleteById(temp.getSubjectId());	
 	}
 	

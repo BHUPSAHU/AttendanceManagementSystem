@@ -68,9 +68,9 @@ public class SubjectController {
 	}
 
 	// creating delete mapping that deletes on DB
-	@DeleteMapping("/subject/delete")
-	public void deleteSubject(@RequestBody SubjectEntity subject) throws Exception {
-		subjectservice.delete(subject);
+	@DeleteMapping("/subject/delete/{id}")
+	public void deleteSubject(@PathVariable long id) throws Exception {
+		subjectservice.delete(id);
 	}
 
 	// creating get mapping through subjectId

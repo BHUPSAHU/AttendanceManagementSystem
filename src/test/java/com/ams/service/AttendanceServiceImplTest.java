@@ -49,7 +49,7 @@ class AttendanceServiceImplTest {
 		AttendanceEntity ae = createAndSaveAttendance();
 		Optional<AttendanceEntity> aeOpt = Optional.of(ae);
 		Mockito.when(attendanceDao.findById(ae.getAttendanceId())).thenReturn(aeOpt);
-		attendanceService.delete(ae);
+		attendanceService.delete(ae.getAttendanceId());
 		verify(attendanceDao,times(1)).deleteById(ae.getAttendanceId());
 		
 	}

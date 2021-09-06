@@ -46,7 +46,7 @@ class StudentServiceImplTest {
 	@Test
 	void testDelete() {
 		StudentEntity temp = createAndSaveStudent();
-		studentService.delete(temp);
+		studentService.delete(temp.getStudentId());
 		verify(repo,times(1)).deleteById(temp.getStudentId());
 	}
 
