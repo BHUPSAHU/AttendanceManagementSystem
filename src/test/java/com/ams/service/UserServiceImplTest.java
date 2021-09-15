@@ -90,7 +90,7 @@ class UserServiceImplTest {
 		user.setFirstName("test");
 		user.setLastName("one");
 		user.setMobileNo("777777777");
-		user.setPassword("pass");
+		user.setEmail("test.one@gmail.com");
 		user.setProfilePic("hellopic");
 		user.setRoleType(1);
 		return user;

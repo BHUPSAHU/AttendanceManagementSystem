@@ -68,14 +68,19 @@ public class UserController {
 
 	// creating delete mapping that deletes on DB
 	@RequestMapping(value = "/user/delete/{userId}", method = RequestMethod.DELETE)
-	public void delete(@PathVariable("userId") Long userId) {
-		userService.delete(userId);
+	public ResponseEntity<Long> delete(@PathVariable("userId") Long userId) {
+		long uid=userService.delete(userId);
+		ResponseEntity<Long> result= new ResponseEntity<Long>(uid,HttpStatus.ACCEPTED);
+		return result;
+
 	}
 
 	// creating put mapping that update to DB
 	@RequestMapping(value = "/user/update", method = RequestMethod.PUT)
-	public void update(@RequestBody UserEntity user) throws Exception {
-		userService.update(user);
+	public ResponseEntity<Long> update(@RequestBody UserEntity user) throws Exception {
+		long uid=userService.update(user);
+		ResponseEntity<Long> result= new ResponseEntity<Long>(uid,HttpStatus.ACCEPTED);
+		return result;
 	}
 
 	// creating get mapping through Name
@@ -111,4 +116,14 @@ public class UserController {
 		return res;
 
 	}
+	
+	@RequestMapping(value = "/user/byEmail/{name}", method = RequestMethod.GET)
+	public ResponseEntity<UserEntity> getById(@PathVariable("name") String name) throws Exception {
+		UserEntity temp = userService.findByEmail(name);
+		ResponseEntity<UserEntity> res = new ResponseEntity<UserEntity>(temp, HttpStatus.ACCEPTED);
+		return res;
+	}
+	
+	
+	
 }

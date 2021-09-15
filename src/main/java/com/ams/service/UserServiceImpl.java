@@ -41,24 +41,26 @@ public class UserServiceImpl implements UserService {
 
 	// updating a record
 	@Override
-	public void update(UserEntity user) throws Exception {
+	public long update(UserEntity user) throws Exception {
 		UserEntity existingUser = userRepo.findById(user.getUserId()).orElseThrow(userexp);
 		existingUser.setDob(user.getDob());
 		existingUser.setFirstName(user.getFirstName());
 		existingUser.setLastName(user.getLastName());
 		existingUser.setMobileNo(user.getMobileNo());
-		existingUser.setPassword(user.getPassword());
+		existingUser.setEmail(user.getEmail());
 		existingUser.setProfilePic(user.getProfilePic());
 		existingUser.setUserId(user.getUserId());
 		existingUser.setRoleType(user.getRoleType());
 		existingUser.setAssignFaculty(user.getAssignFaculty());
 		userRepo.save(existingUser);
+		return user.getUserId();
 	}
 
 	// deleting a specific record by using the method deleteById()
 	@Override
-	public void delete(Long userId) {
+	public long delete(Long userId) {
 		userRepo.deleteById(userId);
+		return userId;
 	}
 
 	// getting a specific record by using the method findByName()
@@ -76,6 +78,10 @@ public class UserServiceImpl implements UserService {
 	@Override
 	public Boolean forgotPassword(String userName) {
 		return true;
+	}
+	
+	public UserEntity findByEmail(String email) throws Exception {
+		return userRepo.findByEmail(email);
 	}
 
 }

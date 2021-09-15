@@ -7,6 +7,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.OneToOne;
+import javax.validation.constraints.Email;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Past;
@@ -47,10 +48,15 @@ public class UserEntity {
 	@Past
 	private LocalDate dob;
 
-	@Length(min = 6, max = 15)
-	@NotNull(message="\npassword is required")
-	private String password;
-
+//	@Length(min = 6, max = 15)
+//	@NotNull(message="\npassword is required")
+//	private String password;
+	
+	@NotNull(message= "Student Email is required")
+	@Email(message = "Student Email should be valid")
+	private String email;
+	
+	
 	@Min(1)
 	@NotNull(message= "\nRole Type is required")
 	private long roleType;
@@ -60,7 +66,8 @@ public class UserEntity {
  Many To one Relation with Student Entity
 */
 	
-	@OneToOne(cascade=CascadeType.ALL)
+//	@OneToOne(cascade=CascadeType.ALL)
+	@OneToOne
 	private FacultyEntity assignFaculty;
 
 
@@ -117,12 +124,12 @@ public class UserEntity {
 		this.dob = dob;
 	}
 
-	public String getPassword() {
-		return password;
+	public String getEmail() {
+		return email;
 	}
 
-	public void setPassword(String password) {
-		this.password = password;
+	public void setEmail(String email) {
+		this.email = email;
 	}
 
 	public long getRoleType() {

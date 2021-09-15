@@ -6,4 +6,6 @@ import com.ams.entity.UserEntity;
 
 public interface UserDAO extends JpaRepository<UserEntity,Long>{
 	public UserEntity findByFirstName(String name);
+	
+	public UserEntity findByEmail(String email);
 }

@@ -10,9 +10,9 @@ public interface UserService {
 
 	public UserEntity findById(Long id) throws Exception;
 
-	public void update(UserEntity user) throws Exception;
+	public long update(UserEntity user) throws Exception;
 
-	public void delete(Long userId);
+	public long delete(Long userId);
 
 	public Boolean authenticate(String userName);
 
