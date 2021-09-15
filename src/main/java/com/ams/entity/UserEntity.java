@@ -1,12 +1,19 @@
 package com.ams.entity;
 
 import java.time.LocalDate;
+import java.util.HashSet;
+import java.util.Set;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
 import javax.persistence.OneToOne;
+import javax.validation.constraints.Email;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Past;
@@ -14,6 +21,7 @@ import javax.validation.constraints.Pattern;
 
 import org.hibernate.validator.constraints.Length;
 import org.springframework.format.annotation.DateTimeFormat;
+
 
 /*
 Entity Definition of USER_ENTITY Table
@@ -47,19 +55,25 @@ public class UserEntity {
 	@Past
 	private LocalDate dob;
 
-	@Length(min = 6, max = 15)
-	@NotNull(message="\npassword is required")
-	private String password;
+//	@Length(min = 6)
+//	@NotNull(message="\n email is required")
+//	private String email;
 
-	@Min(1)
+	@NotNull(message= "Student Email is required")
+	@Email(message = "Student Email should be valid")
+	private String email;
+
+	
 	@NotNull(message= "\nRole Type is required")
 	private long roleType;
 	
 	
-/*
+
+	/*
  Many To one Relation with Student Entity
 */
 	
+
 	@OneToOne(cascade=CascadeType.ALL)
 	private FacultyEntity assignFaculty;
 
@@ -117,12 +131,13 @@ public class UserEntity {
 		this.dob = dob;
 	}
 
-	public String getPassword() {
-		return password;
+
+	public String getEmail() {
+		return email;
 	}
 
-	public void setPassword(String password) {
-		this.password = password;
+	public void setEmail(String email) {
+		this.email = email;
 	}
 
 	public long getRoleType() {

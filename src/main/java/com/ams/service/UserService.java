@@ -14,11 +14,12 @@ public interface UserService {
 
 	public long delete(long userId);
 
-	public Boolean authenticate(String userName);
+//	public Boolean authenticate(String userName);
 
-	public Boolean forgotPassword(String userName);
+//	public Boolean forgotPassword(String userName);
 
 	public UserEntity findByFirstName(String name) throws Exception;
 
-	public List<UserEntity> userlist();
+	public List<UserEntity> userlist();	
+
 }

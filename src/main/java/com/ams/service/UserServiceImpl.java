@@ -21,7 +21,6 @@ public class UserServiceImpl implements UserService {
 
 	// saving a specific record by using the method save()
 	@Override
-	@Transactional
 	public long add(UserEntity user) {
 		UserEntity tempUser = userRepo.save(user);
 		return tempUser.getUserId();
@@ -47,7 +46,8 @@ public class UserServiceImpl implements UserService {
 		existingUser.setFirstName(user.getFirstName());
 		existingUser.setLastName(user.getLastName());
 		existingUser.setMobileNo(user.getMobileNo());
-		existingUser.setPassword(user.getPassword());
+//		existingUser.setPassword(user.getPassword());
+		existingUser.setEmail(user.getEmail());
 		existingUser.setProfilePic(user.getProfilePic());
 		existingUser.setUserId(user.getUserId());
 		existingUser.setRoleType(user.getRoleType());
@@ -67,16 +67,15 @@ public class UserServiceImpl implements UserService {
 	public UserEntity findByFirstName(String userName) throws Exception {
 		return userRepo.findByFirstName(userName);
 	}
-
-	@Override
-	public Boolean authenticate(String userName) {
-
-		return true;
+	
+	public UserEntity findByEmail(String email) throws Exception {
+		return userRepo.findByEmail(email);
 	}
 
-	@Override
-	public Boolean forgotPassword(String userName) {
-		return true;
-	}
+
+//	@Override
+//	public Boolean forgotPassword(String userName) {
+//		return true;
+//	}
 
 }

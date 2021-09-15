@@ -27,34 +27,31 @@ public class AttendanceEntity {
 	@NotNull(message = "\nSubjectName is required")
 	private String subjectName;
 	
-	@Length(min=2,max=5, message = "\ncourse name should be between 2 and 5 characters")
+	@Length(min=2,max=20, message = "\ncourse name should be between 2 and 20 characters")
 	@NotNull(message= "\nSemester is required")
 	private String semester;
 	
 	@NotNull(message = "\nDate is required")
 	private Date attendanceDate;
 	
-	@Length(min=1,max=3, message = "\ncourse name should be between 1 and 3 characters")
+	@Length(min=1,max=20, message = "\ncourse name should be between 1 and 20aracters")
 	@NotNull(message= "\nTotalClass is required")
 	private String totalClass;
 	
-	@Min(1)
 	@NotNull(message= "\nStatus is required")
 	private long status;
 	
-	@Min(1)
 	@NotNull(message= "\nTotal is required Minimum 1")
 	private long total;
 	
-	@Length(min=1,max=4, message = "\ncourse name should be between 1 and 4 characters")
+	@Length(min=1,max=20, message = "\ncourse name should be between 1 and 20 characters")
 	@NotNull(message= "\nPercentage is required")
 	private String percentage;
 	
-	@Min(2)
 	@NotNull(message= "\nCourseId is required")
 	private long courseId;
 	
-	@Length(min=3,max=10, message = "\ncourse name should be between 3 and 10 characters")
+	@Length(max=20, message = "\ncourse name should be between 3 and 20 characters")
 	@NotNull(message= "\nCourseName is required")
 	private String courseName;
 

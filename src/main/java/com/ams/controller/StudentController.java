@@ -34,7 +34,6 @@ import com.ams.service.StudentServiceImpl;
 @RestController
 @CrossOrigin(origins = "http://localhost:4200")
 @RequestMapping("/api")
-
 public class StudentController {
 
 	// @Autowire the StudentService class
