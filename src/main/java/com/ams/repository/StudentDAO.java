@@ -7,4 +7,7 @@ import com.ams.entity.StudentEntity;
 public interface StudentDAO extends JpaRepository<StudentEntity,Long>{
 
 	public StudentEntity findByName(String name);
+	
+	public StudentEntity findByRollNo(long roll);
+	
 }

@@ -99,4 +99,11 @@ public class StudentController {
 				HttpStatus.OK);
 		return responseEntity;
 	}
+	
+	@GetMapping("/student/byRoll/{roll}")
+	public ResponseEntity<StudentEntity> findStudentByRollNo(@PathVariable("roll") long roll) {
+		StudentEntity temp = studentService.findByRoll(roll);
+		ResponseEntity<StudentEntity> responseEntity = new ResponseEntity<StudentEntity>(temp, HttpStatus.OK);
+		return responseEntity;
+	}
 }

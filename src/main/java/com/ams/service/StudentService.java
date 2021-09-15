@@ -10,5 +10,6 @@ public interface StudentService {
 	public long delete(long id);
 	public StudentEntity findByName(String name);
 	public StudentEntity findByPk(long id)throws Exception;
+	public StudentEntity findByRoll(long roll);
 	public List<StudentEntity> findAllStudents();
 }

@@ -70,4 +70,9 @@ public class StudentServiceImpl implements StudentService {
 		List<StudentEntity> tempList = repo.findAll();
 		return tempList;
 	}
+	@Override
+	public StudentEntity findByRoll(long roll)  {
+		StudentEntity temp = repo.findByRollNo(roll);
+		return temp;
+	}
 }
